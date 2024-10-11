@@ -229,10 +229,19 @@ namespace RTDataExtractor
          /// <param name="ID"></param>
          /// <param name="courseID"></param>
          /// <param name="planID"></param>
-        public void Anonymize(string pathOutput, string pseudoID, MainForm mainForm)
+        public void Anonymize(string pathOutput, string ID, string pseudoID, MainForm mainForm)
         {
             // Identify files to anonymize and set counter
             var toAnonymize = Directory.GetFiles(pathOutput);
+
+            // Verify that files were exported for the considered patient
+            var test = toAnonymize.Length;
+            if (toAnonymize.Length == 0)
+            {
+                //MessageBox.Show($"No files were exported for patient: {ID}");
+                return;
+            }
+
             int patientCounter = toAnonymize.Length;
 
             var settings = AnonymizationSettings.Default;
@@ -255,38 +264,61 @@ namespace RTDataExtractor
                 referencedSOPs.Add(referencedSOP);
                 referencedSOPs = referencedSOPs.Distinct().ToList();
             }
-            
+
+            // A boolean variable is created that will look for remaining files in the output folder that does not belong to the considered patient
+            bool otherPatientFiles = false;
+
             foreach (var file in toAnonymize)
             {
                 DICOMObject dcm = DICOMObject.Read(file);
+                if (dcm.FindFirst(TagHelper.PatientID).DData.ToString() == ID)
+                { 
+                    // Filters out structure sets that are not linked to the treatment plans. These will be deleted. 
+                    if (dcm.FindFirst(TagHelper.Modality).DData.ToString() == "RTSTRUCT" && !referencedSOPs.Contains(dcm.FindFirst(TagHelper.SOPInstanceUID).DData.ToString()))
+                    {
+                        File.Delete(file);
 
-                // Filters out structure sets that are not linked to the treatment plans. These will be deleted. 
-                if (dcm.FindFirst(TagHelper.Modality).DData.ToString() == "RTSTRUCT" && !referencedSOPs.Contains(dcm.FindFirst(TagHelper.SOPInstanceUID).DData.ToString()))
-                {
+                        // Update progress bar
+                        patientCounter++;
+                        mainForm.UpdatePatientRequestsBar(patientCounter);
+
+                        continue;
+                    }
+
+                    // All other files are anonymized in two steps
+                    queue.Anonymize(dcm);
+                    dcm = EditDICOMFile(dcm);
+
+                    // The anonymized files are saved in a new directory
+                    string basePath = Directory.GetParent(file).FullName;
+                    Directory.CreateDirectory(basePath + @"\" + pseudoID);
+                    dcm.Write(Path.Combine(basePath, pseudoID, GetModalityCode(dcm.FindFirst(TagHelper.Modality).DData.ToString()) + "." + dcm.FindFirst(TagHelper.SOPInstanceUID).DData.ToString() + ".dcm"));
+                
+                    // The initial (not anonymized) file is deleted
                     File.Delete(file);
 
                     // Update progress bar
                     patientCounter++;
                     mainForm.UpdatePatientRequestsBar(patientCounter);
-
-                    continue;
                 }
+                else
+                {
+                    otherPatientFiles = true;
+                }
+            }
 
-                // All other files are anonymized in two steps
-                queue.Anonymize(dcm);
-                dcm = EditDICOMFile(dcm);
-
-                // The anonymized files are saved in a new directory
-                string basePath = Directory.GetParent(file).FullName;
-                Directory.CreateDirectory(basePath + @"\" + pseudoID);
-                dcm.Write(Path.Combine(basePath, pseudoID, GetModalityCode(dcm.FindFirst(TagHelper.Modality).DData.ToString()) + "." + dcm.FindFirst(TagHelper.SOPInstanceUID).DData.ToString() + ".dcm"));
-                
-                // The initial (not anonymized) file is deleted
-                File.Delete(file);
-
-                // Update progress bar
-                patientCounter++;
-                mainForm.UpdatePatientRequestsBar(patientCounter);
+            // Check that all not anonymized files have been deleted
+            string[] remainingFiles = Directory.GetFiles(pathOutput, "*.*", SearchOption.TopDirectoryOnly);
+            if (remainingFiles.Length > 0)
+            {
+                if (otherPatientFiles) 
+                {
+                    //MessageBox.Show($"There are remaining files in the output folder that does not belong to the considered patient: {ID}");
+                }
+                else
+                {
+                    //MessageBox.Show($"All files were not anonymized");
+                }
             }
         }
 
@@ -358,29 +390,6 @@ namespace RTDataExtractor
         {
             dicomObjects.Remove(TagHelper.Setup​Technique​Description);
         }
-
-        ///// <summary>
-        ///// Performs a C-STORE operation using predefined entities.
-        ///// </summary>
-        //public Status Store(DICOMObject dicomObject)
-        //{
-        //    if (storer != null)
-        //    {
-        //        if (dicomObject.AllElements.Count > 0)
-        //        {
-        //            ushort msgId = 1;
-
-        //            // Performs the C-STORE operation
-        //            CStoreResponse response = storer.SendCStore(dicomObject, ref msgId);
-
-        //            return (Status)response.Status;
-        //        }
-        //        MessageBox.Show("An empty DICOMObject cannot be stored.", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-        //        return Status.FAILURE;
-        //    }
-        //    MessageBox.Show("A storer has to be created.", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-        //    return Status.FAILURE;
-        //}
 
         /// <summary>
         /// Performs the echo operation.

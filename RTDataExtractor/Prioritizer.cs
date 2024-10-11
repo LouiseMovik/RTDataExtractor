@@ -79,14 +79,15 @@ namespace RTDataExtractor
                 var patientRows = dtPatients.AsEnumerable()
                                        .Where(row => row.Field<string>("Patient ID") == patient);
 
-                // Save pseudo ID to use for anonymization
+                // Save IDs to use for anonymization
+                string ID = null;
                 string pseudoID = null;
 
                 // Look at all patient rows to identify UIDs to extract
                 foreach (DataRow planRow in patientRows)
                 {
                     // Information from the data row
-                    string ID = planRow["Patient ID"].ToString();
+                    ID = planRow["Patient ID"].ToString();
                     pseudoID = planRow["Pseudo ID"].ToString();
                     string courseID = planRow["Course ID"].ToString();
                     string planID = planRow["Plan ID"].ToString();
@@ -99,10 +100,10 @@ namespace RTDataExtractor
                 UIDs = UIDs.Distinct().ToList();
 
                 // Extract all requested UIDs for this patient. The files will be writted directly in the output folder.
-                extractor.Extract(UIDs, mainForm);
+                //extractor.Extract(UIDs, mainForm);
 
                 // Anonymize all written files and structure them.
-                extractor.Anonymize(pathOutput, pseudoID, mainForm);
+                extractor.Anonymize(pathOutput, ID, pseudoID, mainForm);
 
                 // Update counter
                 counter++;

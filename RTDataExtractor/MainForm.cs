@@ -26,10 +26,14 @@ namespace RTDataExtractor
         public MainForm()
         {
             // Optional for user: Reset previous property settings. 
-            // Settings.Default.Reset();
+            Settings.Default.Reset();
 
             InitializeComponent();
-            InitializeDataGrid();
+
+            // Optional for user: Enter static paths
+            //txtPath.Text = @"";
+            //pathOutput = @"";
+            //txtOutputPath.Text = pathOutput;
 
             prioritizer = new Prioritizer(pathOutput);
             toolTipInput.SetToolTip(btnSelectFolder, "Path to a textfile with patient information structured as:\nPatient ID \t Pseudo ID \t Course ID \t Plan ID");
@@ -106,8 +110,7 @@ namespace RTDataExtractor
             {
                 string pathToData = txtPath.Text;
                 dtPatients = LoadPatientDataIntoDataTable(pathToData);
-                gridList.AutoGenerateColumns= true;
-                gridList.DataSource = new DataTableReader(dtPatients);
+                gridList.DataSource = dtPatients;
 
                 if (dtPatients.Rows.Count > 0)
                 {
@@ -193,29 +196,10 @@ namespace RTDataExtractor
             }
         }
 
-        /// <summary>
-        /// Initialization of the Data Grid View.
-        /// </summary>
-        private void InitializeDataGrid()
-        {
-            gridList.Visible = true;
-            gridList.DataSource = null;
-            gridList.Rows.Clear(); // Optional, in case the DataSource is not being used.
-            gridList.Columns.Clear(); // Clear columns if not using DataSource directly.
-
-            gridList = new DataGridView
-            {
-                ColumnCount = 4,
-                Columns =
-                {
-                    [0] = { Name = "Patient ID" },
-                    [1] = { Name = "New Study ID (if anonymized)" },
-                    [2] = { Name = "Course ID" },
-                    [3] = { Name = "Plan ID" }
-                }
-            };
-        }
-
+       /// <summary>
+       /// Control of all input before extraction is started.       
+       /// </summary>
+       /// <returns></returns>
         private bool ControlInput()
         {
             bool allOK = true;
@@ -234,47 +218,7 @@ namespace RTDataExtractor
             return allOK;
         }
 
-        /// <summary>
-        /// Reads a text file with patient information and populates the provided DataGridView.
-        /// </summary>
-        /// <param name="filePath">The path to the text file containing tab-separated patient data.</param>
-        /// <param name="dataGridView">The DataGridView to populate with the patient data.</param>
-        public void LoadPatientDataFromFile(string filePath, DataGridView dataGridView)
-        {
-            try
-            {
-                // Clear existing rows in the DataGridView
-                dataGridView.Rows.Clear();
-
-                // Read each line from the file
-                foreach (string line in File.ReadLines(filePath))
-                {
-                    // Split the line by comma to get individual fields
-                    string[] fields = line.Split('\t');
-
-                    // Check if the line has the expected number of fields
-                    if (fields.Length == 4)
-                    {
-                        string patientId = fields[0];
-                        string newStudyId = fields[1];
-                        string courseId = fields[2];
-                        string planId = fields[3];
-
-                        // Add a new row to the DataGridView with the extracted fields
-                        dataGridView.Rows.Add(patientId, newStudyId, courseId, planId);
-                    }
-                    else
-                    {
-                        MessageBox.Show($"Invalid line format: {line}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"An error occurred while reading the file: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
+        
         /// <summary>
         /// Reads a text file containing patient data and populates a DataTable with the contents.
         /// </summary>
@@ -312,13 +256,13 @@ namespace RTDataExtractor
                     }
                     else
                     {
-                        Console.WriteLine($"Invalid line format: {line}");
+                        MessageBox.Show($"Invalid line format: {line}");
                     }
                 }
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"An error occurred while reading the file: {ex.Message}");
+                //MessageBox.Show($"An error occurred while reading the file: { ex.Message}", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
 
             // Return the populated DataTable
