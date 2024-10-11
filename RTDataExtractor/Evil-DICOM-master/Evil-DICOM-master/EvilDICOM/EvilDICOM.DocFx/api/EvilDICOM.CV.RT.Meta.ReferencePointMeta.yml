@@ -1,0 +1,240 @@
+### YamlMime:ManagedReference
+items:
+- uid: EvilDICOM.CV.RT.Meta.ReferencePointMeta
+  commentId: T:EvilDICOM.CV.RT.Meta.ReferencePointMeta
+  id: ReferencePointMeta
+  parent: EvilDICOM.CV.RT.Meta
+  children:
+  - EvilDICOM.CV.RT.Meta.ReferencePointMeta.FractionDoseGy
+  - EvilDICOM.CV.RT.Meta.ReferencePointMeta.Id
+  - EvilDICOM.CV.RT.Meta.ReferencePointMeta.Location
+  - EvilDICOM.CV.RT.Meta.ReferencePointMeta.PointType
+  langs:
+  - csharp
+  - vb
+  name: ReferencePointMeta
+  nameWithType: ReferencePointMeta
+  fullName: EvilDICOM.CV.RT.Meta.ReferencePointMeta
+  type: Class
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/RT/Meta/ReferencePointMeta.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: ReferencePointMeta
+    path: ../EvilDICOM.CV/RT/Meta/ReferencePointMeta.cs
+    startLine: 9
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.RT.Meta
+  syntax:
+    content: 'public class ReferencePointMeta : object'
+    content.vb: >-
+      Public Class ReferencePointMeta
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: EvilDICOM.CV.RT.Meta.ReferencePointMeta.Id
+  commentId: P:EvilDICOM.CV.RT.Meta.ReferencePointMeta.Id
+  id: Id
+  parent: EvilDICOM.CV.RT.Meta.ReferencePointMeta
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: ReferencePointMeta.Id
+  fullName: EvilDICOM.CV.RT.Meta.ReferencePointMeta.Id
+  type: Property
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/RT/Meta/ReferencePointMeta.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: Id
+    path: ../EvilDICOM.CV/RT/Meta/ReferencePointMeta.cs
+    startLine: 11
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.RT.Meta
+  syntax:
+    content: public string Id { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Id As String
+  overload: EvilDICOM.CV.RT.Meta.ReferencePointMeta.Id*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: EvilDICOM.CV.RT.Meta.ReferencePointMeta.Location
+  commentId: P:EvilDICOM.CV.RT.Meta.ReferencePointMeta.Location
+  id: Location
+  parent: EvilDICOM.CV.RT.Meta.ReferencePointMeta
+  langs:
+  - csharp
+  - vb
+  name: Location
+  nameWithType: ReferencePointMeta.Location
+  fullName: EvilDICOM.CV.RT.Meta.ReferencePointMeta.Location
+  type: Property
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/RT/Meta/ReferencePointMeta.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: Location
+    path: ../EvilDICOM.CV/RT/Meta/ReferencePointMeta.cs
+    startLine: 12
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.RT.Meta
+  syntax:
+    content: public Vector3 Location { get; set; }
+    parameters: []
+    return:
+      type: Vector3
+    content.vb: Public Property Location As Vector3
+  overload: EvilDICOM.CV.RT.Meta.ReferencePointMeta.Location*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: EvilDICOM.CV.RT.Meta.ReferencePointMeta.FractionDoseGy
+  commentId: P:EvilDICOM.CV.RT.Meta.ReferencePointMeta.FractionDoseGy
+  id: FractionDoseGy
+  parent: EvilDICOM.CV.RT.Meta.ReferencePointMeta
+  langs:
+  - csharp
+  - vb
+  name: FractionDoseGy
+  nameWithType: ReferencePointMeta.FractionDoseGy
+  fullName: EvilDICOM.CV.RT.Meta.ReferencePointMeta.FractionDoseGy
+  type: Property
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/RT/Meta/ReferencePointMeta.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: FractionDoseGy
+    path: ../EvilDICOM.CV/RT/Meta/ReferencePointMeta.cs
+    startLine: 13
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.RT.Meta
+  syntax:
+    content: public double FractionDoseGy { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property FractionDoseGy As Double
+  overload: EvilDICOM.CV.RT.Meta.ReferencePointMeta.FractionDoseGy*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: EvilDICOM.CV.RT.Meta.ReferencePointMeta.PointType
+  commentId: P:EvilDICOM.CV.RT.Meta.ReferencePointMeta.PointType
+  id: PointType
+  parent: EvilDICOM.CV.RT.Meta.ReferencePointMeta
+  langs:
+  - csharp
+  - vb
+  name: PointType
+  nameWithType: ReferencePointMeta.PointType
+  fullName: EvilDICOM.CV.RT.Meta.ReferencePointMeta.PointType
+  type: Property
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/RT/Meta/ReferencePointMeta.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: PointType
+    path: ../EvilDICOM.CV/RT/Meta/ReferencePointMeta.cs
+    startLine: 14
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.RT.Meta
+  syntax:
+    content: public string PointType { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property PointType As String
+  overload: EvilDICOM.CV.RT.Meta.ReferencePointMeta.PointType*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: EvilDICOM.CV.RT.Meta
+  commentId: N:EvilDICOM.CV.RT.Meta
+  name: EvilDICOM.CV.RT.Meta
+  nameWithType: EvilDICOM.CV.RT.Meta
+  fullName: EvilDICOM.CV.RT.Meta
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: EvilDICOM.CV.RT.Meta.ReferencePointMeta.Id*
+  commentId: Overload:EvilDICOM.CV.RT.Meta.ReferencePointMeta.Id
+  name: Id
+  nameWithType: ReferencePointMeta.Id
+  fullName: EvilDICOM.CV.RT.Meta.ReferencePointMeta.Id
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: EvilDICOM.CV.RT.Meta.ReferencePointMeta.Location*
+  commentId: Overload:EvilDICOM.CV.RT.Meta.ReferencePointMeta.Location
+  name: Location
+  nameWithType: ReferencePointMeta.Location
+  fullName: EvilDICOM.CV.RT.Meta.ReferencePointMeta.Location
+- uid: Vector3
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: Vector3
+- uid: EvilDICOM.CV.RT.Meta.ReferencePointMeta.FractionDoseGy*
+  commentId: Overload:EvilDICOM.CV.RT.Meta.ReferencePointMeta.FractionDoseGy
+  name: FractionDoseGy
+  nameWithType: ReferencePointMeta.FractionDoseGy
+  fullName: EvilDICOM.CV.RT.Meta.ReferencePointMeta.FractionDoseGy
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: EvilDICOM.CV.RT.Meta.ReferencePointMeta.PointType*
+  commentId: Overload:EvilDICOM.CV.RT.Meta.ReferencePointMeta.PointType
+  name: PointType
+  nameWithType: ReferencePointMeta.PointType
+  fullName: EvilDICOM.CV.RT.Meta.ReferencePointMeta.PointType

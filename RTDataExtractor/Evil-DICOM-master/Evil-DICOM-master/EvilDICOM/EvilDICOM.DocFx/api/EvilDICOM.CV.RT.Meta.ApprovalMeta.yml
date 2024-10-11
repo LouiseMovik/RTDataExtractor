@@ -1,0 +1,192 @@
+### YamlMime:ManagedReference
+items:
+- uid: EvilDICOM.CV.RT.Meta.ApprovalMeta
+  commentId: T:EvilDICOM.CV.RT.Meta.ApprovalMeta
+  id: ApprovalMeta
+  parent: EvilDICOM.CV.RT.Meta
+  children:
+  - EvilDICOM.CV.RT.Meta.ApprovalMeta.ApprovalType
+  - EvilDICOM.CV.RT.Meta.ApprovalMeta.ApprovedBy
+  - EvilDICOM.CV.RT.Meta.ApprovalMeta.ApprovedOn
+  langs:
+  - csharp
+  - vb
+  name: ApprovalMeta
+  nameWithType: ApprovalMeta
+  fullName: EvilDICOM.CV.RT.Meta.ApprovalMeta
+  type: Class
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/RT/Meta/ApprovalMeta.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: ApprovalMeta
+    path: ../EvilDICOM.CV/RT/Meta/ApprovalMeta.cs
+    startLine: 8
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.RT.Meta
+  syntax:
+    content: 'public class ApprovalMeta : object'
+    content.vb: >-
+      Public Class ApprovalMeta
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: EvilDICOM.CV.RT.Meta.ApprovalMeta.ApprovedBy
+  commentId: P:EvilDICOM.CV.RT.Meta.ApprovalMeta.ApprovedBy
+  id: ApprovedBy
+  parent: EvilDICOM.CV.RT.Meta.ApprovalMeta
+  langs:
+  - csharp
+  - vb
+  name: ApprovedBy
+  nameWithType: ApprovalMeta.ApprovedBy
+  fullName: EvilDICOM.CV.RT.Meta.ApprovalMeta.ApprovedBy
+  type: Property
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/RT/Meta/ApprovalMeta.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: ApprovedBy
+    path: ../EvilDICOM.CV/RT/Meta/ApprovalMeta.cs
+    startLine: 10
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.RT.Meta
+  syntax:
+    content: public string ApprovedBy { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ApprovedBy As String
+  overload: EvilDICOM.CV.RT.Meta.ApprovalMeta.ApprovedBy*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: EvilDICOM.CV.RT.Meta.ApprovalMeta.ApprovalType
+  commentId: P:EvilDICOM.CV.RT.Meta.ApprovalMeta.ApprovalType
+  id: ApprovalType
+  parent: EvilDICOM.CV.RT.Meta.ApprovalMeta
+  langs:
+  - csharp
+  - vb
+  name: ApprovalType
+  nameWithType: ApprovalMeta.ApprovalType
+  fullName: EvilDICOM.CV.RT.Meta.ApprovalMeta.ApprovalType
+  type: Property
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/RT/Meta/ApprovalMeta.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: ApprovalType
+    path: ../EvilDICOM.CV/RT/Meta/ApprovalMeta.cs
+    startLine: 11
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.RT.Meta
+  syntax:
+    content: public string ApprovalType { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ApprovalType As String
+  overload: EvilDICOM.CV.RT.Meta.ApprovalMeta.ApprovalType*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: EvilDICOM.CV.RT.Meta.ApprovalMeta.ApprovedOn
+  commentId: P:EvilDICOM.CV.RT.Meta.ApprovalMeta.ApprovedOn
+  id: ApprovedOn
+  parent: EvilDICOM.CV.RT.Meta.ApprovalMeta
+  langs:
+  - csharp
+  - vb
+  name: ApprovedOn
+  nameWithType: ApprovalMeta.ApprovedOn
+  fullName: EvilDICOM.CV.RT.Meta.ApprovalMeta.ApprovedOn
+  type: Property
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/RT/Meta/ApprovalMeta.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: ApprovedOn
+    path: ../EvilDICOM.CV/RT/Meta/ApprovalMeta.cs
+    startLine: 12
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.RT.Meta
+  syntax:
+    content: public DateTime ApprovedOn { get; set; }
+    parameters: []
+    return:
+      type: DateTime
+    content.vb: Public Property ApprovedOn As DateTime
+  overload: EvilDICOM.CV.RT.Meta.ApprovalMeta.ApprovedOn*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: EvilDICOM.CV.RT.Meta
+  commentId: N:EvilDICOM.CV.RT.Meta
+  name: EvilDICOM.CV.RT.Meta
+  nameWithType: EvilDICOM.CV.RT.Meta
+  fullName: EvilDICOM.CV.RT.Meta
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: EvilDICOM.CV.RT.Meta.ApprovalMeta.ApprovedBy*
+  commentId: Overload:EvilDICOM.CV.RT.Meta.ApprovalMeta.ApprovedBy
+  name: ApprovedBy
+  nameWithType: ApprovalMeta.ApprovedBy
+  fullName: EvilDICOM.CV.RT.Meta.ApprovalMeta.ApprovedBy
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: EvilDICOM.CV.RT.Meta.ApprovalMeta.ApprovalType*
+  commentId: Overload:EvilDICOM.CV.RT.Meta.ApprovalMeta.ApprovalType
+  name: ApprovalType
+  nameWithType: ApprovalMeta.ApprovalType
+  fullName: EvilDICOM.CV.RT.Meta.ApprovalMeta.ApprovalType
+- uid: EvilDICOM.CV.RT.Meta.ApprovalMeta.ApprovedOn*
+  commentId: Overload:EvilDICOM.CV.RT.Meta.ApprovalMeta.ApprovedOn
+  name: ApprovedOn
+  nameWithType: ApprovalMeta.ApprovedOn
+  fullName: EvilDICOM.CV.RT.Meta.ApprovalMeta.ApprovedOn
+- uid: DateTime
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: DateTime

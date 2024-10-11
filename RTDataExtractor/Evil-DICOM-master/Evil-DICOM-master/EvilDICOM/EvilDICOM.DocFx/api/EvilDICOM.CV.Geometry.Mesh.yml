@@ -1,0 +1,415 @@
+### YamlMime:ManagedReference
+items:
+- uid: EvilDICOM.CV.Geometry.Mesh
+  commentId: T:EvilDICOM.CV.Geometry.Mesh
+  id: Mesh
+  parent: EvilDICOM.CV.Geometry
+  children:
+  - EvilDICOM.CV.Geometry.Mesh.CalculateVolumeCC
+  - EvilDICOM.CV.Geometry.Mesh.Export(System.String)
+  - EvilDICOM.CV.Geometry.Mesh.GetTriangles
+  - EvilDICOM.CV.Geometry.Mesh.Indices
+  - EvilDICOM.CV.Geometry.Mesh.Vertices
+  langs:
+  - csharp
+  - vb
+  name: Mesh
+  nameWithType: Mesh
+  fullName: EvilDICOM.CV.Geometry.Mesh
+  type: Class
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/Geometry/Mesh.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: Mesh
+    path: ../EvilDICOM.CV/Geometry/Mesh.cs
+    startLine: 9
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.Geometry
+  syntax:
+    content: 'public class Mesh : object'
+    content.vb: >-
+      Public Class Mesh
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: EvilDICOM.CV.Geometry.Mesh.GetTriangles
+  commentId: M:EvilDICOM.CV.Geometry.Mesh.GetTriangles
+  id: GetTriangles
+  parent: EvilDICOM.CV.Geometry.Mesh
+  langs:
+  - csharp
+  - vb
+  name: GetTriangles()
+  nameWithType: Mesh.GetTriangles()
+  fullName: EvilDICOM.CV.Geometry.Mesh.GetTriangles()
+  type: Method
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/Geometry/Mesh.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: GetTriangles
+    path: ../EvilDICOM.CV/Geometry/Mesh.cs
+    startLine: 11
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.Geometry
+  syntax:
+    content: public List<Triangle> GetTriangles()
+    return:
+      type: List{EvilDICOM.CV.Geometry.Triangle}
+    content.vb: Public Function GetTriangles As List(Of Triangle)
+  overload: EvilDICOM.CV.Geometry.Mesh.GetTriangles*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: EvilDICOM.CV.Geometry.Mesh.CalculateVolumeCC
+  commentId: M:EvilDICOM.CV.Geometry.Mesh.CalculateVolumeCC
+  id: CalculateVolumeCC
+  parent: EvilDICOM.CV.Geometry.Mesh
+  langs:
+  - csharp
+  - vb
+  name: CalculateVolumeCC()
+  nameWithType: Mesh.CalculateVolumeCC()
+  fullName: EvilDICOM.CV.Geometry.Mesh.CalculateVolumeCC()
+  type: Method
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/Geometry/Mesh.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: CalculateVolumeCC
+    path: ../EvilDICOM.CV/Geometry/Mesh.cs
+    startLine: 25
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.Geometry
+  syntax:
+    content: public double CalculateVolumeCC()
+    return:
+      type: System.Double
+    content.vb: Public Function CalculateVolumeCC As Double
+  overload: EvilDICOM.CV.Geometry.Mesh.CalculateVolumeCC*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: EvilDICOM.CV.Geometry.Mesh.Vertices
+  commentId: F:EvilDICOM.CV.Geometry.Mesh.Vertices
+  id: Vertices
+  parent: EvilDICOM.CV.Geometry.Mesh
+  langs:
+  - csharp
+  - vb
+  name: Vertices
+  nameWithType: Mesh.Vertices
+  fullName: EvilDICOM.CV.Geometry.Mesh.Vertices
+  type: Field
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/Geometry/Mesh.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: Vertices
+    path: ../EvilDICOM.CV/Geometry/Mesh.cs
+    startLine: 30
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.Geometry
+  syntax:
+    content: public List<Vector3> Vertices
+    return:
+      type: List{Vector3}
+    content.vb: Public Vertices As List(Of Vector3)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: EvilDICOM.CV.Geometry.Mesh.Indices
+  commentId: F:EvilDICOM.CV.Geometry.Mesh.Indices
+  id: Indices
+  parent: EvilDICOM.CV.Geometry.Mesh
+  langs:
+  - csharp
+  - vb
+  name: Indices
+  nameWithType: Mesh.Indices
+  fullName: EvilDICOM.CV.Geometry.Mesh.Indices
+  type: Field
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/Geometry/Mesh.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: Indices
+    path: ../EvilDICOM.CV/Geometry/Mesh.cs
+    startLine: 31
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.Geometry
+  syntax:
+    content: public List<int> Indices
+    return:
+      type: List{System.Int32}
+    content.vb: Public Indices As List(Of Integer)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: EvilDICOM.CV.Geometry.Mesh.Export(System.String)
+  commentId: M:EvilDICOM.CV.Geometry.Mesh.Export(System.String)
+  id: Export(System.String)
+  parent: EvilDICOM.CV.Geometry.Mesh
+  langs:
+  - csharp
+  - vb
+  name: Export(String)
+  nameWithType: Mesh.Export(String)
+  fullName: EvilDICOM.CV.Geometry.Mesh.Export(System.String)
+  type: Method
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/Geometry/Mesh.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: Export
+    path: ../EvilDICOM.CV/Geometry/Mesh.cs
+    startLine: 33
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.Geometry
+  syntax:
+    content: public void Export(string filePath)
+    parameters:
+    - id: filePath
+      type: System.String
+    content.vb: Public Sub Export(filePath As String)
+  overload: EvilDICOM.CV.Geometry.Mesh.Export*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: EvilDICOM.CV.Geometry
+  commentId: N:EvilDICOM.CV.Geometry
+  name: EvilDICOM.CV.Geometry
+  nameWithType: EvilDICOM.CV.Geometry
+  fullName: EvilDICOM.CV.Geometry
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: EvilDICOM.CV.Geometry.Mesh.GetTriangles*
+  commentId: Overload:EvilDICOM.CV.Geometry.Mesh.GetTriangles
+  name: GetTriangles
+  nameWithType: Mesh.GetTriangles
+  fullName: EvilDICOM.CV.Geometry.Mesh.GetTriangles
+- uid: List{EvilDICOM.CV.Geometry.Triangle}
+  commentId: '!:List{EvilDICOM.CV.Geometry.Triangle}'
+  definition: List`1
+  name: List<Triangle>
+  nameWithType: List<Triangle>
+  fullName: List<EvilDICOM.CV.Geometry.Triangle>
+  nameWithType.vb: List(Of Triangle)
+  fullName.vb: List(Of EvilDICOM.CV.Geometry.Triangle)
+  name.vb: List(Of Triangle)
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: EvilDICOM.CV.Geometry.Triangle
+    name: Triangle
+    nameWithType: Triangle
+    fullName: EvilDICOM.CV.Geometry.Triangle
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: EvilDICOM.CV.Geometry.Triangle
+    name: Triangle
+    nameWithType: Triangle
+    fullName: EvilDICOM.CV.Geometry.Triangle
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: List`1
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: EvilDICOM.CV.Geometry.Mesh.CalculateVolumeCC*
+  commentId: Overload:EvilDICOM.CV.Geometry.Mesh.CalculateVolumeCC
+  name: CalculateVolumeCC
+  nameWithType: Mesh.CalculateVolumeCC
+  fullName: EvilDICOM.CV.Geometry.Mesh.CalculateVolumeCC
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: List{Vector3}
+  commentId: '!:List{Vector3}'
+  definition: List`1
+  name: List<Vector3>
+  nameWithType: List<Vector3>
+  fullName: List<Vector3>
+  nameWithType.vb: List(Of Vector3)
+  fullName.vb: List(Of Vector3)
+  name.vb: List(Of Vector3)
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: Vector3
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: Vector3
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: List{System.Int32}
+  commentId: '!:List{System.Int32}'
+  definition: List`1
+  name: List<Int32>
+  nameWithType: List<Int32>
+  fullName: List<System.Int32>
+  nameWithType.vb: List(Of Int32)
+  fullName.vb: List(Of System.Int32)
+  name.vb: List(Of Int32)
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: EvilDICOM.CV.Geometry.Mesh.Export*
+  commentId: Overload:EvilDICOM.CV.Geometry.Mesh.Export
+  name: Export
+  nameWithType: Mesh.Export
+  fullName: EvilDICOM.CV.Geometry.Mesh.Export
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

@@ -1,0 +1,241 @@
+### YamlMime:ManagedReference
+items:
+- uid: EvilDICOM.CV.RT.DVHCalculator
+  commentId: T:EvilDICOM.CV.RT.DVHCalculator
+  id: DVHCalculator
+  parent: EvilDICOM.CV.RT
+  children:
+  - EvilDICOM.CV.RT.DVHCalculator.CalculateDVH(EvilDICOM.CV.RT.Meta.StructureMeta,EvilDICOM.CV.RT.DoseMatrix)
+  - EvilDICOM.CV.RT.DVHCalculator.CalculateMarchingDVH(EvilDICOM.CV.RT.Meta.StructureMeta,EvilDICOM.CV.RT.DoseMatrix)
+  - EvilDICOM.CV.RT.DVHCalculator.CalculateSDF_DVH(EvilDICOM.CV.RT.Meta.StructureMeta,EvilDICOM.CV.RT.DoseMatrix)
+  langs:
+  - csharp
+  - vb
+  name: DVHCalculator
+  nameWithType: DVHCalculator
+  fullName: EvilDICOM.CV.RT.DVHCalculator
+  type: Class
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/RT/DVHCalculator.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: DVHCalculator
+    path: ../EvilDICOM.CV/RT/DVHCalculator.cs
+    startLine: 18
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.RT
+  syntax:
+    content: 'public class DVHCalculator : object'
+    content.vb: >-
+      Public Class DVHCalculator
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: EvilDICOM.CV.RT.DVHCalculator.CalculateDVH(EvilDICOM.CV.RT.Meta.StructureMeta,EvilDICOM.CV.RT.DoseMatrix)
+  commentId: M:EvilDICOM.CV.RT.DVHCalculator.CalculateDVH(EvilDICOM.CV.RT.Meta.StructureMeta,EvilDICOM.CV.RT.DoseMatrix)
+  id: CalculateDVH(EvilDICOM.CV.RT.Meta.StructureMeta,EvilDICOM.CV.RT.DoseMatrix)
+  parent: EvilDICOM.CV.RT.DVHCalculator
+  langs:
+  - csharp
+  - vb
+  name: CalculateDVH(StructureMeta, DoseMatrix)
+  nameWithType: DVHCalculator.CalculateDVH(StructureMeta, DoseMatrix)
+  fullName: EvilDICOM.CV.RT.DVHCalculator.CalculateDVH(EvilDICOM.CV.RT.Meta.StructureMeta, EvilDICOM.CV.RT.DoseMatrix)
+  type: Method
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/RT/DVHCalculator.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: CalculateDVH
+    path: ../EvilDICOM.CV/RT/DVHCalculator.cs
+    startLine: 22
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.RT
+  syntax:
+    content: public static DVH CalculateDVH(StructureMeta sm, DoseMatrix dm)
+    parameters:
+    - id: sm
+      type: EvilDICOM.CV.RT.Meta.StructureMeta
+    - id: dm
+      type: EvilDICOM.CV.RT.DoseMatrix
+    return:
+      type: EvilDICOM.CV.RT.DVH
+    content.vb: Public Shared Function CalculateDVH(sm As StructureMeta, dm As DoseMatrix) As DVH
+  overload: EvilDICOM.CV.RT.DVHCalculator.CalculateDVH*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: EvilDICOM.CV.RT.DVHCalculator.CalculateSDF_DVH(EvilDICOM.CV.RT.Meta.StructureMeta,EvilDICOM.CV.RT.DoseMatrix)
+  commentId: M:EvilDICOM.CV.RT.DVHCalculator.CalculateSDF_DVH(EvilDICOM.CV.RT.Meta.StructureMeta,EvilDICOM.CV.RT.DoseMatrix)
+  id: CalculateSDF_DVH(EvilDICOM.CV.RT.Meta.StructureMeta,EvilDICOM.CV.RT.DoseMatrix)
+  parent: EvilDICOM.CV.RT.DVHCalculator
+  langs:
+  - csharp
+  - vb
+  name: CalculateSDF_DVH(StructureMeta, DoseMatrix)
+  nameWithType: DVHCalculator.CalculateSDF_DVH(StructureMeta, DoseMatrix)
+  fullName: EvilDICOM.CV.RT.DVHCalculator.CalculateSDF_DVH(EvilDICOM.CV.RT.Meta.StructureMeta, EvilDICOM.CV.RT.DoseMatrix)
+  type: Method
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/RT/DVHCalculator.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: CalculateSDF_DVH
+    path: ../EvilDICOM.CV/RT/DVHCalculator.cs
+    startLine: 37
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.RT
+  syntax:
+    content: public static DVH CalculateSDF_DVH(StructureMeta sm, DoseMatrix dm)
+    parameters:
+    - id: sm
+      type: EvilDICOM.CV.RT.Meta.StructureMeta
+    - id: dm
+      type: EvilDICOM.CV.RT.DoseMatrix
+    return:
+      type: EvilDICOM.CV.RT.DVH
+    content.vb: Public Shared Function CalculateSDF_DVH(sm As StructureMeta, dm As DoseMatrix) As DVH
+  overload: EvilDICOM.CV.RT.DVHCalculator.CalculateSDF_DVH*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: EvilDICOM.CV.RT.DVHCalculator.CalculateMarchingDVH(EvilDICOM.CV.RT.Meta.StructureMeta,EvilDICOM.CV.RT.DoseMatrix)
+  commentId: M:EvilDICOM.CV.RT.DVHCalculator.CalculateMarchingDVH(EvilDICOM.CV.RT.Meta.StructureMeta,EvilDICOM.CV.RT.DoseMatrix)
+  id: CalculateMarchingDVH(EvilDICOM.CV.RT.Meta.StructureMeta,EvilDICOM.CV.RT.DoseMatrix)
+  parent: EvilDICOM.CV.RT.DVHCalculator
+  langs:
+  - csharp
+  - vb
+  name: CalculateMarchingDVH(StructureMeta, DoseMatrix)
+  nameWithType: DVHCalculator.CalculateMarchingDVH(StructureMeta, DoseMatrix)
+  fullName: EvilDICOM.CV.RT.DVHCalculator.CalculateMarchingDVH(EvilDICOM.CV.RT.Meta.StructureMeta, EvilDICOM.CV.RT.DoseMatrix)
+  type: Method
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/RT/DVHCalculator.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: CalculateMarchingDVH
+    path: ../EvilDICOM.CV/RT/DVHCalculator.cs
+    startLine: 64
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.RT
+  syntax:
+    content: public static DVHPoint[] CalculateMarchingDVH(StructureMeta sm, DoseMatrix dm)
+    parameters:
+    - id: sm
+      type: EvilDICOM.CV.RT.Meta.StructureMeta
+    - id: dm
+      type: EvilDICOM.CV.RT.DoseMatrix
+    return:
+      type: DVHPoint[]
+    content.vb: Public Shared Function CalculateMarchingDVH(sm As StructureMeta, dm As DoseMatrix) As DVHPoint()
+  overload: EvilDICOM.CV.RT.DVHCalculator.CalculateMarchingDVH*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: EvilDICOM.CV.RT
+  commentId: N:EvilDICOM.CV.RT
+  name: EvilDICOM.CV.RT
+  nameWithType: EvilDICOM.CV.RT
+  fullName: EvilDICOM.CV.RT
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: EvilDICOM.CV.RT.DVHCalculator.CalculateDVH*
+  commentId: Overload:EvilDICOM.CV.RT.DVHCalculator.CalculateDVH
+  name: CalculateDVH
+  nameWithType: DVHCalculator.CalculateDVH
+  fullName: EvilDICOM.CV.RT.DVHCalculator.CalculateDVH
+- uid: EvilDICOM.CV.RT.Meta.StructureMeta
+  commentId: T:EvilDICOM.CV.RT.Meta.StructureMeta
+  parent: EvilDICOM.CV.RT.Meta
+  name: StructureMeta
+  nameWithType: StructureMeta
+  fullName: EvilDICOM.CV.RT.Meta.StructureMeta
+- uid: EvilDICOM.CV.RT.DoseMatrix
+  commentId: T:EvilDICOM.CV.RT.DoseMatrix
+  parent: EvilDICOM.CV.RT
+  name: DoseMatrix
+  nameWithType: DoseMatrix
+  fullName: EvilDICOM.CV.RT.DoseMatrix
+- uid: EvilDICOM.CV.RT.DVH
+  commentId: T:EvilDICOM.CV.RT.DVH
+  parent: EvilDICOM.CV.RT
+  name: DVH
+  nameWithType: DVH
+  fullName: EvilDICOM.CV.RT.DVH
+- uid: EvilDICOM.CV.RT.Meta
+  commentId: N:EvilDICOM.CV.RT.Meta
+  name: EvilDICOM.CV.RT.Meta
+  nameWithType: EvilDICOM.CV.RT.Meta
+  fullName: EvilDICOM.CV.RT.Meta
+- uid: EvilDICOM.CV.RT.DVHCalculator.CalculateSDF_DVH*
+  commentId: Overload:EvilDICOM.CV.RT.DVHCalculator.CalculateSDF_DVH
+  name: CalculateSDF_DVH
+  nameWithType: DVHCalculator.CalculateSDF_DVH
+  fullName: EvilDICOM.CV.RT.DVHCalculator.CalculateSDF_DVH
+- uid: EvilDICOM.CV.RT.DVHCalculator.CalculateMarchingDVH*
+  commentId: Overload:EvilDICOM.CV.RT.DVHCalculator.CalculateMarchingDVH
+  name: CalculateMarchingDVH
+  nameWithType: DVHCalculator.CalculateMarchingDVH
+  fullName: EvilDICOM.CV.RT.DVHCalculator.CalculateMarchingDVH
+- uid: DVHPoint[]
+  isExternal: true
+  name: DVHPoint[]
+  nameWithType: DVHPoint[]
+  fullName: DVHPoint[]
+  nameWithType.vb: DVHPoint()
+  fullName.vb: DVHPoint()
+  name.vb: DVHPoint()
+  spec.csharp:
+  - uid: DVHPoint
+    name: DVHPoint
+    nameWithType: DVHPoint
+    fullName: DVHPoint
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: DVHPoint
+    name: DVHPoint
+    nameWithType: DVHPoint
+    fullName: DVHPoint
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()

@@ -1,0 +1,118 @@
+### YamlMime:ManagedReference
+items:
+- uid: EvilDICOM.CV.IO.DICOM2Plan
+  commentId: T:EvilDICOM.CV.IO.DICOM2Plan
+  id: DICOM2Plan
+  parent: EvilDICOM.CV.IO
+  children:
+  - EvilDICOM.CV.IO.DICOM2Plan.ParseDICOM(System.String)
+  langs:
+  - csharp
+  - vb
+  name: DICOM2Plan
+  nameWithType: DICOM2Plan
+  fullName: EvilDICOM.CV.IO.DICOM2Plan
+  type: Class
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/IO/DICOM2Plan.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: DICOM2Plan
+    path: ../EvilDICOM.CV/IO/DICOM2Plan.cs
+    startLine: 14
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.IO
+  syntax:
+    content: 'public class DICOM2Plan : object'
+    content.vb: >-
+      Public Class DICOM2Plan
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: EvilDICOM.CV.IO.DICOM2Plan.ParseDICOM(System.String)
+  commentId: M:EvilDICOM.CV.IO.DICOM2Plan.ParseDICOM(System.String)
+  id: ParseDICOM(System.String)
+  parent: EvilDICOM.CV.IO.DICOM2Plan
+  langs:
+  - csharp
+  - vb
+  name: ParseDICOM(String)
+  nameWithType: DICOM2Plan.ParseDICOM(String)
+  fullName: EvilDICOM.CV.IO.DICOM2Plan.ParseDICOM(System.String)
+  type: Method
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/IO/DICOM2Plan.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: ParseDICOM
+    path: ../EvilDICOM.CV/IO/DICOM2Plan.cs
+    startLine: 18
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.IO
+  syntax:
+    content: public static PlanMeta ParseDICOM(string dicomPath)
+    parameters:
+    - id: dicomPath
+      type: System.String
+    return:
+      type: EvilDICOM.CV.RT.Meta.PlanMeta
+    content.vb: Public Shared Function ParseDICOM(dicomPath As String) As PlanMeta
+  overload: EvilDICOM.CV.IO.DICOM2Plan.ParseDICOM*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: EvilDICOM.CV.IO
+  commentId: N:EvilDICOM.CV.IO
+  name: EvilDICOM.CV.IO
+  nameWithType: EvilDICOM.CV.IO
+  fullName: EvilDICOM.CV.IO
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: EvilDICOM.CV.IO.DICOM2Plan.ParseDICOM*
+  commentId: Overload:EvilDICOM.CV.IO.DICOM2Plan.ParseDICOM
+  name: ParseDICOM
+  nameWithType: DICOM2Plan.ParseDICOM
+  fullName: EvilDICOM.CV.IO.DICOM2Plan.ParseDICOM
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: EvilDICOM.CV.RT.Meta.PlanMeta
+  commentId: T:EvilDICOM.CV.RT.Meta.PlanMeta
+  parent: EvilDICOM.CV.RT.Meta
+  name: PlanMeta
+  nameWithType: PlanMeta
+  fullName: EvilDICOM.CV.RT.Meta.PlanMeta
+- uid: EvilDICOM.CV.RT.Meta
+  commentId: N:EvilDICOM.CV.RT.Meta
+  name: EvilDICOM.CV.RT.Meta
+  nameWithType: EvilDICOM.CV.RT.Meta
+  fullName: EvilDICOM.CV.RT.Meta

@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33403.182
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RTDataExtractor", "RTDataExtractor\RTDataExtractor.csproj", "{F5EAA004-20ED-41A8-9018-3E118F0CA35A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EvilDICOM", "RTDataExtractor\Evil-DICOM-master\Evil-DICOM-master\EvilDICOM\EvilDICOM\EvilDICOM.csproj", "{D12426DA-34EC-47BF-A2F6-3C3A08CFA918}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F5EAA004-20ED-41A8-9018-3E118F0CA35A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5EAA004-20ED-41A8-9018-3E118F0CA35A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5EAA004-20ED-41A8-9018-3E118F0CA35A}.Debug|x64.ActiveCfg = Debug|x64
+		{F5EAA004-20ED-41A8-9018-3E118F0CA35A}.Debug|x64.Build.0 = Debug|x64
+		{F5EAA004-20ED-41A8-9018-3E118F0CA35A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5EAA004-20ED-41A8-9018-3E118F0CA35A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5EAA004-20ED-41A8-9018-3E118F0CA35A}.Release|x64.ActiveCfg = Release|x64
+		{F5EAA004-20ED-41A8-9018-3E118F0CA35A}.Release|x64.Build.0 = Release|x64
+		{D12426DA-34EC-47BF-A2F6-3C3A08CFA918}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D12426DA-34EC-47BF-A2F6-3C3A08CFA918}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D12426DA-34EC-47BF-A2F6-3C3A08CFA918}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{D12426DA-34EC-47BF-A2F6-3C3A08CFA918}.Debug|x64.Build.0 = Debug|Any CPU
+		{D12426DA-34EC-47BF-A2F6-3C3A08CFA918}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D12426DA-34EC-47BF-A2F6-3C3A08CFA918}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D12426DA-34EC-47BF-A2F6-3C3A08CFA918}.Release|x64.ActiveCfg = Release|Any CPU
+		{D12426DA-34EC-47BF-A2F6-3C3A08CFA918}.Release|x64.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A955DD34-2942-4303-B8E4-5AC3E0254247}
+	EndGlobalSection
+EndGlobal

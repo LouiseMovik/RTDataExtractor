@@ -1,0 +1,59 @@
+### YamlMime:ManagedReference
+items:
+- uid: EvilDICOM.Core.Wrapping
+  commentId: N:EvilDICOM.Core.Wrapping
+  id: EvilDICOM.Core.Wrapping
+  children:
+  - EvilDICOM.Core.Wrapping.DICOMObjectWrapper
+  - EvilDICOM.Core.Wrapping.SequenceItemWrapper`1
+  langs:
+  - csharp
+  - vb
+  name: EvilDICOM.Core.Wrapping
+  nameWithType: EvilDICOM.Core.Wrapping
+  fullName: EvilDICOM.Core.Wrapping
+  type: Namespace
+  assemblies:
+  - EvilDICOM
+references:
+- uid: EvilDICOM.Core.Wrapping.DICOMObjectWrapper
+  commentId: T:EvilDICOM.Core.Wrapping.DICOMObjectWrapper
+  name: DICOMObjectWrapper
+  nameWithType: DICOMObjectWrapper
+  fullName: EvilDICOM.Core.Wrapping.DICOMObjectWrapper
+- uid: EvilDICOM.Core.Wrapping.SequenceItemWrapper`1
+  commentId: T:EvilDICOM.Core.Wrapping.SequenceItemWrapper`1
+  name: SequenceItemWrapper<T>
+  nameWithType: SequenceItemWrapper<T>
+  fullName: EvilDICOM.Core.Wrapping.SequenceItemWrapper<T>
+  nameWithType.vb: SequenceItemWrapper(Of T)
+  fullName.vb: EvilDICOM.Core.Wrapping.SequenceItemWrapper(Of T)
+  name.vb: SequenceItemWrapper(Of T)
+  spec.csharp:
+  - uid: EvilDICOM.Core.Wrapping.SequenceItemWrapper`1
+    name: SequenceItemWrapper
+    nameWithType: SequenceItemWrapper
+    fullName: EvilDICOM.Core.Wrapping.SequenceItemWrapper
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: EvilDICOM.Core.Wrapping.SequenceItemWrapper`1
+    name: SequenceItemWrapper
+    nameWithType: SequenceItemWrapper
+    fullName: EvilDICOM.Core.Wrapping.SequenceItemWrapper
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )

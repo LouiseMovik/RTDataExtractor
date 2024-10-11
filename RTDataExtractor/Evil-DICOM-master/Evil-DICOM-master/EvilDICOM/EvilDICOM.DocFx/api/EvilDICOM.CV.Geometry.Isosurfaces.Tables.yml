@@ -1,0 +1,155 @@
+### YamlMime:ManagedReference
+items:
+- uid: EvilDICOM.CV.Geometry.Isosurfaces.Tables
+  commentId: T:EvilDICOM.CV.Geometry.Isosurfaces.Tables
+  id: Tables
+  parent: EvilDICOM.CV.Geometry.Isosurfaces
+  children:
+  - EvilDICOM.CV.Geometry.Isosurfaces.Tables.MC_EDGE_TABLE
+  - EvilDICOM.CV.Geometry.Isosurfaces.Tables.MC_TRI_TABLE
+  langs:
+  - csharp
+  - vb
+  name: Tables
+  nameWithType: Tables
+  fullName: EvilDICOM.CV.Geometry.Isosurfaces.Tables
+  type: Class
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/Geometry/Isosurfaces/Tables.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: Tables
+    path: ../EvilDICOM.CV/Geometry/Isosurfaces/Tables.cs
+    startLine: 8
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.Geometry.Isosurfaces
+  syntax:
+    content: 'public class Tables : object'
+    content.vb: >-
+      Public Class Tables
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: EvilDICOM.CV.Geometry.Isosurfaces.Tables.MC_EDGE_TABLE
+  commentId: F:EvilDICOM.CV.Geometry.Isosurfaces.Tables.MC_EDGE_TABLE
+  id: MC_EDGE_TABLE
+  parent: EvilDICOM.CV.Geometry.Isosurfaces.Tables
+  langs:
+  - csharp
+  - vb
+  name: MC_EDGE_TABLE
+  nameWithType: Tables.MC_EDGE_TABLE
+  fullName: EvilDICOM.CV.Geometry.Isosurfaces.Tables.MC_EDGE_TABLE
+  type: Field
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/Geometry/Isosurfaces/Tables.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: MC_EDGE_TABLE
+    path: ../EvilDICOM.CV/Geometry/Isosurfaces/Tables.cs
+    startLine: 10
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.Geometry.Isosurfaces
+  syntax:
+    content: public static readonly int[] MC_EDGE_TABLE
+    return:
+      type: System.Int32[]
+    content.vb: Public Shared ReadOnly MC_EDGE_TABLE As Integer()
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: EvilDICOM.CV.Geometry.Isosurfaces.Tables.MC_TRI_TABLE
+  commentId: F:EvilDICOM.CV.Geometry.Isosurfaces.Tables.MC_TRI_TABLE
+  id: MC_TRI_TABLE
+  parent: EvilDICOM.CV.Geometry.Isosurfaces.Tables
+  langs:
+  - csharp
+  - vb
+  name: MC_TRI_TABLE
+  nameWithType: Tables.MC_TRI_TABLE
+  fullName: EvilDICOM.CV.Geometry.Isosurfaces.Tables.MC_TRI_TABLE
+  type: Field
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/Geometry/Isosurfaces/Tables.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: MC_TRI_TABLE
+    path: ../EvilDICOM.CV/Geometry/Isosurfaces/Tables.cs
+    startLine: 44
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.Geometry.Isosurfaces
+  syntax:
+    content: public static readonly int[] MC_TRI_TABLE
+    return:
+      type: System.Int32[]
+    content.vb: Public Shared ReadOnly MC_TRI_TABLE As Integer()
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+references:
+- uid: EvilDICOM.CV.Geometry.Isosurfaces
+  commentId: N:EvilDICOM.CV.Geometry.Isosurfaces
+  name: EvilDICOM.CV.Geometry.Isosurfaces
+  nameWithType: EvilDICOM.CV.Geometry.Isosurfaces
+  fullName: EvilDICOM.CV.Geometry.Isosurfaces
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32[]
+  isExternal: true
+  name: Int32[]
+  nameWithType: Int32[]
+  fullName: System.Int32[]
+  nameWithType.vb: Int32()
+  fullName.vb: System.Int32()
+  name.vb: Int32()
+  spec.csharp:
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()

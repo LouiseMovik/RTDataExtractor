@@ -1,0 +1,199 @@
+### YamlMime:ManagedReference
+items:
+- uid: EvilDICOM.CV.Helpers.FloatMat
+  commentId: T:EvilDICOM.CV.Helpers.FloatMat
+  id: FloatMat
+  parent: EvilDICOM.CV.Helpers
+  children:
+  - EvilDICOM.CV.Helpers.FloatMat.Show(Mat,System.String)
+  - EvilDICOM.CV.Helpers.FloatMat.ToSDFRender(Mat)
+  - EvilDICOM.CV.Helpers.FloatMat.WindowLevelColor(Mat)
+  langs:
+  - csharp
+  - vb
+  name: FloatMat
+  nameWithType: FloatMat
+  fullName: EvilDICOM.CV.Helpers.FloatMat
+  type: Class
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/Helpers/FloatMat.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: FloatMat
+    path: ../EvilDICOM.CV/Helpers/FloatMat.cs
+    startLine: 10
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.Helpers
+  syntax:
+    content: 'public static class FloatMat : object'
+    content.vb: >-
+      Public Module FloatMat
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: EvilDICOM.CV.Helpers.FloatMat.Show(Mat,System.String)
+  commentId: M:EvilDICOM.CV.Helpers.FloatMat.Show(Mat,System.String)
+  id: Show(Mat,System.String)
+  parent: EvilDICOM.CV.Helpers.FloatMat
+  langs:
+  - csharp
+  - vb
+  name: Show(Mat, String)
+  nameWithType: FloatMat.Show(Mat, String)
+  fullName: EvilDICOM.CV.Helpers.FloatMat.Show(Mat, System.String)
+  type: Method
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/Helpers/FloatMat.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: Show
+    path: ../EvilDICOM.CV/Helpers/FloatMat.cs
+    startLine: 12
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.Helpers
+  syntax:
+    content: public static void Show(Mat mat, string windowName = "CV")
+    parameters:
+    - id: mat
+      type: Mat
+    - id: windowName
+      type: System.String
+    content.vb: Public Shared Sub Show(mat As Mat, windowName As String = "CV")
+  overload: EvilDICOM.CV.Helpers.FloatMat.Show*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: EvilDICOM.CV.Helpers.FloatMat.WindowLevelColor(Mat)
+  commentId: M:EvilDICOM.CV.Helpers.FloatMat.WindowLevelColor(Mat)
+  id: WindowLevelColor(Mat)
+  parent: EvilDICOM.CV.Helpers.FloatMat
+  langs:
+  - csharp
+  - vb
+  name: WindowLevelColor(Mat)
+  nameWithType: FloatMat.WindowLevelColor(Mat)
+  fullName: EvilDICOM.CV.Helpers.FloatMat.WindowLevelColor(Mat)
+  type: Method
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/Helpers/FloatMat.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: WindowLevelColor
+    path: ../EvilDICOM.CV/Helpers/FloatMat.cs
+    startLine: 21
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.Helpers
+  syntax:
+    content: public static Mat WindowLevelColor(Mat mat)
+    parameters:
+    - id: mat
+      type: Mat
+    return:
+      type: Mat
+    content.vb: Public Shared Function WindowLevelColor(mat As Mat) As Mat
+  overload: EvilDICOM.CV.Helpers.FloatMat.WindowLevelColor*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: EvilDICOM.CV.Helpers.FloatMat.ToSDFRender(Mat)
+  commentId: M:EvilDICOM.CV.Helpers.FloatMat.ToSDFRender(Mat)
+  id: ToSDFRender(Mat)
+  parent: EvilDICOM.CV.Helpers.FloatMat
+  langs:
+  - csharp
+  - vb
+  name: ToSDFRender(Mat)
+  nameWithType: FloatMat.ToSDFRender(Mat)
+  fullName: EvilDICOM.CV.Helpers.FloatMat.ToSDFRender(Mat)
+  type: Method
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/Helpers/FloatMat.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: ToSDFRender
+    path: ../EvilDICOM.CV/Helpers/FloatMat.cs
+    startLine: 31
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.Helpers
+  syntax:
+    content: public static Mat ToSDFRender(Mat sdf)
+    parameters:
+    - id: sdf
+      type: Mat
+    return:
+      type: Mat
+    content.vb: Public Shared Function ToSDFRender(sdf As Mat) As Mat
+  overload: EvilDICOM.CV.Helpers.FloatMat.ToSDFRender*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: EvilDICOM.CV.Helpers
+  commentId: N:EvilDICOM.CV.Helpers
+  name: EvilDICOM.CV.Helpers
+  nameWithType: EvilDICOM.CV.Helpers
+  fullName: EvilDICOM.CV.Helpers
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: EvilDICOM.CV.Helpers.FloatMat.Show*
+  commentId: Overload:EvilDICOM.CV.Helpers.FloatMat.Show
+  name: Show
+  nameWithType: FloatMat.Show
+  fullName: EvilDICOM.CV.Helpers.FloatMat.Show
+- uid: Mat
+  isExternal: true
+  name: Mat
+  nameWithType: Mat
+  fullName: Mat
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: EvilDICOM.CV.Helpers.FloatMat.WindowLevelColor*
+  commentId: Overload:EvilDICOM.CV.Helpers.FloatMat.WindowLevelColor
+  name: WindowLevelColor
+  nameWithType: FloatMat.WindowLevelColor
+  fullName: EvilDICOM.CV.Helpers.FloatMat.WindowLevelColor
+- uid: EvilDICOM.CV.Helpers.FloatMat.ToSDFRender*
+  commentId: Overload:EvilDICOM.CV.Helpers.FloatMat.ToSDFRender
+  name: ToSDFRender
+  nameWithType: FloatMat.ToSDFRender
+  fullName: EvilDICOM.CV.Helpers.FloatMat.ToSDFRender

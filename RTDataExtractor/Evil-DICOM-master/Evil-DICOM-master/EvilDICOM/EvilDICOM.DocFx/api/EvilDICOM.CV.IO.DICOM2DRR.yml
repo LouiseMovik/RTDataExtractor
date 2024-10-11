@@ -1,0 +1,118 @@
+### YamlMime:ManagedReference
+items:
+- uid: EvilDICOM.CV.IO.DICOM2DRR
+  commentId: T:EvilDICOM.CV.IO.DICOM2DRR
+  id: DICOM2DRR
+  parent: EvilDICOM.CV.IO
+  children:
+  - EvilDICOM.CV.IO.DICOM2DRR.ParseDICOM(System.String)
+  langs:
+  - csharp
+  - vb
+  name: DICOM2DRR
+  nameWithType: DICOM2DRR
+  fullName: EvilDICOM.CV.IO.DICOM2DRR
+  type: Class
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/IO/DICOM2DRR.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: DICOM2DRR
+    path: ../EvilDICOM.CV/IO/DICOM2DRR.cs
+    startLine: 14
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.IO
+  syntax:
+    content: 'public class DICOM2DRR : object'
+    content.vb: >-
+      Public Class DICOM2DRR
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: EvilDICOM.CV.IO.DICOM2DRR.ParseDICOM(System.String)
+  commentId: M:EvilDICOM.CV.IO.DICOM2DRR.ParseDICOM(System.String)
+  id: ParseDICOM(System.String)
+  parent: EvilDICOM.CV.IO.DICOM2DRR
+  langs:
+  - csharp
+  - vb
+  name: ParseDICOM(String)
+  nameWithType: DICOM2DRR.ParseDICOM(String)
+  fullName: EvilDICOM.CV.IO.DICOM2DRR.ParseDICOM(System.String)
+  type: Method
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/IO/DICOM2DRR.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: ParseDICOM
+    path: ../EvilDICOM.CV/IO/DICOM2DRR.cs
+    startLine: 16
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.IO
+  syntax:
+    content: public static DRR ParseDICOM(string dcmFile)
+    parameters:
+    - id: dcmFile
+      type: System.String
+    return:
+      type: EvilDICOM.CV.RT.DRR
+    content.vb: Public Shared Function ParseDICOM(dcmFile As String) As DRR
+  overload: EvilDICOM.CV.IO.DICOM2DRR.ParseDICOM*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: EvilDICOM.CV.IO
+  commentId: N:EvilDICOM.CV.IO
+  name: EvilDICOM.CV.IO
+  nameWithType: EvilDICOM.CV.IO
+  fullName: EvilDICOM.CV.IO
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: EvilDICOM.CV.IO.DICOM2DRR.ParseDICOM*
+  commentId: Overload:EvilDICOM.CV.IO.DICOM2DRR.ParseDICOM
+  name: ParseDICOM
+  nameWithType: DICOM2DRR.ParseDICOM
+  fullName: EvilDICOM.CV.IO.DICOM2DRR.ParseDICOM
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: EvilDICOM.CV.RT.DRR
+  commentId: T:EvilDICOM.CV.RT.DRR
+  parent: EvilDICOM.CV.RT
+  name: DRR
+  nameWithType: DRR
+  fullName: EvilDICOM.CV.RT.DRR
+- uid: EvilDICOM.CV.RT
+  commentId: N:EvilDICOM.CV.RT
+  name: EvilDICOM.CV.RT
+  nameWithType: EvilDICOM.CV.RT
+  fullName: EvilDICOM.CV.RT

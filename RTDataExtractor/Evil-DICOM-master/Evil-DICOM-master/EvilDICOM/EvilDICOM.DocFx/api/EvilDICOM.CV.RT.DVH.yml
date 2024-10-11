@@ -1,0 +1,244 @@
+### YamlMime:ManagedReference
+items:
+- uid: EvilDICOM.CV.RT.DVH
+  commentId: T:EvilDICOM.CV.RT.DVH
+  id: DVH
+  parent: EvilDICOM.CV.RT
+  children:
+  - EvilDICOM.CV.RT.DVH.#ctor(System.Double,System.Double,System.String)
+  - EvilDICOM.CV.RT.DVH.AddSliceToDVH(Mat,Mat)
+  - EvilDICOM.CV.RT.DVH.GetDVHData
+  - EvilDICOM.CV.RT.DVH.Volume
+  langs:
+  - csharp
+  - vb
+  name: DVH
+  nameWithType: DVH
+  fullName: EvilDICOM.CV.RT.DVH
+  type: Class
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/RT/DVH.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: DVH
+    path: ../EvilDICOM.CV/RT/DVH.cs
+    startLine: 10
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.RT
+  syntax:
+    content: 'public class DVH : object'
+    content.vb: >-
+      Public Class DVH
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: EvilDICOM.CV.RT.DVH.Volume
+  commentId: P:EvilDICOM.CV.RT.DVH.Volume
+  id: Volume
+  parent: EvilDICOM.CV.RT.DVH
+  langs:
+  - csharp
+  - vb
+  name: Volume
+  nameWithType: DVH.Volume
+  fullName: EvilDICOM.CV.RT.DVH.Volume
+  type: Property
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/RT/DVH.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: Volume
+    path: ../EvilDICOM.CV/RT/DVH.cs
+    startLine: 19
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.RT
+  syntax:
+    content: public double Volume { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property Volume As Double
+  overload: EvilDICOM.CV.RT.DVH.Volume*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: EvilDICOM.CV.RT.DVH.#ctor(System.Double,System.Double,System.String)
+  commentId: M:EvilDICOM.CV.RT.DVH.#ctor(System.Double,System.Double,System.String)
+  id: '#ctor(System.Double,System.Double,System.String)'
+  parent: EvilDICOM.CV.RT.DVH
+  langs:
+  - csharp
+  - vb
+  name: DVH(Double, Double, String)
+  nameWithType: DVH.DVH(Double, Double, String)
+  fullName: EvilDICOM.CV.RT.DVH.DVH(System.Double, System.Double, System.String)
+  type: Constructor
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/RT/DVH.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: .ctor
+    path: ../EvilDICOM.CV/RT/DVH.cs
+    startLine: 21
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.RT
+  syntax:
+    content: public DVH(double maxDose, double voxelCC, string doseUnit)
+    parameters:
+    - id: maxDose
+      type: System.Double
+    - id: voxelCC
+      type: System.Double
+    - id: doseUnit
+      type: System.String
+    content.vb: Public Sub New(maxDose As Double, voxelCC As Double, doseUnit As String)
+  overload: EvilDICOM.CV.RT.DVH.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: EvilDICOM.CV.RT.DVH.AddSliceToDVH(Mat,Mat)
+  commentId: M:EvilDICOM.CV.RT.DVH.AddSliceToDVH(Mat,Mat)
+  id: AddSliceToDVH(Mat,Mat)
+  parent: EvilDICOM.CV.RT.DVH
+  langs:
+  - csharp
+  - vb
+  name: AddSliceToDVH(Mat, Mat)
+  nameWithType: DVH.AddSliceToDVH(Mat, Mat)
+  fullName: EvilDICOM.CV.RT.DVH.AddSliceToDVH(Mat, Mat)
+  type: Method
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/RT/DVH.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: AddSliceToDVH
+    path: ../EvilDICOM.CV/RT/DVH.cs
+    startLine: 31
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.RT
+  syntax:
+    content: public void AddSliceToDVH(Mat doseSlice, Mat mask)
+    parameters:
+    - id: doseSlice
+      type: Mat
+    - id: mask
+      type: Mat
+    content.vb: Public Sub AddSliceToDVH(doseSlice As Mat, mask As Mat)
+  overload: EvilDICOM.CV.RT.DVH.AddSliceToDVH*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: EvilDICOM.CV.RT.DVH.GetDVHData
+  commentId: M:EvilDICOM.CV.RT.DVH.GetDVHData
+  id: GetDVHData
+  parent: EvilDICOM.CV.RT.DVH
+  langs:
+  - csharp
+  - vb
+  name: GetDVHData()
+  nameWithType: DVH.GetDVHData()
+  fullName: EvilDICOM.CV.RT.DVH.GetDVHData()
+  type: Method
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/RT/DVH.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: GetDVHData
+    path: ../EvilDICOM.CV/RT/DVH.cs
+    startLine: 37
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.RT
+  syntax:
+    content: public DVHData GetDVHData()
+    return:
+      type: DVHData
+    content.vb: Public Function GetDVHData As DVHData
+  overload: EvilDICOM.CV.RT.DVH.GetDVHData*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: EvilDICOM.CV.RT
+  commentId: N:EvilDICOM.CV.RT
+  name: EvilDICOM.CV.RT
+  nameWithType: EvilDICOM.CV.RT
+  fullName: EvilDICOM.CV.RT
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: EvilDICOM.CV.RT.DVH.Volume*
+  commentId: Overload:EvilDICOM.CV.RT.DVH.Volume
+  name: Volume
+  nameWithType: DVH.Volume
+  fullName: EvilDICOM.CV.RT.DVH.Volume
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: EvilDICOM.CV.RT.DVH.#ctor*
+  commentId: Overload:EvilDICOM.CV.RT.DVH.#ctor
+  name: DVH
+  nameWithType: DVH.DVH
+  fullName: EvilDICOM.CV.RT.DVH.DVH
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: EvilDICOM.CV.RT.DVH.AddSliceToDVH*
+  commentId: Overload:EvilDICOM.CV.RT.DVH.AddSliceToDVH
+  name: AddSliceToDVH
+  nameWithType: DVH.AddSliceToDVH
+  fullName: EvilDICOM.CV.RT.DVH.AddSliceToDVH
+- uid: Mat
+  isExternal: true
+  name: Mat
+  nameWithType: Mat
+  fullName: Mat
+- uid: EvilDICOM.CV.RT.DVH.GetDVHData*
+  commentId: Overload:EvilDICOM.CV.RT.DVH.GetDVHData
+  name: GetDVHData
+  nameWithType: DVH.GetDVHData
+  fullName: EvilDICOM.CV.RT.DVH.GetDVHData
+- uid: DVHData
+  isExternal: true
+  name: DVHData
+  nameWithType: DVHData
+  fullName: DVHData

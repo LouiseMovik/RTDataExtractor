@@ -1,0 +1,246 @@
+### YamlMime:ManagedReference
+items:
+- uid: EvilDICOM.CV.Image.MatrixHistogram
+  commentId: T:EvilDICOM.CV.Image.MatrixHistogram
+  id: MatrixHistogram
+  parent: EvilDICOM.CV.Image
+  children:
+  - EvilDICOM.CV.Image.MatrixHistogram.#ctor(EvilDICOM.CV.Image.Matrix,System.Int32)
+  - EvilDICOM.CV.Image.MatrixHistogram.AddSlice(Mat)
+  - EvilDICOM.CV.Image.MatrixHistogram.Count(System.Single,System.Single)
+  - EvilDICOM.CV.Image.MatrixHistogram.Dispose
+  langs:
+  - csharp
+  - vb
+  name: MatrixHistogram
+  nameWithType: MatrixHistogram
+  fullName: EvilDICOM.CV.Image.MatrixHistogram
+  type: Class
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/Image/MatrixHistogram.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: MatrixHistogram
+    path: ../EvilDICOM.CV/Image/MatrixHistogram.cs
+    startLine: 10
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.Image
+  syntax:
+    content: 'public class MatrixHistogram : IDisposable'
+    content.vb: >-
+      Public Class MatrixHistogram
+          Inherits IDisposable
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: EvilDICOM.CV.Image.MatrixHistogram.#ctor(EvilDICOM.CV.Image.Matrix,System.Int32)
+  commentId: M:EvilDICOM.CV.Image.MatrixHistogram.#ctor(EvilDICOM.CV.Image.Matrix,System.Int32)
+  id: '#ctor(EvilDICOM.CV.Image.Matrix,System.Int32)'
+  parent: EvilDICOM.CV.Image.MatrixHistogram
+  langs:
+  - csharp
+  - vb
+  name: MatrixHistogram(Matrix, Int32)
+  nameWithType: MatrixHistogram.MatrixHistogram(Matrix, Int32)
+  fullName: EvilDICOM.CV.Image.MatrixHistogram.MatrixHistogram(EvilDICOM.CV.Image.Matrix, System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/Image/MatrixHistogram.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: .ctor
+    path: ../EvilDICOM.CV/Image/MatrixHistogram.cs
+    startLine: 19
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.Image
+  syntax:
+    content: public MatrixHistogram(Matrix m, int nBins)
+    parameters:
+    - id: m
+      type: EvilDICOM.CV.Image.Matrix
+    - id: nBins
+      type: System.Int32
+    content.vb: Public Sub New(m As Matrix, nBins As Integer)
+  overload: EvilDICOM.CV.Image.MatrixHistogram.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: EvilDICOM.CV.Image.MatrixHistogram.AddSlice(Mat)
+  commentId: M:EvilDICOM.CV.Image.MatrixHistogram.AddSlice(Mat)
+  id: AddSlice(Mat)
+  parent: EvilDICOM.CV.Image.MatrixHistogram
+  langs:
+  - csharp
+  - vb
+  name: AddSlice(Mat)
+  nameWithType: MatrixHistogram.AddSlice(Mat)
+  fullName: EvilDICOM.CV.Image.MatrixHistogram.AddSlice(Mat)
+  type: Method
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/Image/MatrixHistogram.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: AddSlice
+    path: ../EvilDICOM.CV/Image/MatrixHistogram.cs
+    startLine: 27
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.Image
+  syntax:
+    content: public void AddSlice(Mat slice)
+    parameters:
+    - id: slice
+      type: Mat
+    content.vb: Public Sub AddSlice(slice As Mat)
+  overload: EvilDICOM.CV.Image.MatrixHistogram.AddSlice*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: EvilDICOM.CV.Image.MatrixHistogram.Count(System.Single,System.Single)
+  commentId: M:EvilDICOM.CV.Image.MatrixHistogram.Count(System.Single,System.Single)
+  id: Count(System.Single,System.Single)
+  parent: EvilDICOM.CV.Image.MatrixHistogram
+  langs:
+  - csharp
+  - vb
+  name: Count(Single, Single)
+  nameWithType: MatrixHistogram.Count(Single, Single)
+  fullName: EvilDICOM.CV.Image.MatrixHistogram.Count(System.Single, System.Single)
+  type: Method
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/Image/MatrixHistogram.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: Count
+    path: ../EvilDICOM.CV/Image/MatrixHistogram.cs
+    startLine: 39
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.Image
+  summary: "\nCounts voxels between min and max\n"
+  example: []
+  syntax:
+    content: public int Count(float min, float max)
+    parameters:
+    - id: min
+      type: System.Single
+      description: ''
+    - id: max
+      type: System.Single
+      description: ''
+    return:
+      type: System.Int32
+      description: ''
+    content.vb: Public Function Count(min As Single, max As Single) As Integer
+  overload: EvilDICOM.CV.Image.MatrixHistogram.Count*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: EvilDICOM.CV.Image.MatrixHistogram.Dispose
+  commentId: M:EvilDICOM.CV.Image.MatrixHistogram.Dispose
+  id: Dispose
+  parent: EvilDICOM.CV.Image.MatrixHistogram
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: MatrixHistogram.Dispose()
+  fullName: EvilDICOM.CV.Image.MatrixHistogram.Dispose()
+  type: Method
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/Image/MatrixHistogram.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: Dispose
+    path: ../EvilDICOM.CV/Image/MatrixHistogram.cs
+    startLine: 60
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.Image
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+  overload: EvilDICOM.CV.Image.MatrixHistogram.Dispose*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: EvilDICOM.CV.Image
+  commentId: N:EvilDICOM.CV.Image
+  name: EvilDICOM.CV.Image
+  nameWithType: EvilDICOM.CV.Image
+  fullName: EvilDICOM.CV.Image
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: EvilDICOM.CV.Image.MatrixHistogram.#ctor*
+  commentId: Overload:EvilDICOM.CV.Image.MatrixHistogram.#ctor
+  name: MatrixHistogram
+  nameWithType: MatrixHistogram.MatrixHistogram
+  fullName: EvilDICOM.CV.Image.MatrixHistogram.MatrixHistogram
+- uid: EvilDICOM.CV.Image.Matrix
+  commentId: T:EvilDICOM.CV.Image.Matrix
+  parent: EvilDICOM.CV.Image
+  name: Matrix
+  nameWithType: Matrix
+  fullName: EvilDICOM.CV.Image.Matrix
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: EvilDICOM.CV.Image.MatrixHistogram.AddSlice*
+  commentId: Overload:EvilDICOM.CV.Image.MatrixHistogram.AddSlice
+  name: AddSlice
+  nameWithType: MatrixHistogram.AddSlice
+  fullName: EvilDICOM.CV.Image.MatrixHistogram.AddSlice
+- uid: Mat
+  isExternal: true
+  name: Mat
+  nameWithType: Mat
+  fullName: Mat
+- uid: EvilDICOM.CV.Image.MatrixHistogram.Count*
+  commentId: Overload:EvilDICOM.CV.Image.MatrixHistogram.Count
+  name: Count
+  nameWithType: MatrixHistogram.Count
+  fullName: EvilDICOM.CV.Image.MatrixHistogram.Count
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: EvilDICOM.CV.Image.MatrixHistogram.Dispose*
+  commentId: Overload:EvilDICOM.CV.Image.MatrixHistogram.Dispose
+  name: Dispose
+  nameWithType: MatrixHistogram.Dispose
+  fullName: EvilDICOM.CV.Image.MatrixHistogram.Dispose

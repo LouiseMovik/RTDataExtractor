@@ -1,0 +1,117 @@
+### YamlMime:ManagedReference
+items:
+- uid: EvilDICOM.CV.Drawing.Renderers.FieldRenderer
+  commentId: T:EvilDICOM.CV.Drawing.Renderers.FieldRenderer
+  id: FieldRenderer
+  parent: EvilDICOM.CV.Drawing.Renderers
+  children:
+  - EvilDICOM.CV.Drawing.Renderers.FieldRenderer.Render(DICOMSelector,EvilDICOM.CV.RT.DRR)
+  langs:
+  - csharp
+  - vb
+  name: FieldRenderer
+  nameWithType: FieldRenderer
+  fullName: EvilDICOM.CV.Drawing.Renderers.FieldRenderer
+  type: Class
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/Drawing/Renderers/FieldRenderer.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: FieldRenderer
+    path: ../EvilDICOM.CV/Drawing/Renderers/FieldRenderer.cs
+    startLine: 8
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.Drawing.Renderers
+  syntax:
+    content: 'public class FieldRenderer : object'
+    content.vb: >-
+      Public Class FieldRenderer
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: EvilDICOM.CV.Drawing.Renderers.FieldRenderer.Render(DICOMSelector,EvilDICOM.CV.RT.DRR)
+  commentId: M:EvilDICOM.CV.Drawing.Renderers.FieldRenderer.Render(DICOMSelector,EvilDICOM.CV.RT.DRR)
+  id: Render(DICOMSelector,EvilDICOM.CV.RT.DRR)
+  parent: EvilDICOM.CV.Drawing.Renderers.FieldRenderer
+  langs:
+  - csharp
+  - vb
+  name: Render(DICOMSelector, DRR)
+  nameWithType: FieldRenderer.Render(DICOMSelector, DRR)
+  fullName: EvilDICOM.CV.Drawing.Renderers.FieldRenderer.Render(DICOMSelector, EvilDICOM.CV.RT.DRR)
+  type: Method
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/Drawing/Renderers/FieldRenderer.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: Render
+    path: ../EvilDICOM.CV/Drawing/Renderers/FieldRenderer.cs
+    startLine: 10
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.Drawing.Renderers
+  syntax:
+    content: public static void Render(DICOMSelector sel, DRR drr)
+    parameters:
+    - id: sel
+      type: DICOMSelector
+    - id: drr
+      type: EvilDICOM.CV.RT.DRR
+    content.vb: Public Shared Sub Render(sel As DICOMSelector, drr As DRR)
+  overload: EvilDICOM.CV.Drawing.Renderers.FieldRenderer.Render*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: EvilDICOM.CV.Drawing.Renderers
+  commentId: N:EvilDICOM.CV.Drawing.Renderers
+  name: EvilDICOM.CV.Drawing.Renderers
+  nameWithType: EvilDICOM.CV.Drawing.Renderers
+  fullName: EvilDICOM.CV.Drawing.Renderers
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: EvilDICOM.CV.Drawing.Renderers.FieldRenderer.Render*
+  commentId: Overload:EvilDICOM.CV.Drawing.Renderers.FieldRenderer.Render
+  name: Render
+  nameWithType: FieldRenderer.Render
+  fullName: EvilDICOM.CV.Drawing.Renderers.FieldRenderer.Render
+- uid: DICOMSelector
+  commentId: '!:DICOMSelector'
+  isExternal: true
+  name: DICOMSelector
+  nameWithType: DICOMSelector
+  fullName: DICOMSelector
+- uid: EvilDICOM.CV.RT.DRR
+  commentId: T:EvilDICOM.CV.RT.DRR
+  parent: EvilDICOM.CV.RT
+  name: DRR
+  nameWithType: DRR
+  fullName: EvilDICOM.CV.RT.DRR
+- uid: EvilDICOM.CV.RT
+  commentId: N:EvilDICOM.CV.RT
+  name: EvilDICOM.CV.RT
+  nameWithType: EvilDICOM.CV.RT
+  fullName: EvilDICOM.CV.RT

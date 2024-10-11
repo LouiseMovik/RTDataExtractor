@@ -1,0 +1,122 @@
+### YamlMime:ManagedReference
+items:
+- uid: EvilDICOM.CV.Image.Ops.Resampler
+  commentId: T:EvilDICOM.CV.Image.Ops.Resampler
+  id: Resampler
+  parent: EvilDICOM.CV.Image.Ops
+  children:
+  - EvilDICOM.CV.Image.Ops.Resampler.Resample(EvilDICOM.CV.Image.Matrix,System.Double,System.Double,System.Double)
+  langs:
+  - csharp
+  - vb
+  name: Resampler
+  nameWithType: Resampler
+  fullName: EvilDICOM.CV.Image.Ops.Resampler
+  type: Class
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/Image/Ops/Resampler.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: Resampler
+    path: ../EvilDICOM.CV/Image/Ops/Resampler.cs
+    startLine: 11
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.Image.Ops
+  syntax:
+    content: 'public class Resampler : object'
+    content.vb: >-
+      Public Class Resampler
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: EvilDICOM.CV.Image.Ops.Resampler.Resample(EvilDICOM.CV.Image.Matrix,System.Double,System.Double,System.Double)
+  commentId: M:EvilDICOM.CV.Image.Ops.Resampler.Resample(EvilDICOM.CV.Image.Matrix,System.Double,System.Double,System.Double)
+  id: Resample(EvilDICOM.CV.Image.Matrix,System.Double,System.Double,System.Double)
+  parent: EvilDICOM.CV.Image.Ops.Resampler
+  langs:
+  - csharp
+  - vb
+  name: Resample(Matrix, Double, Double, Double)
+  nameWithType: Resampler.Resample(Matrix, Double, Double, Double)
+  fullName: EvilDICOM.CV.Image.Ops.Resampler.Resample(EvilDICOM.CV.Image.Matrix, System.Double, System.Double, System.Double)
+  type: Method
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/Image/Ops/Resampler.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: Resample
+    path: ../EvilDICOM.CV/Image/Ops/Resampler.cs
+    startLine: 13
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.Image.Ops
+  syntax:
+    content: public static void Resample(Matrix m, double xRes, double yRes, double zRes)
+    parameters:
+    - id: m
+      type: EvilDICOM.CV.Image.Matrix
+    - id: xRes
+      type: System.Double
+    - id: yRes
+      type: System.Double
+    - id: zRes
+      type: System.Double
+    content.vb: Public Shared Sub Resample(m As Matrix, xRes As Double, yRes As Double, zRes As Double)
+  overload: EvilDICOM.CV.Image.Ops.Resampler.Resample*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: EvilDICOM.CV.Image.Ops
+  commentId: N:EvilDICOM.CV.Image.Ops
+  name: EvilDICOM.CV.Image.Ops
+  nameWithType: EvilDICOM.CV.Image.Ops
+  fullName: EvilDICOM.CV.Image.Ops
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: EvilDICOM.CV.Image.Ops.Resampler.Resample*
+  commentId: Overload:EvilDICOM.CV.Image.Ops.Resampler.Resample
+  name: Resample
+  nameWithType: Resampler.Resample
+  fullName: EvilDICOM.CV.Image.Ops.Resampler.Resample
+- uid: EvilDICOM.CV.Image.Matrix
+  commentId: T:EvilDICOM.CV.Image.Matrix
+  parent: EvilDICOM.CV.Image
+  name: Matrix
+  nameWithType: Matrix
+  fullName: EvilDICOM.CV.Image.Matrix
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: EvilDICOM.CV.Image
+  commentId: N:EvilDICOM.CV.Image
+  name: EvilDICOM.CV.Image
+  nameWithType: EvilDICOM.CV.Image
+  fullName: EvilDICOM.CV.Image

@@ -1,0 +1,115 @@
+### YamlMime:ManagedReference
+items:
+- uid: EvilDICOM.CV.Helpers.MatMaker
+  commentId: T:EvilDICOM.CV.Helpers.MatMaker
+  id: MatMaker
+  parent: EvilDICOM.CV.Helpers
+  children:
+  - EvilDICOM.CV.Helpers.MatMaker.Identity(System.Int32,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: MatMaker
+  nameWithType: MatMaker
+  fullName: EvilDICOM.CV.Helpers.MatMaker
+  type: Class
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/Helpers/MatMaker.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: MatMaker
+    path: ../EvilDICOM.CV/Helpers/MatMaker.cs
+    startLine: 9
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.Helpers
+  syntax:
+    content: 'public static class MatMaker : object'
+    content.vb: >-
+      Public Module MatMaker
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: EvilDICOM.CV.Helpers.MatMaker.Identity(System.Int32,System.Int32)
+  commentId: M:EvilDICOM.CV.Helpers.MatMaker.Identity(System.Int32,System.Int32)
+  id: Identity(System.Int32,System.Int32)
+  parent: EvilDICOM.CV.Helpers.MatMaker
+  langs:
+  - csharp
+  - vb
+  name: Identity(Int32, Int32)
+  nameWithType: MatMaker.Identity(Int32, Int32)
+  fullName: EvilDICOM.CV.Helpers.MatMaker.Identity(System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/Helpers/MatMaker.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: Identity
+    path: ../EvilDICOM.CV/Helpers/MatMaker.cs
+    startLine: 11
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.Helpers
+  syntax:
+    content: public static Mat Identity(int rows, int cols)
+    parameters:
+    - id: rows
+      type: System.Int32
+    - id: cols
+      type: System.Int32
+    return:
+      type: Mat
+    content.vb: Public Shared Function Identity(rows As Integer, cols As Integer) As Mat
+  overload: EvilDICOM.CV.Helpers.MatMaker.Identity*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: EvilDICOM.CV.Helpers
+  commentId: N:EvilDICOM.CV.Helpers
+  name: EvilDICOM.CV.Helpers
+  nameWithType: EvilDICOM.CV.Helpers
+  fullName: EvilDICOM.CV.Helpers
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: EvilDICOM.CV.Helpers.MatMaker.Identity*
+  commentId: Overload:EvilDICOM.CV.Helpers.MatMaker.Identity
+  name: Identity
+  nameWithType: MatMaker.Identity
+  fullName: EvilDICOM.CV.Helpers.MatMaker.Identity
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Mat
+  isExternal: true
+  name: Mat
+  nameWithType: Mat
+  fullName: Mat

@@ -1,0 +1,279 @@
+### YamlMime:ManagedReference
+items:
+- uid: EvilDICOM.CV.Helpers.ContourHelper
+  commentId: T:EvilDICOM.CV.Helpers.ContourHelper
+  id: ContourHelper
+  parent: EvilDICOM.CV.Helpers
+  children:
+  - EvilDICOM.CV.Helpers.ContourHelper.GetMaskAtZ(IEnumerable{EvilDICOM.CV.RT.Meta.SliceContourMeta},System.Single,Mat,Mat,System.Double)
+  - EvilDICOM.CV.Helpers.ContourHelper.OrganizeIntoChildren(EvilDICOM.CV.RT.Meta.SliceContourMeta,IEnumerable{EvilDICOM.CV.RT.Meta.SliceContourMeta})
+  langs:
+  - csharp
+  - vb
+  name: ContourHelper
+  nameWithType: ContourHelper
+  fullName: EvilDICOM.CV.Helpers.ContourHelper
+  type: Class
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/Helpers/ContourHelper.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: ContourHelper
+    path: ../EvilDICOM.CV/Helpers/ContourHelper.cs
+    startLine: 11
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.Helpers
+  syntax:
+    content: 'public static class ContourHelper : object'
+    content.vb: >-
+      Public Module ContourHelper
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: EvilDICOM.CV.Helpers.ContourHelper.OrganizeIntoChildren(EvilDICOM.CV.RT.Meta.SliceContourMeta,IEnumerable{EvilDICOM.CV.RT.Meta.SliceContourMeta})
+  commentId: M:EvilDICOM.CV.Helpers.ContourHelper.OrganizeIntoChildren(EvilDICOM.CV.RT.Meta.SliceContourMeta,IEnumerable{EvilDICOM.CV.RT.Meta.SliceContourMeta})
+  id: OrganizeIntoChildren(EvilDICOM.CV.RT.Meta.SliceContourMeta,IEnumerable{EvilDICOM.CV.RT.Meta.SliceContourMeta})
+  parent: EvilDICOM.CV.Helpers.ContourHelper
+  langs:
+  - csharp
+  - vb
+  name: OrganizeIntoChildren(SliceContourMeta, IEnumerable<SliceContourMeta>)
+  nameWithType: ContourHelper.OrganizeIntoChildren(SliceContourMeta, IEnumerable<SliceContourMeta>)
+  fullName: EvilDICOM.CV.Helpers.ContourHelper.OrganizeIntoChildren(EvilDICOM.CV.RT.Meta.SliceContourMeta, IEnumerable<EvilDICOM.CV.RT.Meta.SliceContourMeta>)
+  type: Method
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/Helpers/ContourHelper.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: OrganizeIntoChildren
+    path: ../EvilDICOM.CV/Helpers/ContourHelper.cs
+    startLine: 20
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.Helpers
+  summary: "\nRecursive method that takes the largest contour and an array of smaller contours to\nplace smaller contours which are inside the largest contour into the child list\nfor area calculations\n"
+  example: []
+  syntax:
+    content: public static void OrganizeIntoChildren(SliceContourMeta largerContour, IEnumerable<SliceContourMeta> smallerContours)
+    parameters:
+    - id: largerContour
+      type: EvilDICOM.CV.RT.Meta.SliceContourMeta
+      description: the large contour possibly containing smaller contours
+    - id: smallerContours
+      type: IEnumerable{EvilDICOM.CV.RT.Meta.SliceContourMeta}
+      description: the list of smaller contours
+    content.vb: Public Shared Sub OrganizeIntoChildren(largerContour As SliceContourMeta, smallerContours As IEnumerable(Of SliceContourMeta))
+  overload: EvilDICOM.CV.Helpers.ContourHelper.OrganizeIntoChildren*
+  nameWithType.vb: ContourHelper.OrganizeIntoChildren(SliceContourMeta, IEnumerable(Of SliceContourMeta))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: EvilDICOM.CV.Helpers.ContourHelper.OrganizeIntoChildren(EvilDICOM.CV.RT.Meta.SliceContourMeta, IEnumerable(Of EvilDICOM.CV.RT.Meta.SliceContourMeta))
+  name.vb: OrganizeIntoChildren(SliceContourMeta, IEnumerable(Of SliceContourMeta))
+- uid: EvilDICOM.CV.Helpers.ContourHelper.GetMaskAtZ(IEnumerable{EvilDICOM.CV.RT.Meta.SliceContourMeta},System.Single,Mat,Mat,System.Double)
+  commentId: M:EvilDICOM.CV.Helpers.ContourHelper.GetMaskAtZ(IEnumerable{EvilDICOM.CV.RT.Meta.SliceContourMeta},System.Single,Mat,Mat,System.Double)
+  id: GetMaskAtZ(IEnumerable{EvilDICOM.CV.RT.Meta.SliceContourMeta},System.Single,Mat,Mat,System.Double)
+  isExtensionMethod: true
+  parent: EvilDICOM.CV.Helpers.ContourHelper
+  langs:
+  - csharp
+  - vb
+  name: GetMaskAtZ(IEnumerable<SliceContourMeta>, Single, Mat, Mat, Double)
+  nameWithType: ContourHelper.GetMaskAtZ(IEnumerable<SliceContourMeta>, Single, Mat, Mat, Double)
+  fullName: EvilDICOM.CV.Helpers.ContourHelper.GetMaskAtZ(IEnumerable<EvilDICOM.CV.RT.Meta.SliceContourMeta>, System.Single, Mat, Mat, System.Double)
+  type: Method
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/Helpers/ContourHelper.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: GetMaskAtZ
+    path: ../EvilDICOM.CV/Helpers/ContourHelper.cs
+    startLine: 39
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.Helpers
+  summary: "\nGets the contours on a slice z. Interpolates if contours don&apos;t exist\n"
+  example: []
+  syntax:
+    content: public static Mat GetMaskAtZ(this IEnumerable<SliceContourMeta> contours, float z, Mat zSlice, Mat imageToPatientTx, double scale)
+    parameters:
+    - id: contours
+      type: IEnumerable{EvilDICOM.CV.RT.Meta.SliceContourMeta}
+    - id: z
+      type: System.Single
+      description: z position of contours
+    - id: zSlice
+      type: Mat
+    - id: imageToPatientTx
+      type: Mat
+    - id: scale
+      type: System.Double
+    return:
+      type: Mat
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetMaskAtZ(contours As IEnumerable(Of SliceContourMeta), z As Single, zSlice As Mat, imageToPatientTx As Mat, scale As Double) As Mat
+  overload: EvilDICOM.CV.Helpers.ContourHelper.GetMaskAtZ*
+  nameWithType.vb: ContourHelper.GetMaskAtZ(IEnumerable(Of SliceContourMeta), Single, Mat, Mat, Double)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: EvilDICOM.CV.Helpers.ContourHelper.GetMaskAtZ(IEnumerable(Of EvilDICOM.CV.RT.Meta.SliceContourMeta), System.Single, Mat, Mat, System.Double)
+  name.vb: GetMaskAtZ(IEnumerable(Of SliceContourMeta), Single, Mat, Mat, Double)
+references:
+- uid: EvilDICOM.CV.Helpers
+  commentId: N:EvilDICOM.CV.Helpers
+  name: EvilDICOM.CV.Helpers
+  nameWithType: EvilDICOM.CV.Helpers
+  fullName: EvilDICOM.CV.Helpers
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: EvilDICOM.CV.Helpers.ContourHelper.OrganizeIntoChildren*
+  commentId: Overload:EvilDICOM.CV.Helpers.ContourHelper.OrganizeIntoChildren
+  name: OrganizeIntoChildren
+  nameWithType: ContourHelper.OrganizeIntoChildren
+  fullName: EvilDICOM.CV.Helpers.ContourHelper.OrganizeIntoChildren
+- uid: EvilDICOM.CV.RT.Meta.SliceContourMeta
+  commentId: T:EvilDICOM.CV.RT.Meta.SliceContourMeta
+  parent: EvilDICOM.CV.RT.Meta
+  name: SliceContourMeta
+  nameWithType: SliceContourMeta
+  fullName: EvilDICOM.CV.RT.Meta.SliceContourMeta
+- uid: IEnumerable{EvilDICOM.CV.RT.Meta.SliceContourMeta}
+  commentId: '!:IEnumerable{EvilDICOM.CV.RT.Meta.SliceContourMeta}'
+  definition: IEnumerable`1
+  name: IEnumerable<SliceContourMeta>
+  nameWithType: IEnumerable<SliceContourMeta>
+  fullName: IEnumerable<EvilDICOM.CV.RT.Meta.SliceContourMeta>
+  nameWithType.vb: IEnumerable(Of SliceContourMeta)
+  fullName.vb: IEnumerable(Of EvilDICOM.CV.RT.Meta.SliceContourMeta)
+  name.vb: IEnumerable(Of SliceContourMeta)
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: EvilDICOM.CV.RT.Meta.SliceContourMeta
+    name: SliceContourMeta
+    nameWithType: SliceContourMeta
+    fullName: EvilDICOM.CV.RT.Meta.SliceContourMeta
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: EvilDICOM.CV.RT.Meta.SliceContourMeta
+    name: SliceContourMeta
+    nameWithType: SliceContourMeta
+    fullName: EvilDICOM.CV.RT.Meta.SliceContourMeta
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: EvilDICOM.CV.RT.Meta
+  commentId: N:EvilDICOM.CV.RT.Meta
+  name: EvilDICOM.CV.RT.Meta
+  nameWithType: EvilDICOM.CV.RT.Meta
+  fullName: EvilDICOM.CV.RT.Meta
+- uid: IEnumerable`1
+  isExternal: true
+  name: IEnumerable<>
+  nameWithType: IEnumerable<>
+  fullName: IEnumerable<>
+  nameWithType.vb: IEnumerable(Of )
+  fullName.vb: IEnumerable(Of )
+  name.vb: IEnumerable(Of )
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: EvilDICOM.CV.Helpers.ContourHelper.GetMaskAtZ*
+  commentId: Overload:EvilDICOM.CV.Helpers.ContourHelper.GetMaskAtZ
+  name: GetMaskAtZ
+  nameWithType: ContourHelper.GetMaskAtZ
+  fullName: EvilDICOM.CV.Helpers.ContourHelper.GetMaskAtZ
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Mat
+  isExternal: true
+  name: Mat
+  nameWithType: Mat
+  fullName: Mat
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double

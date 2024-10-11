@@ -1,0 +1,257 @@
+### YamlMime:ManagedReference
+items:
+- uid: EvilDICOM.CV.IO.DICOM2ImageMatrix
+  commentId: T:EvilDICOM.CV.IO.DICOM2ImageMatrix
+  id: DICOM2ImageMatrix
+  parent: EvilDICOM.CV.IO
+  children:
+  - EvilDICOM.CV.IO.DICOM2ImageMatrix.ParseDICOM(IEnumerable{System.String})
+  langs:
+  - csharp
+  - vb
+  name: DICOM2ImageMatrix
+  nameWithType: DICOM2ImageMatrix
+  fullName: EvilDICOM.CV.IO.DICOM2ImageMatrix
+  type: Class
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/IO/DICOM2ImageMatrix.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: DICOM2ImageMatrix
+    path: ../EvilDICOM.CV/IO/DICOM2ImageMatrix.cs
+    startLine: 14
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.IO
+  syntax:
+    content: 'public class DICOM2ImageMatrix : DICOM2Matrix'
+    content.vb: >-
+      Public Class DICOM2ImageMatrix
+          Inherits DICOM2Matrix
+  inheritance:
+  - System.Object
+  - EvilDICOM.CV.IO.DICOM2Matrix
+  inheritedMembers:
+  - EvilDICOM.CV.IO.DICOM2Matrix.FillMetadata(EvilDICOM.CV.Image.Matrix,DICOMObject)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: EvilDICOM.CV.IO.DICOM2ImageMatrix.ParseDICOM(IEnumerable{System.String})
+  commentId: M:EvilDICOM.CV.IO.DICOM2ImageMatrix.ParseDICOM(IEnumerable{System.String})
+  id: ParseDICOM(IEnumerable{System.String})
+  parent: EvilDICOM.CV.IO.DICOM2ImageMatrix
+  langs:
+  - csharp
+  - vb
+  name: ParseDICOM(IEnumerable<String>)
+  nameWithType: DICOM2ImageMatrix.ParseDICOM(IEnumerable<String>)
+  fullName: EvilDICOM.CV.IO.DICOM2ImageMatrix.ParseDICOM(IEnumerable<System.String>)
+  type: Method
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/IO/DICOM2ImageMatrix.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: ParseDICOM
+    path: ../EvilDICOM.CV/IO/DICOM2ImageMatrix.cs
+    startLine: 16
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.IO
+  syntax:
+    content: public static ImageMatrix ParseDICOM(IEnumerable<string> dcmFiles)
+    parameters:
+    - id: dcmFiles
+      type: IEnumerable{System.String}
+    return:
+      type: EvilDICOM.CV.Image.ImageMatrix
+    content.vb: Public Shared Function ParseDICOM(dcmFiles As IEnumerable(Of String)) As ImageMatrix
+  overload: EvilDICOM.CV.IO.DICOM2ImageMatrix.ParseDICOM*
+  nameWithType.vb: DICOM2ImageMatrix.ParseDICOM(IEnumerable(Of String))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: EvilDICOM.CV.IO.DICOM2ImageMatrix.ParseDICOM(IEnumerable(Of System.String))
+  name.vb: ParseDICOM(IEnumerable(Of String))
+references:
+- uid: EvilDICOM.CV.IO
+  commentId: N:EvilDICOM.CV.IO
+  name: EvilDICOM.CV.IO
+  nameWithType: EvilDICOM.CV.IO
+  fullName: EvilDICOM.CV.IO
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: EvilDICOM.CV.IO.DICOM2Matrix
+  commentId: T:EvilDICOM.CV.IO.DICOM2Matrix
+  parent: EvilDICOM.CV.IO
+  name: DICOM2Matrix
+  nameWithType: DICOM2Matrix
+  fullName: EvilDICOM.CV.IO.DICOM2Matrix
+- uid: EvilDICOM.CV.IO.DICOM2Matrix.FillMetadata(EvilDICOM.CV.Image.Matrix,DICOMObject)
+  commentId: M:EvilDICOM.CV.IO.DICOM2Matrix.FillMetadata(EvilDICOM.CV.Image.Matrix,DICOMObject)
+  parent: EvilDICOM.CV.IO.DICOM2Matrix
+  isExternal: true
+  name: FillMetadata(Matrix, DICOMObject)
+  nameWithType: DICOM2Matrix.FillMetadata(Matrix, DICOMObject)
+  fullName: EvilDICOM.CV.IO.DICOM2Matrix.FillMetadata(EvilDICOM.CV.Image.Matrix, DICOMObject)
+  spec.csharp:
+  - uid: EvilDICOM.CV.IO.DICOM2Matrix.FillMetadata(EvilDICOM.CV.Image.Matrix,DICOMObject)
+    name: FillMetadata
+    nameWithType: DICOM2Matrix.FillMetadata
+    fullName: EvilDICOM.CV.IO.DICOM2Matrix.FillMetadata
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: EvilDICOM.CV.Image.Matrix
+    name: Matrix
+    nameWithType: Matrix
+    fullName: EvilDICOM.CV.Image.Matrix
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: DICOMObject
+    name: DICOMObject
+    nameWithType: DICOMObject
+    fullName: DICOMObject
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: EvilDICOM.CV.IO.DICOM2Matrix.FillMetadata(EvilDICOM.CV.Image.Matrix,DICOMObject)
+    name: FillMetadata
+    nameWithType: DICOM2Matrix.FillMetadata
+    fullName: EvilDICOM.CV.IO.DICOM2Matrix.FillMetadata
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: EvilDICOM.CV.Image.Matrix
+    name: Matrix
+    nameWithType: Matrix
+    fullName: EvilDICOM.CV.Image.Matrix
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: DICOMObject
+    name: DICOMObject
+    nameWithType: DICOMObject
+    fullName: DICOMObject
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: EvilDICOM.CV.IO.DICOM2ImageMatrix.ParseDICOM*
+  commentId: Overload:EvilDICOM.CV.IO.DICOM2ImageMatrix.ParseDICOM
+  name: ParseDICOM
+  nameWithType: DICOM2ImageMatrix.ParseDICOM
+  fullName: EvilDICOM.CV.IO.DICOM2ImageMatrix.ParseDICOM
+- uid: IEnumerable{System.String}
+  commentId: '!:IEnumerable{System.String}'
+  definition: IEnumerable`1
+  name: IEnumerable<String>
+  nameWithType: IEnumerable<String>
+  fullName: IEnumerable<System.String>
+  nameWithType.vb: IEnumerable(Of String)
+  fullName.vb: IEnumerable(Of System.String)
+  name.vb: IEnumerable(Of String)
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: EvilDICOM.CV.Image.ImageMatrix
+  commentId: T:EvilDICOM.CV.Image.ImageMatrix
+  parent: EvilDICOM.CV.Image
+  name: ImageMatrix
+  nameWithType: ImageMatrix
+  fullName: EvilDICOM.CV.Image.ImageMatrix
+- uid: IEnumerable`1
+  isExternal: true
+  name: IEnumerable<>
+  nameWithType: IEnumerable<>
+  fullName: IEnumerable<>
+  nameWithType.vb: IEnumerable(Of )
+  fullName.vb: IEnumerable(Of )
+  name.vb: IEnumerable(Of )
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: EvilDICOM.CV.Image
+  commentId: N:EvilDICOM.CV.Image
+  name: EvilDICOM.CV.Image
+  nameWithType: EvilDICOM.CV.Image
+  fullName: EvilDICOM.CV.Image

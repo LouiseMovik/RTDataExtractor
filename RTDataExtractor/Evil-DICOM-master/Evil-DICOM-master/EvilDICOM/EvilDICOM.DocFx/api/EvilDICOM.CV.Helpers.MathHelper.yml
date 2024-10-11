@@ -1,0 +1,116 @@
+### YamlMime:ManagedReference
+items:
+- uid: EvilDICOM.CV.Helpers.MathHelper
+  commentId: T:EvilDICOM.CV.Helpers.MathHelper
+  id: MathHelper
+  parent: EvilDICOM.CV.Helpers
+  children:
+  - EvilDICOM.CV.Helpers.MathHelper.Interpolate(System.Double,System.Double,System.Double,System.Double,System.Double)
+  langs:
+  - csharp
+  - vb
+  name: MathHelper
+  nameWithType: MathHelper
+  fullName: EvilDICOM.CV.Helpers.MathHelper
+  type: Class
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/Helpers/MathHelper.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: MathHelper
+    path: ../EvilDICOM.CV/Helpers/MathHelper.cs
+    startLine: 8
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.Helpers
+  syntax:
+    content: 'public static class MathHelper : object'
+    content.vb: >-
+      Public Module MathHelper
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: EvilDICOM.CV.Helpers.MathHelper.Interpolate(System.Double,System.Double,System.Double,System.Double,System.Double)
+  commentId: M:EvilDICOM.CV.Helpers.MathHelper.Interpolate(System.Double,System.Double,System.Double,System.Double,System.Double)
+  id: Interpolate(System.Double,System.Double,System.Double,System.Double,System.Double)
+  parent: EvilDICOM.CV.Helpers.MathHelper
+  langs:
+  - csharp
+  - vb
+  name: Interpolate(Double, Double, Double, Double, Double)
+  nameWithType: MathHelper.Interpolate(Double, Double, Double, Double, Double)
+  fullName: EvilDICOM.CV.Helpers.MathHelper.Interpolate(System.Double, System.Double, System.Double, System.Double, System.Double)
+  type: Method
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/Helpers/MathHelper.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: Interpolate
+    path: ../EvilDICOM.CV/Helpers/MathHelper.cs
+    startLine: 10
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.Helpers
+  syntax:
+    content: public static double Interpolate(double x1, double x3, double y1, double y3, double x2)
+    parameters:
+    - id: x1
+      type: System.Double
+    - id: x3
+      type: System.Double
+    - id: y1
+      type: System.Double
+    - id: y3
+      type: System.Double
+    - id: x2
+      type: System.Double
+    return:
+      type: System.Double
+    content.vb: Public Shared Function Interpolate(x1 As Double, x3 As Double, y1 As Double, y3 As Double, x2 As Double) As Double
+  overload: EvilDICOM.CV.Helpers.MathHelper.Interpolate*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: EvilDICOM.CV.Helpers
+  commentId: N:EvilDICOM.CV.Helpers
+  name: EvilDICOM.CV.Helpers
+  nameWithType: EvilDICOM.CV.Helpers
+  fullName: EvilDICOM.CV.Helpers
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: EvilDICOM.CV.Helpers.MathHelper.Interpolate*
+  commentId: Overload:EvilDICOM.CV.Helpers.MathHelper.Interpolate
+  name: Interpolate
+  nameWithType: MathHelper.Interpolate
+  fullName: EvilDICOM.CV.Helpers.MathHelper.Interpolate
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double

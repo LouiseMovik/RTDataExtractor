@@ -1,0 +1,192 @@
+### YamlMime:ManagedReference
+items:
+- uid: EvilDICOM.CV.Drawing.StructureLooks
+  commentId: T:EvilDICOM.CV.Drawing.StructureLooks
+  id: StructureLooks
+  parent: EvilDICOM.CV.Drawing
+  children:
+  - EvilDICOM.CV.Drawing.StructureLooks.Default
+  - EvilDICOM.CV.Drawing.StructureLooks.GTV
+  - EvilDICOM.CV.Drawing.StructureLooks.Purple
+  langs:
+  - csharp
+  - vb
+  name: StructureLooks
+  nameWithType: StructureLooks
+  fullName: EvilDICOM.CV.Drawing.StructureLooks
+  type: Class
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/Drawing/StructureLooks.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: StructureLooks
+    path: ../EvilDICOM.CV/Drawing/StructureLooks.cs
+    startLine: 9
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.Drawing
+  syntax:
+    content: 'public class StructureLooks : object'
+    content.vb: >-
+      Public Class StructureLooks
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: EvilDICOM.CV.Drawing.StructureLooks.GTV
+  commentId: P:EvilDICOM.CV.Drawing.StructureLooks.GTV
+  id: GTV
+  parent: EvilDICOM.CV.Drawing.StructureLooks
+  langs:
+  - csharp
+  - vb
+  name: GTV
+  nameWithType: StructureLooks.GTV
+  fullName: EvilDICOM.CV.Drawing.StructureLooks.GTV
+  type: Property
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/Drawing/StructureLooks.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: GTV
+    path: ../EvilDICOM.CV/Drawing/StructureLooks.cs
+    startLine: 11
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.Drawing
+  syntax:
+    content: public static StructureLook GTV { get; }
+    parameters: []
+    return:
+      type: EvilDICOM.CV.Drawing.StructureLook
+    content.vb: Public Shared ReadOnly Property GTV As StructureLook
+  overload: EvilDICOM.CV.Drawing.StructureLooks.GTV*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: EvilDICOM.CV.Drawing.StructureLooks.Purple
+  commentId: P:EvilDICOM.CV.Drawing.StructureLooks.Purple
+  id: Purple
+  parent: EvilDICOM.CV.Drawing.StructureLooks
+  langs:
+  - csharp
+  - vb
+  name: Purple
+  nameWithType: StructureLooks.Purple
+  fullName: EvilDICOM.CV.Drawing.StructureLooks.Purple
+  type: Property
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/Drawing/StructureLooks.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: Purple
+    path: ../EvilDICOM.CV/Drawing/StructureLooks.cs
+    startLine: 13
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.Drawing
+  syntax:
+    content: public static StructureLook Purple { get; }
+    parameters: []
+    return:
+      type: EvilDICOM.CV.Drawing.StructureLook
+    content.vb: Public Shared ReadOnly Property Purple As StructureLook
+  overload: EvilDICOM.CV.Drawing.StructureLooks.Purple*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: EvilDICOM.CV.Drawing.StructureLooks.Default
+  commentId: P:EvilDICOM.CV.Drawing.StructureLooks.Default
+  id: Default
+  parent: EvilDICOM.CV.Drawing.StructureLooks
+  langs:
+  - csharp
+  - vb
+  name: Default
+  nameWithType: StructureLooks.Default
+  fullName: EvilDICOM.CV.Drawing.StructureLooks.Default
+  type: Property
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/Drawing/StructureLooks.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: Default
+    path: ../EvilDICOM.CV/Drawing/StructureLooks.cs
+    startLine: 14
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.Drawing
+  syntax:
+    content: public static StructureLook Default { get; }
+    parameters: []
+    return:
+      type: EvilDICOM.CV.Drawing.StructureLook
+    content.vb: Public Shared ReadOnly Property Default As StructureLook
+  overload: EvilDICOM.CV.Drawing.StructureLooks.Default*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+references:
+- uid: EvilDICOM.CV.Drawing
+  commentId: N:EvilDICOM.CV.Drawing
+  name: EvilDICOM.CV.Drawing
+  nameWithType: EvilDICOM.CV.Drawing
+  fullName: EvilDICOM.CV.Drawing
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: EvilDICOM.CV.Drawing.StructureLooks.GTV*
+  commentId: Overload:EvilDICOM.CV.Drawing.StructureLooks.GTV
+  name: GTV
+  nameWithType: StructureLooks.GTV
+  fullName: EvilDICOM.CV.Drawing.StructureLooks.GTV
+- uid: EvilDICOM.CV.Drawing.StructureLook
+  commentId: T:EvilDICOM.CV.Drawing.StructureLook
+  parent: EvilDICOM.CV.Drawing
+  name: StructureLook
+  nameWithType: StructureLook
+  fullName: EvilDICOM.CV.Drawing.StructureLook
+- uid: EvilDICOM.CV.Drawing.StructureLooks.Purple*
+  commentId: Overload:EvilDICOM.CV.Drawing.StructureLooks.Purple
+  name: Purple
+  nameWithType: StructureLooks.Purple
+  fullName: EvilDICOM.CV.Drawing.StructureLooks.Purple
+- uid: EvilDICOM.CV.Drawing.StructureLooks.Default*
+  commentId: Overload:EvilDICOM.CV.Drawing.StructureLooks.Default
+  name: Default
+  nameWithType: StructureLooks.Default
+  fullName: EvilDICOM.CV.Drawing.StructureLooks.Default

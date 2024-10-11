@@ -1,0 +1,308 @@
+### YamlMime:ManagedReference
+items:
+- uid: EvilDICOM.CV.RT.IsodoseLevel
+  commentId: T:EvilDICOM.CV.RT.IsodoseLevel
+  id: IsodoseLevel
+  parent: EvilDICOM.CV.RT
+  children:
+  - EvilDICOM.CV.RT.IsodoseLevel.Color
+  - EvilDICOM.CV.RT.IsodoseLevel.DefaultLevels
+  - EvilDICOM.CV.RT.IsodoseLevel.DefaultLevels(System.Double)
+  - EvilDICOM.CV.RT.IsodoseLevel.Value
+  langs:
+  - csharp
+  - vb
+  name: IsodoseLevel
+  nameWithType: IsodoseLevel
+  fullName: EvilDICOM.CV.RT.IsodoseLevel
+  type: Class
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/RT/IsodoseLevel.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: IsodoseLevel
+    path: ../EvilDICOM.CV/RT/IsodoseLevel.cs
+    startLine: 9
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.RT
+  syntax:
+    content: 'public class IsodoseLevel : object'
+    content.vb: >-
+      Public Class IsodoseLevel
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: EvilDICOM.CV.RT.IsodoseLevel.Value
+  commentId: P:EvilDICOM.CV.RT.IsodoseLevel.Value
+  id: Value
+  parent: EvilDICOM.CV.RT.IsodoseLevel
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: IsodoseLevel.Value
+  fullName: EvilDICOM.CV.RT.IsodoseLevel.Value
+  type: Property
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/RT/IsodoseLevel.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: Value
+    path: ../EvilDICOM.CV/RT/IsodoseLevel.cs
+    startLine: 11
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.RT
+  syntax:
+    content: public double Value { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property Value As Double
+  overload: EvilDICOM.CV.RT.IsodoseLevel.Value*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: EvilDICOM.CV.RT.IsodoseLevel.Color
+  commentId: P:EvilDICOM.CV.RT.IsodoseLevel.Color
+  id: Color
+  parent: EvilDICOM.CV.RT.IsodoseLevel
+  langs:
+  - csharp
+  - vb
+  name: Color
+  nameWithType: IsodoseLevel.Color
+  fullName: EvilDICOM.CV.RT.IsodoseLevel.Color
+  type: Property
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/RT/IsodoseLevel.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: Color
+    path: ../EvilDICOM.CV/RT/IsodoseLevel.cs
+    startLine: 12
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.RT
+  syntax:
+    content: public Scalar Color { get; set; }
+    parameters: []
+    return:
+      type: Scalar
+    content.vb: Public Property Color As Scalar
+  overload: EvilDICOM.CV.RT.IsodoseLevel.Color*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: EvilDICOM.CV.RT.IsodoseLevel.DefaultLevels
+  commentId: M:EvilDICOM.CV.RT.IsodoseLevel.DefaultLevels
+  id: DefaultLevels
+  parent: EvilDICOM.CV.RT.IsodoseLevel
+  langs:
+  - csharp
+  - vb
+  name: DefaultLevels()
+  nameWithType: IsodoseLevel.DefaultLevels()
+  fullName: EvilDICOM.CV.RT.IsodoseLevel.DefaultLevels()
+  type: Method
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/RT/IsodoseLevel.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: DefaultLevels
+    path: ../EvilDICOM.CV/RT/IsodoseLevel.cs
+    startLine: 13
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.RT
+  syntax:
+    content: public static List<IsodoseLevel> DefaultLevels()
+    return:
+      type: List{EvilDICOM.CV.RT.IsodoseLevel}
+    content.vb: Public Shared Function DefaultLevels As List(Of IsodoseLevel)
+  overload: EvilDICOM.CV.RT.IsodoseLevel.DefaultLevels*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: EvilDICOM.CV.RT.IsodoseLevel.DefaultLevels(System.Double)
+  commentId: M:EvilDICOM.CV.RT.IsodoseLevel.DefaultLevels(System.Double)
+  id: DefaultLevels(System.Double)
+  parent: EvilDICOM.CV.RT.IsodoseLevel
+  langs:
+  - csharp
+  - vb
+  name: DefaultLevels(Double)
+  nameWithType: IsodoseLevel.DefaultLevels(Double)
+  fullName: EvilDICOM.CV.RT.IsodoseLevel.DefaultLevels(System.Double)
+  type: Method
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/RT/IsodoseLevel.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: DefaultLevels
+    path: ../EvilDICOM.CV/RT/IsodoseLevel.cs
+    startLine: 27
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.RT
+  syntax:
+    content: public static List<IsodoseLevel> DefaultLevels(double rxDose)
+    parameters:
+    - id: rxDose
+      type: System.Double
+    return:
+      type: List{EvilDICOM.CV.RT.IsodoseLevel}
+    content.vb: Public Shared Function DefaultLevels(rxDose As Double) As List(Of IsodoseLevel)
+  overload: EvilDICOM.CV.RT.IsodoseLevel.DefaultLevels*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: EvilDICOM.CV.RT
+  commentId: N:EvilDICOM.CV.RT
+  name: EvilDICOM.CV.RT
+  nameWithType: EvilDICOM.CV.RT
+  fullName: EvilDICOM.CV.RT
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: EvilDICOM.CV.RT.IsodoseLevel.Value*
+  commentId: Overload:EvilDICOM.CV.RT.IsodoseLevel.Value
+  name: Value
+  nameWithType: IsodoseLevel.Value
+  fullName: EvilDICOM.CV.RT.IsodoseLevel.Value
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: EvilDICOM.CV.RT.IsodoseLevel.Color*
+  commentId: Overload:EvilDICOM.CV.RT.IsodoseLevel.Color
+  name: Color
+  nameWithType: IsodoseLevel.Color
+  fullName: EvilDICOM.CV.RT.IsodoseLevel.Color
+- uid: Scalar
+  isExternal: true
+  name: Scalar
+  nameWithType: Scalar
+  fullName: Scalar
+- uid: EvilDICOM.CV.RT.IsodoseLevel.DefaultLevels*
+  commentId: Overload:EvilDICOM.CV.RT.IsodoseLevel.DefaultLevels
+  name: DefaultLevels
+  nameWithType: IsodoseLevel.DefaultLevels
+  fullName: EvilDICOM.CV.RT.IsodoseLevel.DefaultLevels
+- uid: List{EvilDICOM.CV.RT.IsodoseLevel}
+  commentId: '!:List{EvilDICOM.CV.RT.IsodoseLevel}'
+  definition: List`1
+  name: List<IsodoseLevel>
+  nameWithType: List<IsodoseLevel>
+  fullName: List<EvilDICOM.CV.RT.IsodoseLevel>
+  nameWithType.vb: List(Of IsodoseLevel)
+  fullName.vb: List(Of EvilDICOM.CV.RT.IsodoseLevel)
+  name.vb: List(Of IsodoseLevel)
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: EvilDICOM.CV.RT.IsodoseLevel
+    name: IsodoseLevel
+    nameWithType: IsodoseLevel
+    fullName: EvilDICOM.CV.RT.IsodoseLevel
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: EvilDICOM.CV.RT.IsodoseLevel
+    name: IsodoseLevel
+    nameWithType: IsodoseLevel
+    fullName: EvilDICOM.CV.RT.IsodoseLevel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: List`1
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )

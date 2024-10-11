@@ -1,0 +1,194 @@
+### YamlMime:ManagedReference
+items:
+- uid: EvilDICOM.CV.Extensions.ArrayExtensions
+  commentId: T:EvilDICOM.CV.Extensions.ArrayExtensions
+  id: ArrayExtensions
+  parent: EvilDICOM.CV.Extensions
+  children:
+  - EvilDICOM.CV.Extensions.ArrayExtensions.ToPoint3f(List{System.Double})
+  langs:
+  - csharp
+  - vb
+  name: ArrayExtensions
+  nameWithType: ArrayExtensions
+  fullName: EvilDICOM.CV.Extensions.ArrayExtensions
+  type: Class
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/Extensions/ArrayExtensions.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: ArrayExtensions
+    path: ../EvilDICOM.CV/Extensions/ArrayExtensions.cs
+    startLine: 9
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.Extensions
+  syntax:
+    content: 'public static class ArrayExtensions : object'
+    content.vb: >-
+      Public Module ArrayExtensions
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: EvilDICOM.CV.Extensions.ArrayExtensions.ToPoint3f(List{System.Double})
+  commentId: M:EvilDICOM.CV.Extensions.ArrayExtensions.ToPoint3f(List{System.Double})
+  id: ToPoint3f(List{System.Double})
+  isExtensionMethod: true
+  parent: EvilDICOM.CV.Extensions.ArrayExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToPoint3f(List<Double>)
+  nameWithType: ArrayExtensions.ToPoint3f(List<Double>)
+  fullName: EvilDICOM.CV.Extensions.ArrayExtensions.ToPoint3f(List<System.Double>)
+  type: Method
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/Extensions/ArrayExtensions.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: ToPoint3f
+    path: ../EvilDICOM.CV/Extensions/ArrayExtensions.cs
+    startLine: 11
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.Extensions
+  syntax:
+    content: public static Point3f ToPoint3f(this List<double> array)
+    parameters:
+    - id: array
+      type: List{System.Double}
+    return:
+      type: Point3f
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToPoint3f(array As List(Of Double)) As Point3f
+  overload: EvilDICOM.CV.Extensions.ArrayExtensions.ToPoint3f*
+  nameWithType.vb: ArrayExtensions.ToPoint3f(List(Of Double))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: EvilDICOM.CV.Extensions.ArrayExtensions.ToPoint3f(List(Of System.Double))
+  name.vb: ToPoint3f(List(Of Double))
+references:
+- uid: EvilDICOM.CV.Extensions
+  commentId: N:EvilDICOM.CV.Extensions
+  name: EvilDICOM.CV.Extensions
+  nameWithType: EvilDICOM.CV.Extensions
+  fullName: EvilDICOM.CV.Extensions
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: EvilDICOM.CV.Extensions.ArrayExtensions.ToPoint3f*
+  commentId: Overload:EvilDICOM.CV.Extensions.ArrayExtensions.ToPoint3f
+  name: ToPoint3f
+  nameWithType: ArrayExtensions.ToPoint3f
+  fullName: EvilDICOM.CV.Extensions.ArrayExtensions.ToPoint3f
+- uid: List{System.Double}
+  commentId: '!:List{System.Double}'
+  definition: List`1
+  name: List<Double>
+  nameWithType: List<Double>
+  fullName: List<System.Double>
+  nameWithType.vb: List(Of Double)
+  fullName.vb: List(Of System.Double)
+  name.vb: List(Of Double)
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Point3f
+  isExternal: true
+  name: Point3f
+  nameWithType: Point3f
+  fullName: Point3f
+- uid: List`1
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )

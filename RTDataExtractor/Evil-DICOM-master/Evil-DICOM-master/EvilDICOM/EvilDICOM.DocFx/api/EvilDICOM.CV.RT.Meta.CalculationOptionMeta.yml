@@ -1,0 +1,328 @@
+### YamlMime:ManagedReference
+items:
+- uid: EvilDICOM.CV.RT.Meta.CalculationOptionMeta
+  commentId: T:EvilDICOM.CV.RT.Meta.CalculationOptionMeta
+  id: CalculationOptionMeta
+  parent: EvilDICOM.CV.RT.Meta
+  children:
+  - EvilDICOM.CV.RT.Meta.CalculationOptionMeta.AlgorithmName
+  - EvilDICOM.CV.RT.Meta.CalculationOptionMeta.AlgorithmType
+  - EvilDICOM.CV.RT.Meta.CalculationOptionMeta.Options
+  - EvilDICOM.CV.RT.Meta.CalculationOptionMeta.Particle
+  langs:
+  - csharp
+  - vb
+  name: CalculationOptionMeta
+  nameWithType: CalculationOptionMeta
+  fullName: EvilDICOM.CV.RT.Meta.CalculationOptionMeta
+  type: Class
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/RT/Meta/CalculationOptionMeta.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: CalculationOptionMeta
+    path: ../EvilDICOM.CV/RT/Meta/CalculationOptionMeta.cs
+    startLine: 8
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.RT.Meta
+  syntax:
+    content: 'public class CalculationOptionMeta : object'
+    content.vb: >-
+      Public Class CalculationOptionMeta
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: EvilDICOM.CV.RT.Meta.CalculationOptionMeta.Particle
+  commentId: P:EvilDICOM.CV.RT.Meta.CalculationOptionMeta.Particle
+  id: Particle
+  parent: EvilDICOM.CV.RT.Meta.CalculationOptionMeta
+  langs:
+  - csharp
+  - vb
+  name: Particle
+  nameWithType: CalculationOptionMeta.Particle
+  fullName: EvilDICOM.CV.RT.Meta.CalculationOptionMeta.Particle
+  type: Property
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/RT/Meta/CalculationOptionMeta.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: Particle
+    path: ../EvilDICOM.CV/RT/Meta/CalculationOptionMeta.cs
+    startLine: 10
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.RT.Meta
+  syntax:
+    content: public string Particle { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Particle As String
+  overload: EvilDICOM.CV.RT.Meta.CalculationOptionMeta.Particle*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: EvilDICOM.CV.RT.Meta.CalculationOptionMeta.AlgorithmType
+  commentId: P:EvilDICOM.CV.RT.Meta.CalculationOptionMeta.AlgorithmType
+  id: AlgorithmType
+  parent: EvilDICOM.CV.RT.Meta.CalculationOptionMeta
+  langs:
+  - csharp
+  - vb
+  name: AlgorithmType
+  nameWithType: CalculationOptionMeta.AlgorithmType
+  fullName: EvilDICOM.CV.RT.Meta.CalculationOptionMeta.AlgorithmType
+  type: Property
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/RT/Meta/CalculationOptionMeta.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: AlgorithmType
+    path: ../EvilDICOM.CV/RT/Meta/CalculationOptionMeta.cs
+    startLine: 11
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.RT.Meta
+  syntax:
+    content: public string AlgorithmType { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property AlgorithmType As String
+  overload: EvilDICOM.CV.RT.Meta.CalculationOptionMeta.AlgorithmType*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: EvilDICOM.CV.RT.Meta.CalculationOptionMeta.AlgorithmName
+  commentId: P:EvilDICOM.CV.RT.Meta.CalculationOptionMeta.AlgorithmName
+  id: AlgorithmName
+  parent: EvilDICOM.CV.RT.Meta.CalculationOptionMeta
+  langs:
+  - csharp
+  - vb
+  name: AlgorithmName
+  nameWithType: CalculationOptionMeta.AlgorithmName
+  fullName: EvilDICOM.CV.RT.Meta.CalculationOptionMeta.AlgorithmName
+  type: Property
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/RT/Meta/CalculationOptionMeta.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: AlgorithmName
+    path: ../EvilDICOM.CV/RT/Meta/CalculationOptionMeta.cs
+    startLine: 12
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.RT.Meta
+  syntax:
+    content: public string AlgorithmName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property AlgorithmName As String
+  overload: EvilDICOM.CV.RT.Meta.CalculationOptionMeta.AlgorithmName*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: EvilDICOM.CV.RT.Meta.CalculationOptionMeta.Options
+  commentId: F:EvilDICOM.CV.RT.Meta.CalculationOptionMeta.Options
+  id: Options
+  parent: EvilDICOM.CV.RT.Meta.CalculationOptionMeta
+  langs:
+  - csharp
+  - vb
+  name: Options
+  nameWithType: CalculationOptionMeta.Options
+  fullName: EvilDICOM.CV.RT.Meta.CalculationOptionMeta.Options
+  type: Field
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/RT/Meta/CalculationOptionMeta.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: Options
+    path: ../EvilDICOM.CV/RT/Meta/CalculationOptionMeta.cs
+    startLine: 14
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.RT.Meta
+  syntax:
+    content: public Dictionary<string, string> Options
+    return:
+      type: Dictionary{System.String,System.String}
+    content.vb: Public Options As Dictionary(Of String, String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: EvilDICOM.CV.RT.Meta
+  commentId: N:EvilDICOM.CV.RT.Meta
+  name: EvilDICOM.CV.RT.Meta
+  nameWithType: EvilDICOM.CV.RT.Meta
+  fullName: EvilDICOM.CV.RT.Meta
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: EvilDICOM.CV.RT.Meta.CalculationOptionMeta.Particle*
+  commentId: Overload:EvilDICOM.CV.RT.Meta.CalculationOptionMeta.Particle
+  name: Particle
+  nameWithType: CalculationOptionMeta.Particle
+  fullName: EvilDICOM.CV.RT.Meta.CalculationOptionMeta.Particle
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: EvilDICOM.CV.RT.Meta.CalculationOptionMeta.AlgorithmType*
+  commentId: Overload:EvilDICOM.CV.RT.Meta.CalculationOptionMeta.AlgorithmType
+  name: AlgorithmType
+  nameWithType: CalculationOptionMeta.AlgorithmType
+  fullName: EvilDICOM.CV.RT.Meta.CalculationOptionMeta.AlgorithmType
+- uid: EvilDICOM.CV.RT.Meta.CalculationOptionMeta.AlgorithmName*
+  commentId: Overload:EvilDICOM.CV.RT.Meta.CalculationOptionMeta.AlgorithmName
+  name: AlgorithmName
+  nameWithType: CalculationOptionMeta.AlgorithmName
+  fullName: EvilDICOM.CV.RT.Meta.CalculationOptionMeta.AlgorithmName
+- uid: Dictionary{System.String,System.String}
+  commentId: '!:Dictionary{System.String,System.String}'
+  definition: Dictionary`2
+  name: Dictionary<String, String>
+  nameWithType: Dictionary<String, String>
+  fullName: Dictionary<System.String, System.String>
+  nameWithType.vb: Dictionary(Of String, String)
+  fullName.vb: Dictionary(Of System.String, System.String)
+  name.vb: Dictionary(Of String, String)
+  spec.csharp:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Dictionary`2
+  isExternal: true
+  name: Dictionary<, >
+  nameWithType: Dictionary<, >
+  fullName: Dictionary<, >
+  nameWithType.vb: Dictionary(Of , )
+  fullName.vb: Dictionary(Of , )
+  name.vb: Dictionary(Of , )
+  spec.csharp:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )

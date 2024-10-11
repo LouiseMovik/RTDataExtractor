@@ -1,0 +1,192 @@
+### YamlMime:ManagedReference
+items:
+- uid: EvilDICOM.CV.Drawing.StructureLook
+  commentId: T:EvilDICOM.CV.Drawing.StructureLook
+  id: StructureLook
+  parent: EvilDICOM.CV.Drawing
+  children:
+  - EvilDICOM.CV.Drawing.StructureLook.FillColor
+  - EvilDICOM.CV.Drawing.StructureLook.OutlineColor
+  - EvilDICOM.CV.Drawing.StructureLook.OutlineThickness
+  langs:
+  - csharp
+  - vb
+  name: StructureLook
+  nameWithType: StructureLook
+  fullName: EvilDICOM.CV.Drawing.StructureLook
+  type: Class
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/Drawing/StructureLook.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: StructureLook
+    path: ../EvilDICOM.CV/Drawing/StructureLook.cs
+    startLine: 9
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.Drawing
+  syntax:
+    content: 'public class StructureLook : object'
+    content.vb: >-
+      Public Class StructureLook
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: EvilDICOM.CV.Drawing.StructureLook.OutlineThickness
+  commentId: P:EvilDICOM.CV.Drawing.StructureLook.OutlineThickness
+  id: OutlineThickness
+  parent: EvilDICOM.CV.Drawing.StructureLook
+  langs:
+  - csharp
+  - vb
+  name: OutlineThickness
+  nameWithType: StructureLook.OutlineThickness
+  fullName: EvilDICOM.CV.Drawing.StructureLook.OutlineThickness
+  type: Property
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/Drawing/StructureLook.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: OutlineThickness
+    path: ../EvilDICOM.CV/Drawing/StructureLook.cs
+    startLine: 11
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.Drawing
+  syntax:
+    content: public int OutlineThickness { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property OutlineThickness As Integer
+  overload: EvilDICOM.CV.Drawing.StructureLook.OutlineThickness*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: EvilDICOM.CV.Drawing.StructureLook.OutlineColor
+  commentId: P:EvilDICOM.CV.Drawing.StructureLook.OutlineColor
+  id: OutlineColor
+  parent: EvilDICOM.CV.Drawing.StructureLook
+  langs:
+  - csharp
+  - vb
+  name: OutlineColor
+  nameWithType: StructureLook.OutlineColor
+  fullName: EvilDICOM.CV.Drawing.StructureLook.OutlineColor
+  type: Property
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/Drawing/StructureLook.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: OutlineColor
+    path: ../EvilDICOM.CV/Drawing/StructureLook.cs
+    startLine: 13
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.Drawing
+  syntax:
+    content: public Scalar OutlineColor { get; set; }
+    parameters: []
+    return:
+      type: Scalar
+    content.vb: Public Property OutlineColor As Scalar
+  overload: EvilDICOM.CV.Drawing.StructureLook.OutlineColor*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: EvilDICOM.CV.Drawing.StructureLook.FillColor
+  commentId: P:EvilDICOM.CV.Drawing.StructureLook.FillColor
+  id: FillColor
+  parent: EvilDICOM.CV.Drawing.StructureLook
+  langs:
+  - csharp
+  - vb
+  name: FillColor
+  nameWithType: StructureLook.FillColor
+  fullName: EvilDICOM.CV.Drawing.StructureLook.FillColor
+  type: Property
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/Drawing/StructureLook.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: FillColor
+    path: ../EvilDICOM.CV/Drawing/StructureLook.cs
+    startLine: 15
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.Drawing
+  syntax:
+    content: public Scalar FillColor { get; set; }
+    parameters: []
+    return:
+      type: Scalar
+    content.vb: Public Property FillColor As Scalar
+  overload: EvilDICOM.CV.Drawing.StructureLook.FillColor*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: EvilDICOM.CV.Drawing
+  commentId: N:EvilDICOM.CV.Drawing
+  name: EvilDICOM.CV.Drawing
+  nameWithType: EvilDICOM.CV.Drawing
+  fullName: EvilDICOM.CV.Drawing
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: EvilDICOM.CV.Drawing.StructureLook.OutlineThickness*
+  commentId: Overload:EvilDICOM.CV.Drawing.StructureLook.OutlineThickness
+  name: OutlineThickness
+  nameWithType: StructureLook.OutlineThickness
+  fullName: EvilDICOM.CV.Drawing.StructureLook.OutlineThickness
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: EvilDICOM.CV.Drawing.StructureLook.OutlineColor*
+  commentId: Overload:EvilDICOM.CV.Drawing.StructureLook.OutlineColor
+  name: OutlineColor
+  nameWithType: StructureLook.OutlineColor
+  fullName: EvilDICOM.CV.Drawing.StructureLook.OutlineColor
+- uid: Scalar
+  isExternal: true
+  name: Scalar
+  nameWithType: Scalar
+  fullName: Scalar
+- uid: EvilDICOM.CV.Drawing.StructureLook.FillColor*
+  commentId: Overload:EvilDICOM.CV.Drawing.StructureLook.FillColor
+  name: FillColor
+  nameWithType: StructureLook.FillColor
+  fullName: EvilDICOM.CV.Drawing.StructureLook.FillColor

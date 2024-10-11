@@ -1,0 +1,225 @@
+### YamlMime:ManagedReference
+items:
+- uid: EvilDICOM.CV.Extensions.MatExtensions
+  commentId: T:EvilDICOM.CV.Extensions.MatExtensions
+  id: MatExtensions
+  parent: EvilDICOM.CV.Extensions
+  children:
+  - EvilDICOM.CV.Extensions.MatExtensions.Show(Mat,System.String)
+  - EvilDICOM.CV.Extensions.MatExtensions.TransformPoint3d(Mat,Point3d)
+  - EvilDICOM.CV.Extensions.MatExtensions.TransformPoint3f(Mat,Point3f)
+  langs:
+  - csharp
+  - vb
+  name: MatExtensions
+  nameWithType: MatExtensions
+  fullName: EvilDICOM.CV.Extensions.MatExtensions
+  type: Class
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/Extensions/MatExtensions.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: MatExtensions
+    path: ../EvilDICOM.CV/Extensions/MatExtensions.cs
+    startLine: 9
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.Extensions
+  syntax:
+    content: 'public static class MatExtensions : object'
+    content.vb: >-
+      Public Module MatExtensions
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: EvilDICOM.CV.Extensions.MatExtensions.TransformPoint3f(Mat,Point3f)
+  commentId: M:EvilDICOM.CV.Extensions.MatExtensions.TransformPoint3f(Mat,Point3f)
+  id: TransformPoint3f(Mat,Point3f)
+  isExtensionMethod: true
+  parent: EvilDICOM.CV.Extensions.MatExtensions
+  langs:
+  - csharp
+  - vb
+  name: TransformPoint3f(Mat, Point3f)
+  nameWithType: MatExtensions.TransformPoint3f(Mat, Point3f)
+  fullName: EvilDICOM.CV.Extensions.MatExtensions.TransformPoint3f(Mat, Point3f)
+  type: Method
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/Extensions/MatExtensions.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: TransformPoint3f
+    path: ../EvilDICOM.CV/Extensions/MatExtensions.cs
+    startLine: 11
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.Extensions
+  syntax:
+    content: public static Point3f TransformPoint3f(this Mat pose, Point3f point)
+    parameters:
+    - id: pose
+      type: Mat
+    - id: point
+      type: Point3f
+    return:
+      type: Point3f
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function TransformPoint3f(pose As Mat, point As Point3f) As Point3f
+  overload: EvilDICOM.CV.Extensions.MatExtensions.TransformPoint3f*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: EvilDICOM.CV.Extensions.MatExtensions.TransformPoint3d(Mat,Point3d)
+  commentId: M:EvilDICOM.CV.Extensions.MatExtensions.TransformPoint3d(Mat,Point3d)
+  id: TransformPoint3d(Mat,Point3d)
+  isExtensionMethod: true
+  parent: EvilDICOM.CV.Extensions.MatExtensions
+  langs:
+  - csharp
+  - vb
+  name: TransformPoint3d(Mat, Point3d)
+  nameWithType: MatExtensions.TransformPoint3d(Mat, Point3d)
+  fullName: EvilDICOM.CV.Extensions.MatExtensions.TransformPoint3d(Mat, Point3d)
+  type: Method
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/Extensions/MatExtensions.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: TransformPoint3d
+    path: ../EvilDICOM.CV/Extensions/MatExtensions.cs
+    startLine: 40
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.Extensions
+  syntax:
+    content: public static Point3d TransformPoint3d(this Mat pose, Point3d point)
+    parameters:
+    - id: pose
+      type: Mat
+    - id: point
+      type: Point3d
+    return:
+      type: Point3d
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function TransformPoint3d(pose As Mat, point As Point3d) As Point3d
+  overload: EvilDICOM.CV.Extensions.MatExtensions.TransformPoint3d*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: EvilDICOM.CV.Extensions.MatExtensions.Show(Mat,System.String)
+  commentId: M:EvilDICOM.CV.Extensions.MatExtensions.Show(Mat,System.String)
+  id: Show(Mat,System.String)
+  isExtensionMethod: true
+  parent: EvilDICOM.CV.Extensions.MatExtensions
+  langs:
+  - csharp
+  - vb
+  name: Show(Mat, String)
+  nameWithType: MatExtensions.Show(Mat, String)
+  fullName: EvilDICOM.CV.Extensions.MatExtensions.Show(Mat, System.String)
+  type: Method
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/Extensions/MatExtensions.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: Show
+    path: ../EvilDICOM.CV/Extensions/MatExtensions.cs
+    startLine: 69
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.Extensions
+  syntax:
+    content: public static void Show(this Mat mat, string windowName = "CV Window")
+    parameters:
+    - id: mat
+      type: Mat
+    - id: windowName
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub Show(mat As Mat, windowName As String = "CV Window")
+  overload: EvilDICOM.CV.Extensions.MatExtensions.Show*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: EvilDICOM.CV.Extensions
+  commentId: N:EvilDICOM.CV.Extensions
+  name: EvilDICOM.CV.Extensions
+  nameWithType: EvilDICOM.CV.Extensions
+  fullName: EvilDICOM.CV.Extensions
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: EvilDICOM.CV.Extensions.MatExtensions.TransformPoint3f*
+  commentId: Overload:EvilDICOM.CV.Extensions.MatExtensions.TransformPoint3f
+  name: TransformPoint3f
+  nameWithType: MatExtensions.TransformPoint3f
+  fullName: EvilDICOM.CV.Extensions.MatExtensions.TransformPoint3f
+- uid: Mat
+  isExternal: true
+  name: Mat
+  nameWithType: Mat
+  fullName: Mat
+- uid: Point3f
+  isExternal: true
+  name: Point3f
+  nameWithType: Point3f
+  fullName: Point3f
+- uid: EvilDICOM.CV.Extensions.MatExtensions.TransformPoint3d*
+  commentId: Overload:EvilDICOM.CV.Extensions.MatExtensions.TransformPoint3d
+  name: TransformPoint3d
+  nameWithType: MatExtensions.TransformPoint3d
+  fullName: EvilDICOM.CV.Extensions.MatExtensions.TransformPoint3d
+- uid: Point3d
+  isExternal: true
+  name: Point3d
+  nameWithType: Point3d
+  fullName: Point3d
+- uid: EvilDICOM.CV.Extensions.MatExtensions.Show*
+  commentId: Overload:EvilDICOM.CV.Extensions.MatExtensions.Show
+  name: Show
+  nameWithType: MatExtensions.Show
+  fullName: EvilDICOM.CV.Extensions.MatExtensions.Show
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

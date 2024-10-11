@@ -1,0 +1,176 @@
+### YamlMime:ManagedReference
+items:
+- uid: EvilDICOM.CV.RT.TargetIndices
+  commentId: T:EvilDICOM.CV.RT.TargetIndices
+  id: TargetIndices
+  parent: EvilDICOM.CV.RT
+  children:
+  - EvilDICOM.CV.RT.TargetIndices.Gradient
+  - EvilDICOM.CV.RT.TargetIndices.PaddingCI
+  - EvilDICOM.CV.RT.TargetIndices.RTOGCI
+  langs:
+  - csharp
+  - vb
+  name: TargetIndices
+  nameWithType: TargetIndices
+  fullName: EvilDICOM.CV.RT.TargetIndices
+  type: Struct
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/RT/TargetIndices.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: TargetIndices
+    path: ../EvilDICOM.CV/RT/TargetIndices.cs
+    startLine: 8
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.RT
+  syntax:
+    content: public struct TargetIndices
+    content.vb: Public Structure TargetIndices
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: EvilDICOM.CV.RT.TargetIndices.Gradient
+  commentId: P:EvilDICOM.CV.RT.TargetIndices.Gradient
+  id: Gradient
+  parent: EvilDICOM.CV.RT.TargetIndices
+  langs:
+  - csharp
+  - vb
+  name: Gradient
+  nameWithType: TargetIndices.Gradient
+  fullName: EvilDICOM.CV.RT.TargetIndices.Gradient
+  type: Property
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/RT/TargetIndices.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: Gradient
+    path: ../EvilDICOM.CV/RT/TargetIndices.cs
+    startLine: 10
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.RT
+  syntax:
+    content: public double Gradient { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property Gradient As Double
+  overload: EvilDICOM.CV.RT.TargetIndices.Gradient*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: EvilDICOM.CV.RT.TargetIndices.PaddingCI
+  commentId: P:EvilDICOM.CV.RT.TargetIndices.PaddingCI
+  id: PaddingCI
+  parent: EvilDICOM.CV.RT.TargetIndices
+  langs:
+  - csharp
+  - vb
+  name: PaddingCI
+  nameWithType: TargetIndices.PaddingCI
+  fullName: EvilDICOM.CV.RT.TargetIndices.PaddingCI
+  type: Property
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/RT/TargetIndices.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: PaddingCI
+    path: ../EvilDICOM.CV/RT/TargetIndices.cs
+    startLine: 11
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.RT
+  syntax:
+    content: public double PaddingCI { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property PaddingCI As Double
+  overload: EvilDICOM.CV.RT.TargetIndices.PaddingCI*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: EvilDICOM.CV.RT.TargetIndices.RTOGCI
+  commentId: P:EvilDICOM.CV.RT.TargetIndices.RTOGCI
+  id: RTOGCI
+  parent: EvilDICOM.CV.RT.TargetIndices
+  langs:
+  - csharp
+  - vb
+  name: RTOGCI
+  nameWithType: TargetIndices.RTOGCI
+  fullName: EvilDICOM.CV.RT.TargetIndices.RTOGCI
+  type: Property
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/RT/TargetIndices.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: RTOGCI
+    path: ../EvilDICOM.CV/RT/TargetIndices.cs
+    startLine: 12
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.RT
+  syntax:
+    content: public double RTOGCI { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property RTOGCI As Double
+  overload: EvilDICOM.CV.RT.TargetIndices.RTOGCI*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: EvilDICOM.CV.RT
+  commentId: N:EvilDICOM.CV.RT
+  name: EvilDICOM.CV.RT
+  nameWithType: EvilDICOM.CV.RT
+  fullName: EvilDICOM.CV.RT
+- uid: EvilDICOM.CV.RT.TargetIndices.Gradient*
+  commentId: Overload:EvilDICOM.CV.RT.TargetIndices.Gradient
+  name: Gradient
+  nameWithType: TargetIndices.Gradient
+  fullName: EvilDICOM.CV.RT.TargetIndices.Gradient
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: EvilDICOM.CV.RT.TargetIndices.PaddingCI*
+  commentId: Overload:EvilDICOM.CV.RT.TargetIndices.PaddingCI
+  name: PaddingCI
+  nameWithType: TargetIndices.PaddingCI
+  fullName: EvilDICOM.CV.RT.TargetIndices.PaddingCI
+- uid: EvilDICOM.CV.RT.TargetIndices.RTOGCI*
+  commentId: Overload:EvilDICOM.CV.RT.TargetIndices.RTOGCI
+  name: RTOGCI
+  nameWithType: TargetIndices.RTOGCI
+  fullName: EvilDICOM.CV.RT.TargetIndices.RTOGCI

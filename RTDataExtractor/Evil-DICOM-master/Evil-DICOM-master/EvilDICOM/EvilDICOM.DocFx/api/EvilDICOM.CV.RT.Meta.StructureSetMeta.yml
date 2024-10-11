@@ -1,0 +1,241 @@
+### YamlMime:ManagedReference
+items:
+- uid: EvilDICOM.CV.RT.Meta.StructureSetMeta
+  commentId: T:EvilDICOM.CV.RT.Meta.StructureSetMeta
+  id: StructureSetMeta
+  parent: EvilDICOM.CV.RT.Meta
+  children:
+  - EvilDICOM.CV.RT.Meta.StructureSetMeta.#ctor
+  - EvilDICOM.CV.RT.Meta.StructureSetMeta.Structures
+  langs:
+  - csharp
+  - vb
+  name: StructureSetMeta
+  nameWithType: StructureSetMeta
+  fullName: EvilDICOM.CV.RT.Meta.StructureSetMeta
+  type: Class
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/RT/Meta/StructureSetMeta.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: StructureSetMeta
+    path: ../EvilDICOM.CV/RT/Meta/StructureSetMeta.cs
+    startLine: 9
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.RT.Meta
+  syntax:
+    content: 'public class StructureSetMeta : object'
+    content.vb: >-
+      Public Class StructureSetMeta
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: EvilDICOM.CV.RT.Meta.StructureSetMeta.#ctor
+  commentId: M:EvilDICOM.CV.RT.Meta.StructureSetMeta.#ctor
+  id: '#ctor'
+  parent: EvilDICOM.CV.RT.Meta.StructureSetMeta
+  langs:
+  - csharp
+  - vb
+  name: StructureSetMeta()
+  nameWithType: StructureSetMeta.StructureSetMeta()
+  fullName: EvilDICOM.CV.RT.Meta.StructureSetMeta.StructureSetMeta()
+  type: Constructor
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/RT/Meta/StructureSetMeta.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: .ctor
+    path: ../EvilDICOM.CV/RT/Meta/StructureSetMeta.cs
+    startLine: 11
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.RT.Meta
+  syntax:
+    content: public StructureSetMeta()
+    content.vb: Public Sub New
+  overload: EvilDICOM.CV.RT.Meta.StructureSetMeta.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: EvilDICOM.CV.RT.Meta.StructureSetMeta.Structures
+  commentId: P:EvilDICOM.CV.RT.Meta.StructureSetMeta.Structures
+  id: Structures
+  parent: EvilDICOM.CV.RT.Meta.StructureSetMeta
+  langs:
+  - csharp
+  - vb
+  name: Structures
+  nameWithType: StructureSetMeta.Structures
+  fullName: EvilDICOM.CV.RT.Meta.StructureSetMeta.Structures
+  type: Property
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/RT/Meta/StructureSetMeta.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: Structures
+    path: ../EvilDICOM.CV/RT/Meta/StructureSetMeta.cs
+    startLine: 14
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.RT.Meta
+  syntax:
+    content: public Dictionary<string, StructureMeta> Structures { get; }
+    parameters: []
+    return:
+      type: Dictionary{System.String,EvilDICOM.CV.RT.Meta.StructureMeta}
+    content.vb: Public ReadOnly Property Structures As Dictionary(Of String, StructureMeta)
+  overload: EvilDICOM.CV.RT.Meta.StructureSetMeta.Structures*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: EvilDICOM.CV.RT.Meta
+  commentId: N:EvilDICOM.CV.RT.Meta
+  name: EvilDICOM.CV.RT.Meta
+  nameWithType: EvilDICOM.CV.RT.Meta
+  fullName: EvilDICOM.CV.RT.Meta
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: EvilDICOM.CV.RT.Meta.StructureSetMeta.#ctor*
+  commentId: Overload:EvilDICOM.CV.RT.Meta.StructureSetMeta.#ctor
+  name: StructureSetMeta
+  nameWithType: StructureSetMeta.StructureSetMeta
+  fullName: EvilDICOM.CV.RT.Meta.StructureSetMeta.StructureSetMeta
+- uid: EvilDICOM.CV.RT.Meta.StructureSetMeta.Structures*
+  commentId: Overload:EvilDICOM.CV.RT.Meta.StructureSetMeta.Structures
+  name: Structures
+  nameWithType: StructureSetMeta.Structures
+  fullName: EvilDICOM.CV.RT.Meta.StructureSetMeta.Structures
+- uid: Dictionary{System.String,EvilDICOM.CV.RT.Meta.StructureMeta}
+  commentId: '!:Dictionary{System.String,EvilDICOM.CV.RT.Meta.StructureMeta}'
+  definition: Dictionary`2
+  name: Dictionary<String, StructureMeta>
+  nameWithType: Dictionary<String, StructureMeta>
+  fullName: Dictionary<System.String, EvilDICOM.CV.RT.Meta.StructureMeta>
+  nameWithType.vb: Dictionary(Of String, StructureMeta)
+  fullName.vb: Dictionary(Of System.String, EvilDICOM.CV.RT.Meta.StructureMeta)
+  name.vb: Dictionary(Of String, StructureMeta)
+  spec.csharp:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: EvilDICOM.CV.RT.Meta.StructureMeta
+    name: StructureMeta
+    nameWithType: StructureMeta
+    fullName: EvilDICOM.CV.RT.Meta.StructureMeta
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: EvilDICOM.CV.RT.Meta.StructureMeta
+    name: StructureMeta
+    nameWithType: StructureMeta
+    fullName: EvilDICOM.CV.RT.Meta.StructureMeta
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Dictionary`2
+  isExternal: true
+  name: Dictionary<, >
+  nameWithType: Dictionary<, >
+  fullName: Dictionary<, >
+  nameWithType.vb: Dictionary(Of , )
+  fullName.vb: Dictionary(Of , )
+  name.vb: Dictionary(Of , )
+  spec.csharp:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )

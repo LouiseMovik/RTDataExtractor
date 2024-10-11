@@ -1,0 +1,249 @@
+### YamlMime:ManagedReference
+items:
+- uid: EvilDICOM.CV.RT.DRR
+  commentId: T:EvilDICOM.CV.RT.DRR
+  id: DRR
+  parent: EvilDICOM.CV.RT
+  children:
+  - EvilDICOM.CV.RT.DRR.Image
+  - EvilDICOM.CV.RT.DRR.Iso2D
+  - EvilDICOM.CV.RT.DRR.Label
+  - EvilDICOM.CV.RT.DRR.Rotate(Point,System.Double)
+  langs:
+  - csharp
+  - vb
+  name: DRR
+  nameWithType: DRR
+  fullName: EvilDICOM.CV.RT.DRR
+  type: Class
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/RT/DRR.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: DRR
+    path: ../EvilDICOM.CV/RT/DRR.cs
+    startLine: 10
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.RT
+  syntax:
+    content: 'public class DRR : object'
+    content.vb: >-
+      Public Class DRR
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: EvilDICOM.CV.RT.DRR.Image
+  commentId: P:EvilDICOM.CV.RT.DRR.Image
+  id: Image
+  parent: EvilDICOM.CV.RT.DRR
+  langs:
+  - csharp
+  - vb
+  name: Image
+  nameWithType: DRR.Image
+  fullName: EvilDICOM.CV.RT.DRR.Image
+  type: Property
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/RT/DRR.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: Image
+    path: ../EvilDICOM.CV/RT/DRR.cs
+    startLine: 14
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.RT
+  syntax:
+    content: public Mat Image { get; }
+    parameters: []
+    return:
+      type: Mat
+    content.vb: Public ReadOnly Property Image As Mat
+  overload: EvilDICOM.CV.RT.DRR.Image*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: EvilDICOM.CV.RT.DRR.Label
+  commentId: P:EvilDICOM.CV.RT.DRR.Label
+  id: Label
+  parent: EvilDICOM.CV.RT.DRR
+  langs:
+  - csharp
+  - vb
+  name: Label
+  nameWithType: DRR.Label
+  fullName: EvilDICOM.CV.RT.DRR.Label
+  type: Property
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/RT/DRR.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: Label
+    path: ../EvilDICOM.CV/RT/DRR.cs
+    startLine: 15
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.RT
+  syntax:
+    content: public string Label { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Label As String
+  overload: EvilDICOM.CV.RT.DRR.Label*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: EvilDICOM.CV.RT.DRR.Iso2D
+  commentId: P:EvilDICOM.CV.RT.DRR.Iso2D
+  id: Iso2D
+  parent: EvilDICOM.CV.RT.DRR
+  langs:
+  - csharp
+  - vb
+  name: Iso2D
+  nameWithType: DRR.Iso2D
+  fullName: EvilDICOM.CV.RT.DRR.Iso2D
+  type: Property
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/RT/DRR.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: Iso2D
+    path: ../EvilDICOM.CV/RT/DRR.cs
+    startLine: 16
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.RT
+  syntax:
+    content: public Point Iso2D { get; }
+    parameters: []
+    return:
+      type: Point
+    content.vb: Public ReadOnly Property Iso2D As Point
+  overload: EvilDICOM.CV.RT.DRR.Iso2D*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: EvilDICOM.CV.RT.DRR.Rotate(Point,System.Double)
+  commentId: M:EvilDICOM.CV.RT.DRR.Rotate(Point,System.Double)
+  id: Rotate(Point,System.Double)
+  parent: EvilDICOM.CV.RT.DRR
+  langs:
+  - csharp
+  - vb
+  name: Rotate(Point, Double)
+  nameWithType: DRR.Rotate(Point, Double)
+  fullName: EvilDICOM.CV.RT.DRR.Rotate(Point, System.Double)
+  type: Method
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/RT/DRR.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: Rotate
+    path: ../EvilDICOM.CV/RT/DRR.cs
+    startLine: 18
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.RT
+  syntax:
+    content: public static Point Rotate(Point pt, double collAngleDeg)
+    parameters:
+    - id: pt
+      type: Point
+    - id: collAngleDeg
+      type: System.Double
+    return:
+      type: Point
+    content.vb: Public Shared Function Rotate(pt As Point, collAngleDeg As Double) As Point
+  overload: EvilDICOM.CV.RT.DRR.Rotate*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: EvilDICOM.CV.RT
+  commentId: N:EvilDICOM.CV.RT
+  name: EvilDICOM.CV.RT
+  nameWithType: EvilDICOM.CV.RT
+  fullName: EvilDICOM.CV.RT
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: EvilDICOM.CV.RT.DRR.Image*
+  commentId: Overload:EvilDICOM.CV.RT.DRR.Image
+  name: Image
+  nameWithType: DRR.Image
+  fullName: EvilDICOM.CV.RT.DRR.Image
+- uid: Mat
+  isExternal: true
+  name: Mat
+  nameWithType: Mat
+  fullName: Mat
+- uid: EvilDICOM.CV.RT.DRR.Label*
+  commentId: Overload:EvilDICOM.CV.RT.DRR.Label
+  name: Label
+  nameWithType: DRR.Label
+  fullName: EvilDICOM.CV.RT.DRR.Label
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: EvilDICOM.CV.RT.DRR.Iso2D*
+  commentId: Overload:EvilDICOM.CV.RT.DRR.Iso2D
+  name: Iso2D
+  nameWithType: DRR.Iso2D
+  fullName: EvilDICOM.CV.RT.DRR.Iso2D
+- uid: Point
+  isExternal: true
+  name: Point
+  nameWithType: Point
+  fullName: Point
+- uid: EvilDICOM.CV.RT.DRR.Rotate*
+  commentId: Overload:EvilDICOM.CV.RT.DRR.Rotate
+  name: Rotate
+  nameWithType: DRR.Rotate
+  fullName: EvilDICOM.CV.RT.DRR.Rotate
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double

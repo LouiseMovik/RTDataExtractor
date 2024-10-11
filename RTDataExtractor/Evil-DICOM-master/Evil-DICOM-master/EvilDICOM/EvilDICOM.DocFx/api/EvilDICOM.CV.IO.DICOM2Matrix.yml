@@ -1,0 +1,119 @@
+### YamlMime:ManagedReference
+items:
+- uid: EvilDICOM.CV.IO.DICOM2Matrix
+  commentId: T:EvilDICOM.CV.IO.DICOM2Matrix
+  id: DICOM2Matrix
+  parent: EvilDICOM.CV.IO
+  children:
+  - EvilDICOM.CV.IO.DICOM2Matrix.FillMetadata(EvilDICOM.CV.Image.Matrix,DICOMObject)
+  langs:
+  - csharp
+  - vb
+  name: DICOM2Matrix
+  nameWithType: DICOM2Matrix
+  fullName: EvilDICOM.CV.IO.DICOM2Matrix
+  type: Class
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/IO/DICOM2Matrix.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: DICOM2Matrix
+    path: ../EvilDICOM.CV/IO/DICOM2Matrix.cs
+    startLine: 12
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.IO
+  syntax:
+    content: 'public class DICOM2Matrix : object'
+    content.vb: >-
+      Public Class DICOM2Matrix
+          Inherits Object
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - EvilDICOM.CV.IO.DICOM2DoseMatrix
+  - EvilDICOM.CV.IO.DICOM2ImageMatrix
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: EvilDICOM.CV.IO.DICOM2Matrix.FillMetadata(EvilDICOM.CV.Image.Matrix,DICOMObject)
+  commentId: M:EvilDICOM.CV.IO.DICOM2Matrix.FillMetadata(EvilDICOM.CV.Image.Matrix,DICOMObject)
+  id: FillMetadata(EvilDICOM.CV.Image.Matrix,DICOMObject)
+  parent: EvilDICOM.CV.IO.DICOM2Matrix
+  langs:
+  - csharp
+  - vb
+  name: FillMetadata(Matrix, DICOMObject)
+  nameWithType: DICOM2Matrix.FillMetadata(Matrix, DICOMObject)
+  fullName: EvilDICOM.CV.IO.DICOM2Matrix.FillMetadata(EvilDICOM.CV.Image.Matrix, DICOMObject)
+  type: Method
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/IO/DICOM2Matrix.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: FillMetadata
+    path: ../EvilDICOM.CV/IO/DICOM2Matrix.cs
+    startLine: 14
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.IO
+  syntax:
+    content: protected static void FillMetadata(Matrix mat, DICOMObject dcm)
+    parameters:
+    - id: mat
+      type: EvilDICOM.CV.Image.Matrix
+    - id: dcm
+      type: DICOMObject
+    content.vb: Protected Shared Sub FillMetadata(mat As Matrix, dcm As DICOMObject)
+  overload: EvilDICOM.CV.IO.DICOM2Matrix.FillMetadata*
+  modifiers.csharp:
+  - protected
+  - static
+  modifiers.vb:
+  - Protected
+  - Shared
+references:
+- uid: EvilDICOM.CV.IO
+  commentId: N:EvilDICOM.CV.IO
+  name: EvilDICOM.CV.IO
+  nameWithType: EvilDICOM.CV.IO
+  fullName: EvilDICOM.CV.IO
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: EvilDICOM.CV.IO.DICOM2Matrix.FillMetadata*
+  commentId: Overload:EvilDICOM.CV.IO.DICOM2Matrix.FillMetadata
+  name: FillMetadata
+  nameWithType: DICOM2Matrix.FillMetadata
+  fullName: EvilDICOM.CV.IO.DICOM2Matrix.FillMetadata
+- uid: EvilDICOM.CV.Image.Matrix
+  commentId: T:EvilDICOM.CV.Image.Matrix
+  parent: EvilDICOM.CV.Image
+  name: Matrix
+  nameWithType: Matrix
+  fullName: EvilDICOM.CV.Image.Matrix
+- uid: DICOMObject
+  isExternal: true
+  name: DICOMObject
+  nameWithType: DICOMObject
+  fullName: DICOMObject
+- uid: EvilDICOM.CV.Image
+  commentId: N:EvilDICOM.CV.Image
+  name: EvilDICOM.CV.Image
+  nameWithType: EvilDICOM.CV.Image
+  fullName: EvilDICOM.CV.Image

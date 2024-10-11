@@ -1,0 +1,139 @@
+### YamlMime:ManagedReference
+items:
+- uid: EvilDICOM.CV.Helpers.IndexCalculator
+  commentId: T:EvilDICOM.CV.Helpers.IndexCalculator
+  id: IndexCalculator
+  parent: EvilDICOM.CV.Helpers
+  children:
+  - EvilDICOM.CV.Helpers.IndexCalculator.CalculateIndices(EvilDICOM.CV.RT.Meta.StructureMeta,EvilDICOM.CV.RT.DoseMatrix,System.Double)
+  langs:
+  - csharp
+  - vb
+  name: IndexCalculator
+  nameWithType: IndexCalculator
+  fullName: EvilDICOM.CV.Helpers.IndexCalculator
+  type: Class
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/Helpers/IndexCalculator.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: IndexCalculator
+    path: ../EvilDICOM.CV/Helpers/IndexCalculator.cs
+    startLine: 13
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.Helpers
+  syntax:
+    content: 'public class IndexCalculator : object'
+    content.vb: >-
+      Public Class IndexCalculator
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: EvilDICOM.CV.Helpers.IndexCalculator.CalculateIndices(EvilDICOM.CV.RT.Meta.StructureMeta,EvilDICOM.CV.RT.DoseMatrix,System.Double)
+  commentId: M:EvilDICOM.CV.Helpers.IndexCalculator.CalculateIndices(EvilDICOM.CV.RT.Meta.StructureMeta,EvilDICOM.CV.RT.DoseMatrix,System.Double)
+  id: CalculateIndices(EvilDICOM.CV.RT.Meta.StructureMeta,EvilDICOM.CV.RT.DoseMatrix,System.Double)
+  parent: EvilDICOM.CV.Helpers.IndexCalculator
+  langs:
+  - csharp
+  - vb
+  name: CalculateIndices(StructureMeta, DoseMatrix, Double)
+  nameWithType: IndexCalculator.CalculateIndices(StructureMeta, DoseMatrix, Double)
+  fullName: EvilDICOM.CV.Helpers.IndexCalculator.CalculateIndices(EvilDICOM.CV.RT.Meta.StructureMeta, EvilDICOM.CV.RT.DoseMatrix, System.Double)
+  type: Method
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/Helpers/IndexCalculator.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: CalculateIndices
+    path: ../EvilDICOM.CV/Helpers/IndexCalculator.cs
+    startLine: 16
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.Helpers
+  syntax:
+    content: public static TargetIndices CalculateIndices(StructureMeta gtv, DoseMatrix dd, double prescriptionDose)
+    parameters:
+    - id: gtv
+      type: EvilDICOM.CV.RT.Meta.StructureMeta
+    - id: dd
+      type: EvilDICOM.CV.RT.DoseMatrix
+    - id: prescriptionDose
+      type: System.Double
+    return:
+      type: EvilDICOM.CV.RT.TargetIndices
+    content.vb: Public Shared Function CalculateIndices(gtv As StructureMeta, dd As DoseMatrix, prescriptionDose As Double) As TargetIndices
+  overload: EvilDICOM.CV.Helpers.IndexCalculator.CalculateIndices*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: EvilDICOM.CV.Helpers
+  commentId: N:EvilDICOM.CV.Helpers
+  name: EvilDICOM.CV.Helpers
+  nameWithType: EvilDICOM.CV.Helpers
+  fullName: EvilDICOM.CV.Helpers
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: EvilDICOM.CV.Helpers.IndexCalculator.CalculateIndices*
+  commentId: Overload:EvilDICOM.CV.Helpers.IndexCalculator.CalculateIndices
+  name: CalculateIndices
+  nameWithType: IndexCalculator.CalculateIndices
+  fullName: EvilDICOM.CV.Helpers.IndexCalculator.CalculateIndices
+- uid: EvilDICOM.CV.RT.Meta.StructureMeta
+  commentId: T:EvilDICOM.CV.RT.Meta.StructureMeta
+  parent: EvilDICOM.CV.RT.Meta
+  name: StructureMeta
+  nameWithType: StructureMeta
+  fullName: EvilDICOM.CV.RT.Meta.StructureMeta
+- uid: EvilDICOM.CV.RT.DoseMatrix
+  commentId: T:EvilDICOM.CV.RT.DoseMatrix
+  parent: EvilDICOM.CV.RT
+  name: DoseMatrix
+  nameWithType: DoseMatrix
+  fullName: EvilDICOM.CV.RT.DoseMatrix
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: EvilDICOM.CV.RT.TargetIndices
+  commentId: T:EvilDICOM.CV.RT.TargetIndices
+  parent: EvilDICOM.CV.RT
+  name: TargetIndices
+  nameWithType: TargetIndices
+  fullName: EvilDICOM.CV.RT.TargetIndices
+- uid: EvilDICOM.CV.RT.Meta
+  commentId: N:EvilDICOM.CV.RT.Meta
+  name: EvilDICOM.CV.RT.Meta
+  nameWithType: EvilDICOM.CV.RT.Meta
+  fullName: EvilDICOM.CV.RT.Meta
+- uid: EvilDICOM.CV.RT
+  commentId: N:EvilDICOM.CV.RT
+  name: EvilDICOM.CV.RT
+  nameWithType: EvilDICOM.CV.RT
+  fullName: EvilDICOM.CV.RT

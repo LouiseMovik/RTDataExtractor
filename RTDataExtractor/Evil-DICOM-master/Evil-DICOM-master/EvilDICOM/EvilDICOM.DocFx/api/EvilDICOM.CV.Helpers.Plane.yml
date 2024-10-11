@@ -1,0 +1,185 @@
+### YamlMime:ManagedReference
+items:
+- uid: EvilDICOM.CV.Helpers.Plane
+  commentId: T:EvilDICOM.CV.Helpers.Plane
+  id: Plane
+  parent: EvilDICOM.CV.Helpers
+  children:
+  - EvilDICOM.CV.Helpers.Plane.Origin
+  - EvilDICOM.CV.Helpers.Plane.XDir
+  - EvilDICOM.CV.Helpers.Plane.YDir
+  langs:
+  - csharp
+  - vb
+  name: Plane
+  nameWithType: Plane
+  fullName: EvilDICOM.CV.Helpers.Plane
+  type: Class
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/Helpers/Plane.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: Plane
+    path: ../EvilDICOM.CV/Helpers/Plane.cs
+    startLine: 9
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.Helpers
+  syntax:
+    content: 'public class Plane : object'
+    content.vb: >-
+      Public Class Plane
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: EvilDICOM.CV.Helpers.Plane.Origin
+  commentId: P:EvilDICOM.CV.Helpers.Plane.Origin
+  id: Origin
+  parent: EvilDICOM.CV.Helpers.Plane
+  langs:
+  - csharp
+  - vb
+  name: Origin
+  nameWithType: Plane.Origin
+  fullName: EvilDICOM.CV.Helpers.Plane.Origin
+  type: Property
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/Helpers/Plane.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: Origin
+    path: ../EvilDICOM.CV/Helpers/Plane.cs
+    startLine: 11
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.Helpers
+  syntax:
+    content: public Point3f Origin { get; set; }
+    parameters: []
+    return:
+      type: Point3f
+    content.vb: Public Property Origin As Point3f
+  overload: EvilDICOM.CV.Helpers.Plane.Origin*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: EvilDICOM.CV.Helpers.Plane.XDir
+  commentId: P:EvilDICOM.CV.Helpers.Plane.XDir
+  id: XDir
+  parent: EvilDICOM.CV.Helpers.Plane
+  langs:
+  - csharp
+  - vb
+  name: XDir
+  nameWithType: Plane.XDir
+  fullName: EvilDICOM.CV.Helpers.Plane.XDir
+  type: Property
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/Helpers/Plane.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: XDir
+    path: ../EvilDICOM.CV/Helpers/Plane.cs
+    startLine: 12
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.Helpers
+  syntax:
+    content: public Point3f XDir { get; set; }
+    parameters: []
+    return:
+      type: Point3f
+    content.vb: Public Property XDir As Point3f
+  overload: EvilDICOM.CV.Helpers.Plane.XDir*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: EvilDICOM.CV.Helpers.Plane.YDir
+  commentId: P:EvilDICOM.CV.Helpers.Plane.YDir
+  id: YDir
+  parent: EvilDICOM.CV.Helpers.Plane
+  langs:
+  - csharp
+  - vb
+  name: YDir
+  nameWithType: Plane.YDir
+  fullName: EvilDICOM.CV.Helpers.Plane.YDir
+  type: Property
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/Helpers/Plane.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: YDir
+    path: ../EvilDICOM.CV/Helpers/Plane.cs
+    startLine: 13
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.Helpers
+  syntax:
+    content: public Point3f YDir { get; set; }
+    parameters: []
+    return:
+      type: Point3f
+    content.vb: Public Property YDir As Point3f
+  overload: EvilDICOM.CV.Helpers.Plane.YDir*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: EvilDICOM.CV.Helpers
+  commentId: N:EvilDICOM.CV.Helpers
+  name: EvilDICOM.CV.Helpers
+  nameWithType: EvilDICOM.CV.Helpers
+  fullName: EvilDICOM.CV.Helpers
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: EvilDICOM.CV.Helpers.Plane.Origin*
+  commentId: Overload:EvilDICOM.CV.Helpers.Plane.Origin
+  name: Origin
+  nameWithType: Plane.Origin
+  fullName: EvilDICOM.CV.Helpers.Plane.Origin
+- uid: Point3f
+  isExternal: true
+  name: Point3f
+  nameWithType: Point3f
+  fullName: Point3f
+- uid: EvilDICOM.CV.Helpers.Plane.XDir*
+  commentId: Overload:EvilDICOM.CV.Helpers.Plane.XDir
+  name: XDir
+  nameWithType: Plane.XDir
+  fullName: EvilDICOM.CV.Helpers.Plane.XDir
+- uid: EvilDICOM.CV.Helpers.Plane.YDir*
+  commentId: Overload:EvilDICOM.CV.Helpers.Plane.YDir
+  name: YDir
+  nameWithType: Plane.YDir
+  fullName: EvilDICOM.CV.Helpers.Plane.YDir

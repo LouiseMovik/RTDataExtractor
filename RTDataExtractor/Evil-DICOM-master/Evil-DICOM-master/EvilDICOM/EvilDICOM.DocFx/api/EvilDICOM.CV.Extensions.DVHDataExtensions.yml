@@ -1,0 +1,538 @@
+### YamlMime:ManagedReference
+items:
+- uid: EvilDICOM.CV.Extensions.DVHDataExtensions
+  commentId: T:EvilDICOM.CV.Extensions.DVHDataExtensions
+  id: DVHDataExtensions
+  parent: EvilDICOM.CV.Extensions
+  children:
+  - EvilDICOM.CV.Extensions.DVHDataExtensions.Differential(DVHPoint[])
+  - EvilDICOM.CV.Extensions.DVHDataExtensions.GetComplementVolumeAtDose(DVHPoint[],System.Double)
+  - EvilDICOM.CV.Extensions.DVHDataExtensions.GetDoseAtVolume(DVHPoint[],System.Double)
+  - EvilDICOM.CV.Extensions.DVHDataExtensions.GetDoseComplement(DVHPoint[],System.Double)
+  - EvilDICOM.CV.Extensions.DVHDataExtensions.GetVolumeAtDose(DVHPoint[],System.Double)
+  - EvilDICOM.CV.Extensions.DVHDataExtensions.MaxDose(DVHPoint[])
+  - EvilDICOM.CV.Extensions.DVHDataExtensions.MeanDose(DVHPoint[])
+  - EvilDICOM.CV.Extensions.DVHDataExtensions.MinDose(DVHPoint[])
+  langs:
+  - csharp
+  - vb
+  name: DVHDataExtensions
+  nameWithType: DVHDataExtensions
+  fullName: EvilDICOM.CV.Extensions.DVHDataExtensions
+  type: Class
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/Extensions/DVHDataExtensions.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: DVHDataExtensions
+    path: ../EvilDICOM.CV/Extensions/DVHDataExtensions.cs
+    startLine: 11
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.Extensions
+  syntax:
+    content: 'public static class DVHDataExtensions : object'
+    content.vb: >-
+      Public Module DVHDataExtensions
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: EvilDICOM.CV.Extensions.DVHDataExtensions.GetVolumeAtDose(DVHPoint[],System.Double)
+  commentId: M:EvilDICOM.CV.Extensions.DVHDataExtensions.GetVolumeAtDose(DVHPoint[],System.Double)
+  id: GetVolumeAtDose(DVHPoint[],System.Double)
+  isExtensionMethod: true
+  parent: EvilDICOM.CV.Extensions.DVHDataExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetVolumeAtDose(DVHPoint[], Double)
+  nameWithType: DVHDataExtensions.GetVolumeAtDose(DVHPoint[], Double)
+  fullName: EvilDICOM.CV.Extensions.DVHDataExtensions.GetVolumeAtDose(DVHPoint[], System.Double)
+  type: Method
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/Extensions/DVHDataExtensions.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: GetVolumeAtDose
+    path: ../EvilDICOM.CV/Extensions/DVHDataExtensions.cs
+    startLine: 19
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.Extensions
+  summary: "\nGets the volume that recieves the input dose\n"
+  example: []
+  syntax:
+    content: public static double GetVolumeAtDose(this DVHPoint[] dvh, double doseVal)
+    parameters:
+    - id: dvh
+      type: DVHPoint[]
+      description: the dose volume histogram for this structure
+    - id: doseVal
+      type: System.Double
+    return:
+      type: System.Double
+      description: the volume in the same units as the DVH point array
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetVolumeAtDose(dvh As DVHPoint(), doseVal As Double) As Double
+  overload: EvilDICOM.CV.Extensions.DVHDataExtensions.GetVolumeAtDose*
+  nameWithType.vb: DVHDataExtensions.GetVolumeAtDose(DVHPoint(), Double)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: EvilDICOM.CV.Extensions.DVHDataExtensions.GetVolumeAtDose(DVHPoint(), System.Double)
+  name.vb: GetVolumeAtDose(DVHPoint(), Double)
+- uid: EvilDICOM.CV.Extensions.DVHDataExtensions.GetComplementVolumeAtDose(DVHPoint[],System.Double)
+  commentId: M:EvilDICOM.CV.Extensions.DVHDataExtensions.GetComplementVolumeAtDose(DVHPoint[],System.Double)
+  id: GetComplementVolumeAtDose(DVHPoint[],System.Double)
+  isExtensionMethod: true
+  parent: EvilDICOM.CV.Extensions.DVHDataExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetComplementVolumeAtDose(DVHPoint[], Double)
+  nameWithType: DVHDataExtensions.GetComplementVolumeAtDose(DVHPoint[], Double)
+  fullName: EvilDICOM.CV.Extensions.DVHDataExtensions.GetComplementVolumeAtDose(DVHPoint[], System.Double)
+  type: Method
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/Extensions/DVHDataExtensions.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: GetComplementVolumeAtDose
+    path: ../EvilDICOM.CV/Extensions/DVHDataExtensions.cs
+    startLine: 43
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.Extensions
+  summary: "\nGets the Complement volume (volume about a certain dose point) for the structure dvh\n"
+  example: []
+  syntax:
+    content: public static double GetComplementVolumeAtDose(this DVHPoint[] dvh, double doseVal)
+    parameters:
+    - id: dvh
+      type: DVHPoint[]
+      description: the dose volume histogram for this structure
+    - id: doseVal
+      type: System.Double
+    return:
+      type: System.Double
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetComplementVolumeAtDose(dvh As DVHPoint(), doseVal As Double) As Double
+  overload: EvilDICOM.CV.Extensions.DVHDataExtensions.GetComplementVolumeAtDose*
+  nameWithType.vb: DVHDataExtensions.GetComplementVolumeAtDose(DVHPoint(), Double)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: EvilDICOM.CV.Extensions.DVHDataExtensions.GetComplementVolumeAtDose(DVHPoint(), System.Double)
+  name.vb: GetComplementVolumeAtDose(DVHPoint(), Double)
+- uid: EvilDICOM.CV.Extensions.DVHDataExtensions.GetDoseAtVolume(DVHPoint[],System.Double)
+  commentId: M:EvilDICOM.CV.Extensions.DVHDataExtensions.GetDoseAtVolume(DVHPoint[],System.Double)
+  id: GetDoseAtVolume(DVHPoint[],System.Double)
+  isExtensionMethod: true
+  parent: EvilDICOM.CV.Extensions.DVHDataExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetDoseAtVolume(DVHPoint[], Double)
+  nameWithType: DVHDataExtensions.GetDoseAtVolume(DVHPoint[], Double)
+  fullName: EvilDICOM.CV.Extensions.DVHDataExtensions.GetDoseAtVolume(DVHPoint[], System.Double)
+  type: Method
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/Extensions/DVHDataExtensions.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: GetDoseAtVolume
+    path: ../EvilDICOM.CV/Extensions/DVHDataExtensions.cs
+    startLine: 56
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.Extensions
+  summary: "\nGets the dose value at the specified volume for the curve\n"
+  example: []
+  syntax:
+    content: public static Dose GetDoseAtVolume(this DVHPoint[] dvh, double volume)
+    parameters:
+    - id: dvh
+      type: DVHPoint[]
+      description: the dvhPoint array that is queried
+    - id: volume
+      type: System.Double
+      description: the volume in the same units as the DVH curve
+    return:
+      type: Dose
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetDoseAtVolume(dvh As DVHPoint(), volume As Double) As Dose
+  overload: EvilDICOM.CV.Extensions.DVHDataExtensions.GetDoseAtVolume*
+  nameWithType.vb: DVHDataExtensions.GetDoseAtVolume(DVHPoint(), Double)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: EvilDICOM.CV.Extensions.DVHDataExtensions.GetDoseAtVolume(DVHPoint(), System.Double)
+  name.vb: GetDoseAtVolume(DVHPoint(), Double)
+- uid: EvilDICOM.CV.Extensions.DVHDataExtensions.GetDoseComplement(DVHPoint[],System.Double)
+  commentId: M:EvilDICOM.CV.Extensions.DVHDataExtensions.GetDoseComplement(DVHPoint[],System.Double)
+  id: GetDoseComplement(DVHPoint[],System.Double)
+  isExtensionMethod: true
+  parent: EvilDICOM.CV.Extensions.DVHDataExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetDoseComplement(DVHPoint[], Double)
+  nameWithType: DVHDataExtensions.GetDoseComplement(DVHPoint[], Double)
+  fullName: EvilDICOM.CV.Extensions.DVHDataExtensions.GetDoseComplement(DVHPoint[], System.Double)
+  type: Method
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/Extensions/DVHDataExtensions.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: GetDoseComplement
+    path: ../EvilDICOM.CV/Extensions/DVHDataExtensions.cs
+    startLine: 106
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.Extensions
+  summary: "\nGets the Complement dose for the specified volume (the cold spot). Calculated by taking the total volume and\nsubtracting the input volume.\n"
+  example: []
+  syntax:
+    content: public static Dose GetDoseComplement(this DVHPoint[] dvh, double volume)
+    parameters:
+    - id: dvh
+      type: DVHPoint[]
+      description: the dvhPoint array that is queried
+    - id: volume
+      type: System.Double
+      description: the volume in the same units as the DVH curve
+    return:
+      type: Dose
+      description: the cold spot dose at the specified volume
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetDoseComplement(dvh As DVHPoint(), volume As Double) As Dose
+  overload: EvilDICOM.CV.Extensions.DVHDataExtensions.GetDoseComplement*
+  nameWithType.vb: DVHDataExtensions.GetDoseComplement(DVHPoint(), Double)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: EvilDICOM.CV.Extensions.DVHDataExtensions.GetDoseComplement(DVHPoint(), System.Double)
+  name.vb: GetDoseComplement(DVHPoint(), Double)
+- uid: EvilDICOM.CV.Extensions.DVHDataExtensions.MaxDose(DVHPoint[])
+  commentId: M:EvilDICOM.CV.Extensions.DVHDataExtensions.MaxDose(DVHPoint[])
+  id: MaxDose(DVHPoint[])
+  isExtensionMethod: true
+  parent: EvilDICOM.CV.Extensions.DVHDataExtensions
+  langs:
+  - csharp
+  - vb
+  name: MaxDose(DVHPoint[])
+  nameWithType: DVHDataExtensions.MaxDose(DVHPoint[])
+  fullName: EvilDICOM.CV.Extensions.DVHDataExtensions.MaxDose(DVHPoint[])
+  type: Method
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/Extensions/DVHDataExtensions.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: MaxDose
+    path: ../EvilDICOM.CV/Extensions/DVHDataExtensions.cs
+    startLine: 120
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.Extensions
+  summary: "\nReturns the max dose from the dvh curve\n"
+  example: []
+  syntax:
+    content: public static Dose MaxDose(this DVHPoint[] dvh)
+    parameters:
+    - id: dvh
+      type: DVHPoint[]
+      description: the dvh curve
+    return:
+      type: Dose
+      description: the max dose in the same units as the curve
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function MaxDose(dvh As DVHPoint()) As Dose
+  overload: EvilDICOM.CV.Extensions.DVHDataExtensions.MaxDose*
+  nameWithType.vb: DVHDataExtensions.MaxDose(DVHPoint())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: EvilDICOM.CV.Extensions.DVHDataExtensions.MaxDose(DVHPoint())
+  name.vb: MaxDose(DVHPoint())
+- uid: EvilDICOM.CV.Extensions.DVHDataExtensions.MinDose(DVHPoint[])
+  commentId: M:EvilDICOM.CV.Extensions.DVHDataExtensions.MinDose(DVHPoint[])
+  id: MinDose(DVHPoint[])
+  isExtensionMethod: true
+  parent: EvilDICOM.CV.Extensions.DVHDataExtensions
+  langs:
+  - csharp
+  - vb
+  name: MinDose(DVHPoint[])
+  nameWithType: DVHDataExtensions.MinDose(DVHPoint[])
+  fullName: EvilDICOM.CV.Extensions.DVHDataExtensions.MinDose(DVHPoint[])
+  type: Method
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/Extensions/DVHDataExtensions.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: MinDose
+    path: ../EvilDICOM.CV/Extensions/DVHDataExtensions.cs
+    startLine: 136
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.Extensions
+  summary: "\nReturns the min dose from the dvh curve\n"
+  example: []
+  syntax:
+    content: public static Dose MinDose(this DVHPoint[] dvh)
+    parameters:
+    - id: dvh
+      type: DVHPoint[]
+      description: the dvh curve
+    return:
+      type: Dose
+      description: the minimum dose in the same units as the curve
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function MinDose(dvh As DVHPoint()) As Dose
+  overload: EvilDICOM.CV.Extensions.DVHDataExtensions.MinDose*
+  nameWithType.vb: DVHDataExtensions.MinDose(DVHPoint())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: EvilDICOM.CV.Extensions.DVHDataExtensions.MinDose(DVHPoint())
+  name.vb: MinDose(DVHPoint())
+- uid: EvilDICOM.CV.Extensions.DVHDataExtensions.MeanDose(DVHPoint[])
+  commentId: M:EvilDICOM.CV.Extensions.DVHDataExtensions.MeanDose(DVHPoint[])
+  id: MeanDose(DVHPoint[])
+  isExtensionMethod: true
+  parent: EvilDICOM.CV.Extensions.DVHDataExtensions
+  langs:
+  - csharp
+  - vb
+  name: MeanDose(DVHPoint[])
+  nameWithType: DVHDataExtensions.MeanDose(DVHPoint[])
+  fullName: EvilDICOM.CV.Extensions.DVHDataExtensions.MeanDose(DVHPoint[])
+  type: Method
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/Extensions/DVHDataExtensions.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: MeanDose
+    path: ../EvilDICOM.CV/Extensions/DVHDataExtensions.cs
+    startLine: 152
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.Extensions
+  summary: "\nReturns the mean dose from the dvh curve\n"
+  example: []
+  syntax:
+    content: public static Dose MeanDose(this DVHPoint[] dvh)
+    parameters:
+    - id: dvh
+      type: DVHPoint[]
+      description: the dvh curve
+    return:
+      type: Dose
+      description: the mean dose in the same units as the curve
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function MeanDose(dvh As DVHPoint()) As Dose
+  overload: EvilDICOM.CV.Extensions.DVHDataExtensions.MeanDose*
+  nameWithType.vb: DVHDataExtensions.MeanDose(DVHPoint())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: EvilDICOM.CV.Extensions.DVHDataExtensions.MeanDose(DVHPoint())
+  name.vb: MeanDose(DVHPoint())
+- uid: EvilDICOM.CV.Extensions.DVHDataExtensions.Differential(DVHPoint[])
+  commentId: M:EvilDICOM.CV.Extensions.DVHDataExtensions.Differential(DVHPoint[])
+  id: Differential(DVHPoint[])
+  isExtensionMethod: true
+  parent: EvilDICOM.CV.Extensions.DVHDataExtensions
+  langs:
+  - csharp
+  - vb
+  name: Differential(DVHPoint[])
+  nameWithType: DVHDataExtensions.Differential(DVHPoint[])
+  fullName: EvilDICOM.CV.Extensions.DVHDataExtensions.Differential(DVHPoint[])
+  type: Method
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/Extensions/DVHDataExtensions.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: Differential
+    path: ../EvilDICOM.CV/Extensions/DVHDataExtensions.cs
+    startLine: 171
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.Extensions
+  summary: "\nConverts cumulative to differntial\n"
+  example: []
+  syntax:
+    content: public static DVHPoint[] Differential(this DVHPoint[] dvh)
+    parameters:
+    - id: dvh
+      type: DVHPoint[]
+      description: the dvh curve
+    return:
+      type: DVHPoint[]
+      description: the differential dvh
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Differential(dvh As DVHPoint()) As DVHPoint()
+  overload: EvilDICOM.CV.Extensions.DVHDataExtensions.Differential*
+  nameWithType.vb: DVHDataExtensions.Differential(DVHPoint())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: EvilDICOM.CV.Extensions.DVHDataExtensions.Differential(DVHPoint())
+  name.vb: Differential(DVHPoint())
+references:
+- uid: EvilDICOM.CV.Extensions
+  commentId: N:EvilDICOM.CV.Extensions
+  name: EvilDICOM.CV.Extensions
+  nameWithType: EvilDICOM.CV.Extensions
+  fullName: EvilDICOM.CV.Extensions
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: EvilDICOM.CV.Extensions.DVHDataExtensions.GetVolumeAtDose*
+  commentId: Overload:EvilDICOM.CV.Extensions.DVHDataExtensions.GetVolumeAtDose
+  name: GetVolumeAtDose
+  nameWithType: DVHDataExtensions.GetVolumeAtDose
+  fullName: EvilDICOM.CV.Extensions.DVHDataExtensions.GetVolumeAtDose
+- uid: DVHPoint[]
+  isExternal: true
+  name: DVHPoint[]
+  nameWithType: DVHPoint[]
+  fullName: DVHPoint[]
+  nameWithType.vb: DVHPoint()
+  fullName.vb: DVHPoint()
+  name.vb: DVHPoint()
+  spec.csharp:
+  - uid: DVHPoint
+    name: DVHPoint
+    nameWithType: DVHPoint
+    fullName: DVHPoint
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: DVHPoint
+    name: DVHPoint
+    nameWithType: DVHPoint
+    fullName: DVHPoint
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: EvilDICOM.CV.Extensions.DVHDataExtensions.GetComplementVolumeAtDose*
+  commentId: Overload:EvilDICOM.CV.Extensions.DVHDataExtensions.GetComplementVolumeAtDose
+  name: GetComplementVolumeAtDose
+  nameWithType: DVHDataExtensions.GetComplementVolumeAtDose
+  fullName: EvilDICOM.CV.Extensions.DVHDataExtensions.GetComplementVolumeAtDose
+- uid: EvilDICOM.CV.Extensions.DVHDataExtensions.GetDoseAtVolume*
+  commentId: Overload:EvilDICOM.CV.Extensions.DVHDataExtensions.GetDoseAtVolume
+  name: GetDoseAtVolume
+  nameWithType: DVHDataExtensions.GetDoseAtVolume
+  fullName: EvilDICOM.CV.Extensions.DVHDataExtensions.GetDoseAtVolume
+- uid: Dose
+  isExternal: true
+  name: Dose
+  nameWithType: Dose
+  fullName: Dose
+- uid: EvilDICOM.CV.Extensions.DVHDataExtensions.GetDoseComplement*
+  commentId: Overload:EvilDICOM.CV.Extensions.DVHDataExtensions.GetDoseComplement
+  name: GetDoseComplement
+  nameWithType: DVHDataExtensions.GetDoseComplement
+  fullName: EvilDICOM.CV.Extensions.DVHDataExtensions.GetDoseComplement
+- uid: EvilDICOM.CV.Extensions.DVHDataExtensions.MaxDose*
+  commentId: Overload:EvilDICOM.CV.Extensions.DVHDataExtensions.MaxDose
+  name: MaxDose
+  nameWithType: DVHDataExtensions.MaxDose
+  fullName: EvilDICOM.CV.Extensions.DVHDataExtensions.MaxDose
+- uid: EvilDICOM.CV.Extensions.DVHDataExtensions.MinDose*
+  commentId: Overload:EvilDICOM.CV.Extensions.DVHDataExtensions.MinDose
+  name: MinDose
+  nameWithType: DVHDataExtensions.MinDose
+  fullName: EvilDICOM.CV.Extensions.DVHDataExtensions.MinDose
+- uid: EvilDICOM.CV.Extensions.DVHDataExtensions.MeanDose*
+  commentId: Overload:EvilDICOM.CV.Extensions.DVHDataExtensions.MeanDose
+  name: MeanDose
+  nameWithType: DVHDataExtensions.MeanDose
+  fullName: EvilDICOM.CV.Extensions.DVHDataExtensions.MeanDose
+- uid: EvilDICOM.CV.Extensions.DVHDataExtensions.Differential*
+  commentId: Overload:EvilDICOM.CV.Extensions.DVHDataExtensions.Differential
+  name: Differential
+  nameWithType: DVHDataExtensions.Differential
+  fullName: EvilDICOM.CV.Extensions.DVHDataExtensions.Differential

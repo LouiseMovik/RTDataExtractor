@@ -1,0 +1,123 @@
+### YamlMime:ManagedReference
+items:
+- uid: EvilDICOM.CV.Extensions.StructureExtensions
+  commentId: T:EvilDICOM.CV.Extensions.StructureExtensions
+  id: StructureExtensions
+  parent: EvilDICOM.CV.Extensions
+  children:
+  - EvilDICOM.CV.Extensions.StructureExtensions.GetContourSliceThickness(EvilDICOM.CV.RT.Meta.StructureMeta)
+  langs:
+  - csharp
+  - vb
+  name: StructureExtensions
+  nameWithType: StructureExtensions
+  fullName: EvilDICOM.CV.Extensions.StructureExtensions
+  type: Class
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/Extensions/StructureExtensions.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: StructureExtensions
+    path: ../EvilDICOM.CV/Extensions/StructureExtensions.cs
+    startLine: 9
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.Extensions
+  syntax:
+    content: 'public static class StructureExtensions : object'
+    content.vb: >-
+      Public Module StructureExtensions
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: EvilDICOM.CV.Extensions.StructureExtensions.GetContourSliceThickness(EvilDICOM.CV.RT.Meta.StructureMeta)
+  commentId: M:EvilDICOM.CV.Extensions.StructureExtensions.GetContourSliceThickness(EvilDICOM.CV.RT.Meta.StructureMeta)
+  id: GetContourSliceThickness(EvilDICOM.CV.RT.Meta.StructureMeta)
+  isExtensionMethod: true
+  parent: EvilDICOM.CV.Extensions.StructureExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetContourSliceThickness(StructureMeta)
+  nameWithType: StructureExtensions.GetContourSliceThickness(StructureMeta)
+  fullName: EvilDICOM.CV.Extensions.StructureExtensions.GetContourSliceThickness(EvilDICOM.CV.RT.Meta.StructureMeta)
+  type: Method
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/Extensions/StructureExtensions.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: GetContourSliceThickness
+    path: ../EvilDICOM.CV/Extensions/StructureExtensions.cs
+    startLine: 11
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.Extensions
+  syntax:
+    content: public static double GetContourSliceThickness(this StructureMeta meta)
+    parameters:
+    - id: meta
+      type: EvilDICOM.CV.RT.Meta.StructureMeta
+    return:
+      type: System.Double
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetContourSliceThickness(meta As StructureMeta) As Double
+  overload: EvilDICOM.CV.Extensions.StructureExtensions.GetContourSliceThickness*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: EvilDICOM.CV.Extensions
+  commentId: N:EvilDICOM.CV.Extensions
+  name: EvilDICOM.CV.Extensions
+  nameWithType: EvilDICOM.CV.Extensions
+  fullName: EvilDICOM.CV.Extensions
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: EvilDICOM.CV.Extensions.StructureExtensions.GetContourSliceThickness*
+  commentId: Overload:EvilDICOM.CV.Extensions.StructureExtensions.GetContourSliceThickness
+  name: GetContourSliceThickness
+  nameWithType: StructureExtensions.GetContourSliceThickness
+  fullName: EvilDICOM.CV.Extensions.StructureExtensions.GetContourSliceThickness
+- uid: EvilDICOM.CV.RT.Meta.StructureMeta
+  commentId: T:EvilDICOM.CV.RT.Meta.StructureMeta
+  parent: EvilDICOM.CV.RT.Meta
+  name: StructureMeta
+  nameWithType: StructureMeta
+  fullName: EvilDICOM.CV.RT.Meta.StructureMeta
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: EvilDICOM.CV.RT.Meta
+  commentId: N:EvilDICOM.CV.RT.Meta
+  name: EvilDICOM.CV.RT.Meta
+  nameWithType: EvilDICOM.CV.RT.Meta
+  fullName: EvilDICOM.CV.RT.Meta

@@ -1,0 +1,118 @@
+### YamlMime:ManagedReference
+items:
+- uid: EvilDICOM.CV.IO.DICOM2StructureSet
+  commentId: T:EvilDICOM.CV.IO.DICOM2StructureSet
+  id: DICOM2StructureSet
+  parent: EvilDICOM.CV.IO
+  children:
+  - EvilDICOM.CV.IO.DICOM2StructureSet.ParseDICOM(System.String)
+  langs:
+  - csharp
+  - vb
+  name: DICOM2StructureSet
+  nameWithType: DICOM2StructureSet
+  fullName: EvilDICOM.CV.IO.DICOM2StructureSet
+  type: Class
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/IO/DICOM2StructureSet.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: DICOM2StructureSet
+    path: ../EvilDICOM.CV/IO/DICOM2StructureSet.cs
+    startLine: 11
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.IO
+  syntax:
+    content: 'public class DICOM2StructureSet : object'
+    content.vb: >-
+      Public Class DICOM2StructureSet
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: EvilDICOM.CV.IO.DICOM2StructureSet.ParseDICOM(System.String)
+  commentId: M:EvilDICOM.CV.IO.DICOM2StructureSet.ParseDICOM(System.String)
+  id: ParseDICOM(System.String)
+  parent: EvilDICOM.CV.IO.DICOM2StructureSet
+  langs:
+  - csharp
+  - vb
+  name: ParseDICOM(String)
+  nameWithType: DICOM2StructureSet.ParseDICOM(String)
+  fullName: EvilDICOM.CV.IO.DICOM2StructureSet.ParseDICOM(System.String)
+  type: Method
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/IO/DICOM2StructureSet.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: ParseDICOM
+    path: ../EvilDICOM.CV/IO/DICOM2StructureSet.cs
+    startLine: 14
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.IO
+  syntax:
+    content: public static StructureSetMeta ParseDICOM(string file)
+    parameters:
+    - id: file
+      type: System.String
+    return:
+      type: EvilDICOM.CV.RT.Meta.StructureSetMeta
+    content.vb: Public Shared Function ParseDICOM(file As String) As StructureSetMeta
+  overload: EvilDICOM.CV.IO.DICOM2StructureSet.ParseDICOM*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: EvilDICOM.CV.IO
+  commentId: N:EvilDICOM.CV.IO
+  name: EvilDICOM.CV.IO
+  nameWithType: EvilDICOM.CV.IO
+  fullName: EvilDICOM.CV.IO
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: EvilDICOM.CV.IO.DICOM2StructureSet.ParseDICOM*
+  commentId: Overload:EvilDICOM.CV.IO.DICOM2StructureSet.ParseDICOM
+  name: ParseDICOM
+  nameWithType: DICOM2StructureSet.ParseDICOM
+  fullName: EvilDICOM.CV.IO.DICOM2StructureSet.ParseDICOM
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: EvilDICOM.CV.RT.Meta.StructureSetMeta
+  commentId: T:EvilDICOM.CV.RT.Meta.StructureSetMeta
+  parent: EvilDICOM.CV.RT.Meta
+  name: StructureSetMeta
+  nameWithType: StructureSetMeta
+  fullName: EvilDICOM.CV.RT.Meta.StructureSetMeta
+- uid: EvilDICOM.CV.RT.Meta
+  commentId: N:EvilDICOM.CV.RT.Meta
+  name: EvilDICOM.CV.RT.Meta
+  nameWithType: EvilDICOM.CV.RT.Meta
+  fullName: EvilDICOM.CV.RT.Meta

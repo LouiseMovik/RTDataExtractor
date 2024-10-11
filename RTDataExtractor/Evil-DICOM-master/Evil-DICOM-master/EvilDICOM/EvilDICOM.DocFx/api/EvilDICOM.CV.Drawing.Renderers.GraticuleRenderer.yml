@@ -1,0 +1,114 @@
+### YamlMime:ManagedReference
+items:
+- uid: EvilDICOM.CV.Drawing.Renderers.GraticuleRenderer
+  commentId: T:EvilDICOM.CV.Drawing.Renderers.GraticuleRenderer
+  id: GraticuleRenderer
+  parent: EvilDICOM.CV.Drawing.Renderers
+  children:
+  - EvilDICOM.CV.Drawing.Renderers.GraticuleRenderer.Render(Mat,System.Double,System.Double)
+  langs:
+  - csharp
+  - vb
+  name: GraticuleRenderer
+  nameWithType: GraticuleRenderer
+  fullName: EvilDICOM.CV.Drawing.Renderers.GraticuleRenderer
+  type: Class
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/Drawing/Renderers/GraticuleRenderer.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: GraticuleRenderer
+    path: ../EvilDICOM.CV/Drawing/Renderers/GraticuleRenderer.cs
+    startLine: 5
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.Drawing.Renderers
+  syntax:
+    content: 'public class GraticuleRenderer : object'
+    content.vb: >-
+      Public Class GraticuleRenderer
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: EvilDICOM.CV.Drawing.Renderers.GraticuleRenderer.Render(Mat,System.Double,System.Double)
+  commentId: M:EvilDICOM.CV.Drawing.Renderers.GraticuleRenderer.Render(Mat,System.Double,System.Double)
+  id: Render(Mat,System.Double,System.Double)
+  parent: EvilDICOM.CV.Drawing.Renderers.GraticuleRenderer
+  langs:
+  - csharp
+  - vb
+  name: Render(Mat, Double, Double)
+  nameWithType: GraticuleRenderer.Render(Mat, Double, Double)
+  fullName: EvilDICOM.CV.Drawing.Renderers.GraticuleRenderer.Render(Mat, System.Double, System.Double)
+  type: Method
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/Drawing/Renderers/GraticuleRenderer.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: Render
+    path: ../EvilDICOM.CV/Drawing/Renderers/GraticuleRenderer.cs
+    startLine: 7
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.Drawing.Renderers
+  syntax:
+    content: public static void Render(Mat image, double collimatorAngleDeg, double mmPerPixel)
+    parameters:
+    - id: image
+      type: Mat
+    - id: collimatorAngleDeg
+      type: System.Double
+    - id: mmPerPixel
+      type: System.Double
+    content.vb: Public Shared Sub Render(image As Mat, collimatorAngleDeg As Double, mmPerPixel As Double)
+  overload: EvilDICOM.CV.Drawing.Renderers.GraticuleRenderer.Render*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: EvilDICOM.CV.Drawing.Renderers
+  commentId: N:EvilDICOM.CV.Drawing.Renderers
+  name: EvilDICOM.CV.Drawing.Renderers
+  nameWithType: EvilDICOM.CV.Drawing.Renderers
+  fullName: EvilDICOM.CV.Drawing.Renderers
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: EvilDICOM.CV.Drawing.Renderers.GraticuleRenderer.Render*
+  commentId: Overload:EvilDICOM.CV.Drawing.Renderers.GraticuleRenderer.Render
+  name: Render
+  nameWithType: GraticuleRenderer.Render
+  fullName: EvilDICOM.CV.Drawing.Renderers.GraticuleRenderer.Render
+- uid: Mat
+  isExternal: true
+  name: Mat
+  nameWithType: Mat
+  fullName: Mat
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double

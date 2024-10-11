@@ -1,0 +1,127 @@
+### YamlMime:ManagedReference
+items:
+- uid: EvilDICOM.CV.IO.DICOM2Beam
+  commentId: T:EvilDICOM.CV.IO.DICOM2Beam
+  id: DICOM2Beam
+  parent: EvilDICOM.CV.IO
+  children:
+  - EvilDICOM.CV.IO.DICOM2Beam.ParseDICOM(DICOMObject,DICOMObject,System.Double)
+  langs:
+  - csharp
+  - vb
+  name: DICOM2Beam
+  nameWithType: DICOM2Beam
+  fullName: EvilDICOM.CV.IO.DICOM2Beam
+  type: Class
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/IO/DICOM2Beam.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: DICOM2Beam
+    path: ../EvilDICOM.CV/IO/DICOM2Beam.cs
+    startLine: 11
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.IO
+  syntax:
+    content: 'public class DICOM2Beam : object'
+    content.vb: >-
+      Public Class DICOM2Beam
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: EvilDICOM.CV.IO.DICOM2Beam.ParseDICOM(DICOMObject,DICOMObject,System.Double)
+  commentId: M:EvilDICOM.CV.IO.DICOM2Beam.ParseDICOM(DICOMObject,DICOMObject,System.Double)
+  id: ParseDICOM(DICOMObject,DICOMObject,System.Double)
+  parent: EvilDICOM.CV.IO.DICOM2Beam
+  langs:
+  - csharp
+  - vb
+  name: ParseDICOM(DICOMObject, DICOMObject, Double)
+  nameWithType: DICOM2Beam.ParseDICOM(DICOMObject, DICOMObject, Double)
+  fullName: EvilDICOM.CV.IO.DICOM2Beam.ParseDICOM(DICOMObject, DICOMObject, System.Double)
+  type: Method
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/IO/DICOM2Beam.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: ParseDICOM
+    path: ../EvilDICOM.CV/IO/DICOM2Beam.cs
+    startLine: 13
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.IO
+  syntax:
+    content: public static BeamMeta ParseDICOM(DICOMObject beamDCM, DICOMObject fxDCM, double totalBeamDose)
+    parameters:
+    - id: beamDCM
+      type: DICOMObject
+    - id: fxDCM
+      type: DICOMObject
+    - id: totalBeamDose
+      type: System.Double
+    return:
+      type: EvilDICOM.CV.RT.Meta.BeamMeta
+    content.vb: Public Shared Function ParseDICOM(beamDCM As DICOMObject, fxDCM As DICOMObject, totalBeamDose As Double) As BeamMeta
+  overload: EvilDICOM.CV.IO.DICOM2Beam.ParseDICOM*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: EvilDICOM.CV.IO
+  commentId: N:EvilDICOM.CV.IO
+  name: EvilDICOM.CV.IO
+  nameWithType: EvilDICOM.CV.IO
+  fullName: EvilDICOM.CV.IO
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: EvilDICOM.CV.IO.DICOM2Beam.ParseDICOM*
+  commentId: Overload:EvilDICOM.CV.IO.DICOM2Beam.ParseDICOM
+  name: ParseDICOM
+  nameWithType: DICOM2Beam.ParseDICOM
+  fullName: EvilDICOM.CV.IO.DICOM2Beam.ParseDICOM
+- uid: DICOMObject
+  isExternal: true
+  name: DICOMObject
+  nameWithType: DICOMObject
+  fullName: DICOMObject
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: EvilDICOM.CV.RT.Meta.BeamMeta
+  commentId: T:EvilDICOM.CV.RT.Meta.BeamMeta
+  parent: EvilDICOM.CV.RT.Meta
+  name: BeamMeta
+  nameWithType: BeamMeta
+  fullName: EvilDICOM.CV.RT.Meta.BeamMeta
+- uid: EvilDICOM.CV.RT.Meta
+  commentId: N:EvilDICOM.CV.RT.Meta
+  name: EvilDICOM.CV.RT.Meta
+  nameWithType: EvilDICOM.CV.RT.Meta
+  fullName: EvilDICOM.CV.RT.Meta

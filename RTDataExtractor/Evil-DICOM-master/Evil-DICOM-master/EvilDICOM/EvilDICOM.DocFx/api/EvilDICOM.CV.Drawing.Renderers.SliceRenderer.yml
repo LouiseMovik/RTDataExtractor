@@ -1,0 +1,138 @@
+### YamlMime:ManagedReference
+items:
+- uid: EvilDICOM.CV.Drawing.Renderers.SliceRenderer
+  commentId: T:EvilDICOM.CV.Drawing.Renderers.SliceRenderer
+  id: SliceRenderer
+  parent: EvilDICOM.CV.Drawing.Renderers
+  children:
+  - EvilDICOM.CV.Drawing.Renderers.SliceRenderer.RenderContourOnDose(EvilDICOM.CV.Image.Matrix,EvilDICOM.CV.RT.Meta.SliceContourMeta[])
+  langs:
+  - csharp
+  - vb
+  name: SliceRenderer
+  nameWithType: SliceRenderer
+  fullName: EvilDICOM.CV.Drawing.Renderers.SliceRenderer
+  type: Class
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/Drawing/Renderers/SliceRenderer.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: SliceRenderer
+    path: ../EvilDICOM.CV/Drawing/Renderers/SliceRenderer.cs
+    startLine: 13
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.Drawing.Renderers
+  syntax:
+    content: 'public class SliceRenderer : object'
+    content.vb: >-
+      Public Class SliceRenderer
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: EvilDICOM.CV.Drawing.Renderers.SliceRenderer.RenderContourOnDose(EvilDICOM.CV.Image.Matrix,EvilDICOM.CV.RT.Meta.SliceContourMeta[])
+  commentId: M:EvilDICOM.CV.Drawing.Renderers.SliceRenderer.RenderContourOnDose(EvilDICOM.CV.Image.Matrix,EvilDICOM.CV.RT.Meta.SliceContourMeta[])
+  id: RenderContourOnDose(EvilDICOM.CV.Image.Matrix,EvilDICOM.CV.RT.Meta.SliceContourMeta[])
+  parent: EvilDICOM.CV.Drawing.Renderers.SliceRenderer
+  langs:
+  - csharp
+  - vb
+  name: RenderContourOnDose(Matrix, SliceContourMeta[])
+  nameWithType: SliceRenderer.RenderContourOnDose(Matrix, SliceContourMeta[])
+  fullName: EvilDICOM.CV.Drawing.Renderers.SliceRenderer.RenderContourOnDose(EvilDICOM.CV.Image.Matrix, EvilDICOM.CV.RT.Meta.SliceContourMeta[])
+  type: Method
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/Drawing/Renderers/SliceRenderer.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: RenderContourOnDose
+    path: ../EvilDICOM.CV/Drawing/Renderers/SliceRenderer.cs
+    startLine: 15
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.Drawing.Renderers
+  syntax:
+    content: public static void RenderContourOnDose(Matrix dm, params SliceContourMeta[] contours)
+    parameters:
+    - id: dm
+      type: EvilDICOM.CV.Image.Matrix
+    - id: contours
+      type: EvilDICOM.CV.RT.Meta.SliceContourMeta[]
+    content.vb: Public Shared Sub RenderContourOnDose(dm As Matrix, ParamArray contours As SliceContourMeta())
+  overload: EvilDICOM.CV.Drawing.Renderers.SliceRenderer.RenderContourOnDose*
+  nameWithType.vb: SliceRenderer.RenderContourOnDose(Matrix, SliceContourMeta())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: EvilDICOM.CV.Drawing.Renderers.SliceRenderer.RenderContourOnDose(EvilDICOM.CV.Image.Matrix, EvilDICOM.CV.RT.Meta.SliceContourMeta())
+  name.vb: RenderContourOnDose(Matrix, SliceContourMeta())
+references:
+- uid: EvilDICOM.CV.Drawing.Renderers
+  commentId: N:EvilDICOM.CV.Drawing.Renderers
+  name: EvilDICOM.CV.Drawing.Renderers
+  nameWithType: EvilDICOM.CV.Drawing.Renderers
+  fullName: EvilDICOM.CV.Drawing.Renderers
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: EvilDICOM.CV.Drawing.Renderers.SliceRenderer.RenderContourOnDose*
+  commentId: Overload:EvilDICOM.CV.Drawing.Renderers.SliceRenderer.RenderContourOnDose
+  name: RenderContourOnDose
+  nameWithType: SliceRenderer.RenderContourOnDose
+  fullName: EvilDICOM.CV.Drawing.Renderers.SliceRenderer.RenderContourOnDose
+- uid: EvilDICOM.CV.Image.Matrix
+  commentId: T:EvilDICOM.CV.Image.Matrix
+  parent: EvilDICOM.CV.Image
+  name: Matrix
+  nameWithType: Matrix
+  fullName: EvilDICOM.CV.Image.Matrix
+- uid: EvilDICOM.CV.RT.Meta.SliceContourMeta[]
+  isExternal: true
+  name: SliceContourMeta[]
+  nameWithType: SliceContourMeta[]
+  fullName: EvilDICOM.CV.RT.Meta.SliceContourMeta[]
+  nameWithType.vb: SliceContourMeta()
+  fullName.vb: EvilDICOM.CV.RT.Meta.SliceContourMeta()
+  name.vb: SliceContourMeta()
+  spec.csharp:
+  - uid: EvilDICOM.CV.RT.Meta.SliceContourMeta
+    name: SliceContourMeta
+    nameWithType: SliceContourMeta
+    fullName: EvilDICOM.CV.RT.Meta.SliceContourMeta
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: EvilDICOM.CV.RT.Meta.SliceContourMeta
+    name: SliceContourMeta
+    nameWithType: SliceContourMeta
+    fullName: EvilDICOM.CV.RT.Meta.SliceContourMeta
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: EvilDICOM.CV.Image
+  commentId: N:EvilDICOM.CV.Image
+  name: EvilDICOM.CV.Image
+  nameWithType: EvilDICOM.CV.Image
+  fullName: EvilDICOM.CV.Image

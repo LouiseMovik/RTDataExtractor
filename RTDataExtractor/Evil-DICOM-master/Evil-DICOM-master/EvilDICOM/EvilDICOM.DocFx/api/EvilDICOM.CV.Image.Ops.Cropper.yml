@@ -1,0 +1,132 @@
+### YamlMime:ManagedReference
+items:
+- uid: EvilDICOM.CV.Image.Ops.Cropper
+  commentId: T:EvilDICOM.CV.Image.Ops.Cropper
+  id: Cropper
+  parent: EvilDICOM.CV.Image.Ops
+  children:
+  - EvilDICOM.CV.Image.Ops.Cropper.CropMatrixToStructure(EvilDICOM.CV.Image.Matrix,EvilDICOM.CV.RT.Meta.StructureMeta,System.Double)
+  langs:
+  - csharp
+  - vb
+  name: Cropper
+  nameWithType: Cropper
+  fullName: EvilDICOM.CV.Image.Ops.Cropper
+  type: Class
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/Image/Ops/Cropper.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: Cropper
+    path: ../EvilDICOM.CV/Image/Ops/Cropper.cs
+    startLine: 13
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.Image.Ops
+  syntax:
+    content: 'public static class Cropper : object'
+    content.vb: >-
+      Public Module Cropper
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: EvilDICOM.CV.Image.Ops.Cropper.CropMatrixToStructure(EvilDICOM.CV.Image.Matrix,EvilDICOM.CV.RT.Meta.StructureMeta,System.Double)
+  commentId: M:EvilDICOM.CV.Image.Ops.Cropper.CropMatrixToStructure(EvilDICOM.CV.Image.Matrix,EvilDICOM.CV.RT.Meta.StructureMeta,System.Double)
+  id: CropMatrixToStructure(EvilDICOM.CV.Image.Matrix,EvilDICOM.CV.RT.Meta.StructureMeta,System.Double)
+  parent: EvilDICOM.CV.Image.Ops.Cropper
+  langs:
+  - csharp
+  - vb
+  name: CropMatrixToStructure(Matrix, StructureMeta, Double)
+  nameWithType: Cropper.CropMatrixToStructure(Matrix, StructureMeta, Double)
+  fullName: EvilDICOM.CV.Image.Ops.Cropper.CropMatrixToStructure(EvilDICOM.CV.Image.Matrix, EvilDICOM.CV.RT.Meta.StructureMeta, System.Double)
+  type: Method
+  source:
+    remote:
+      path: EvilDICOM/EvilDICOM.CV/Image/Ops/Cropper.cs
+      branch: master
+      repo: https://github.com/rexcardan/Evil-DICOM
+    id: CropMatrixToStructure
+    path: ../EvilDICOM.CV/Image/Ops/Cropper.cs
+    startLine: 15
+  assemblies:
+  - EvilDICOM.CV
+  namespace: EvilDICOM.CV.Image.Ops
+  syntax:
+    content: public static void CropMatrixToStructure(Matrix m, StructureMeta contour, double marginMM)
+    parameters:
+    - id: m
+      type: EvilDICOM.CV.Image.Matrix
+    - id: contour
+      type: EvilDICOM.CV.RT.Meta.StructureMeta
+    - id: marginMM
+      type: System.Double
+    content.vb: Public Shared Sub CropMatrixToStructure(m As Matrix, contour As StructureMeta, marginMM As Double)
+  overload: EvilDICOM.CV.Image.Ops.Cropper.CropMatrixToStructure*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: EvilDICOM.CV.Image.Ops
+  commentId: N:EvilDICOM.CV.Image.Ops
+  name: EvilDICOM.CV.Image.Ops
+  nameWithType: EvilDICOM.CV.Image.Ops
+  fullName: EvilDICOM.CV.Image.Ops
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: EvilDICOM.CV.Image.Ops.Cropper.CropMatrixToStructure*
+  commentId: Overload:EvilDICOM.CV.Image.Ops.Cropper.CropMatrixToStructure
+  name: CropMatrixToStructure
+  nameWithType: Cropper.CropMatrixToStructure
+  fullName: EvilDICOM.CV.Image.Ops.Cropper.CropMatrixToStructure
+- uid: EvilDICOM.CV.Image.Matrix
+  commentId: T:EvilDICOM.CV.Image.Matrix
+  parent: EvilDICOM.CV.Image
+  name: Matrix
+  nameWithType: Matrix
+  fullName: EvilDICOM.CV.Image.Matrix
+- uid: EvilDICOM.CV.RT.Meta.StructureMeta
+  commentId: T:EvilDICOM.CV.RT.Meta.StructureMeta
+  parent: EvilDICOM.CV.RT.Meta
+  name: StructureMeta
+  nameWithType: StructureMeta
+  fullName: EvilDICOM.CV.RT.Meta.StructureMeta
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: EvilDICOM.CV.Image
+  commentId: N:EvilDICOM.CV.Image
+  name: EvilDICOM.CV.Image
+  nameWithType: EvilDICOM.CV.Image
+  fullName: EvilDICOM.CV.Image
+- uid: EvilDICOM.CV.RT.Meta
+  commentId: N:EvilDICOM.CV.RT.Meta
+  name: EvilDICOM.CV.RT.Meta
+  nameWithType: EvilDICOM.CV.RT.Meta
+  fullName: EvilDICOM.CV.RT.Meta
