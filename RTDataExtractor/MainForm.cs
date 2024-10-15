@@ -26,7 +26,7 @@ namespace RTDataExtractor
         public MainForm()
         {
             // Optional for user: Reset previous property settings. 
-            Settings.Default.Reset();
+            //Settings.Default.Reset();
 
             InitializeComponent();
 
@@ -51,6 +51,7 @@ namespace RTDataExtractor
             if (ControlInput())
             {
                 btnStart.Enabled = false;
+                txbOutput.BringToFront();
                 if (dtPatients.Rows.Count > 0)
                 {
                     prioritizer.StartExtraction(dtPatients, pathOutput, this);
@@ -61,6 +62,15 @@ namespace RTDataExtractor
                 }
                 btnStart.Enabled = true;
             }
+        }
+
+        /// <summary>
+        /// Writes the message used as argument in the output textbox. 
+        /// </summary>
+        public void WriteMessage(string message)
+        {
+            txbOutput.AppendText(message);
+            txbOutput.AppendText(Environment.NewLine);
         }
 
         /// <summary>

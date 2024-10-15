@@ -72,6 +72,8 @@ namespace RTDataExtractor
 
             foreach (var patient in uniquePatientIDs)
             {
+                mainForm.WriteMessage($"Extraction started for patient: {patient}");
+
                 // A list that stores UIDs to extract for this patient
                 List<string> UIDs = new List<string>();
 
@@ -100,7 +102,7 @@ namespace RTDataExtractor
                 UIDs = UIDs.Distinct().ToList();
 
                 // Extract all requested UIDs for this patient. The files will be writted directly in the output folder.
-                //extractor.Extract(UIDs, mainForm);
+                extractor.Extract(UIDs, mainForm);
 
                 // Anonymize all written files and structure them.
                 extractor.Anonymize(pathOutput, ID, pseudoID, mainForm);
@@ -108,6 +110,7 @@ namespace RTDataExtractor
                 // Update counter
                 counter++;
                 mainForm.UpdateRequestsBar(counter);
+                mainForm.WriteMessage("Extraction completed for patient");
             }
         }
 

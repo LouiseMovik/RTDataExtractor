@@ -35,6 +35,7 @@
             this.btnSelectFolder = new System.Windows.Forms.Button();
             this.gridList = new System.Windows.Forms.DataGridView();
             this.txtPath = new System.Windows.Forms.TextBox();
+            this.txbOutput = new System.Windows.Forms.TextBox();
             this.grpExport = new System.Windows.Forms.GroupBox();
             this.prgBarPatient = new System.Windows.Forms.ProgressBar();
             this.label2 = new System.Windows.Forms.Label();
@@ -81,6 +82,7 @@
             this.grpList.Controls.Add(this.btnSelectFolder);
             this.grpList.Controls.Add(this.gridList);
             this.grpList.Controls.Add(this.txtPath);
+            this.grpList.Controls.Add(this.txbOutput);
             this.grpList.Location = new System.Drawing.Point(11, 12);
             this.grpList.Name = "grpList";
             this.grpList.Size = new System.Drawing.Size(458, 381);
@@ -130,6 +132,19 @@
             this.txtPath.TabIndex = 1;
             this.txtPath.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPath_KeyDown);
             this.txtPath.Leave += new System.EventHandler(this.txtPath_Leave);
+            // 
+            // txbOutput
+            // 
+            this.txbOutput.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txbOutput.BackColor = System.Drawing.SystemColors.Control;
+            this.txbOutput.Location = new System.Drawing.Point(10, 47);
+            this.txbOutput.Multiline = true;
+            this.txbOutput.Name = "txbOutput";
+            this.txbOutput.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txbOutput.Size = new System.Drawing.Size(441, 328);
+            this.txbOutput.TabIndex = 17;
             // 
             // grpExport
             // 
@@ -458,7 +473,7 @@
             this.Controls.Add(this.grpList);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
-            this.Text = "RT Data Extractor (Version 1.0)";
+            this.Text = "RT Data Extractor (Version 1.1)";
             this.Click += new System.EventHandler(this.MainForm_Click);
             this.grpList.ResumeLayout(false);
             this.grpList.PerformLayout();
@@ -511,6 +526,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblOutput;
         private System.Windows.Forms.ToolTip toolTipInput;
+        private System.Windows.Forms.TextBox txbOutput;
     }
 }
 

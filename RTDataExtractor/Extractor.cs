@@ -25,7 +25,6 @@ namespace RTDataExtractor
 {
     class Extractor
     {
-        private string sqlConnectionString;
         private Entity daemon;
         private Entity local;
         private DICOMSCP receiver;
@@ -118,7 +117,7 @@ namespace RTDataExtractor
         }
 
         /// <summary>
-        /// Using DCMTK, a DICOM server is started (receiver) which will catch files as they come in and store them at predefined location.
+        /// Using DCMTK, a DICOM server (receiver) is started which will catch files as they come in and store them at predefined location.
         /// </summary>
         public void StartDICOMServer(string pathOutput)
         {
@@ -164,8 +163,13 @@ namespace RTDataExtractor
             foreach (var UID in UIDs)
             {
                 CFindImageIOD iod = new CFindImageIOD() { SOPInstanceUID = UID };
+                
                 // Make sure local is on the whitelist of the daemon
                 var response = mover.SendCMove(iod, local.AeTitle, ref msgId);
+                if (response.Status != 0)
+                {
+                    mainForm.WriteMessage($"Unable to extract with message: {response}");
+                }
                 patientCounter++;
                 mainForm.UpdatePatientRequestsBar(patientCounter);
             }
@@ -238,7 +242,7 @@ namespace RTDataExtractor
             var test = toAnonymize.Length;
             if (toAnonymize.Length == 0)
             {
-                //MessageBox.Show($"No files were exported for patient: {ID}");
+                mainForm.WriteMessage($"No files were exported for patient: {ID}");
                 return;
             }
 
@@ -313,11 +317,11 @@ namespace RTDataExtractor
             {
                 if (otherPatientFiles) 
                 {
-                    //MessageBox.Show($"There are remaining files in the output folder that does not belong to the considered patient: {ID}");
+                    mainForm.WriteMessage($"There are remaining files in the output folder that does not belong to the considered patient: {ID}");
                 }
                 else
                 {
-                    //MessageBox.Show($"All files were not anonymized");
+                    mainForm.WriteMessage($"All files were not anonymized");
                 }
             }
         }
