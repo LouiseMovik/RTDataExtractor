@@ -38,6 +38,7 @@ namespace RTDataExtractor
             prioritizer = new Prioritizer(pathOutput);
             toolTipInput.SetToolTip(btnSelectFolder, "Path to a textfile with patient information structured as:\nPatient ID \t Pseudo ID \t Course ID \t Plan ID");
             toolTipInput.SetToolTip(txtPath, "Path to a textfile with patient information structured as:\nPatient ID \t Pseudo ID \t Course ID \t Plan ID");
+            toolTipQC.SetToolTip(btnQC, "Optional: A quality control can be performed following extraction. \nThe export request is compared to the generated files and a summary is generated in the output folder.");
             UpdateDICOMSettings();
 
             txtPath.Select();
@@ -60,6 +61,7 @@ namespace RTDataExtractor
                 {
                     
                 }
+                WriteMessage("Extraction completed");
                 btnStart.Enabled = true;
             }
         }
@@ -179,14 +181,20 @@ namespace RTDataExtractor
         /// </summary>
         private void btnSelectFolder_Click(object sender, EventArgs e)
         {
-            using (var fbd = new FolderBrowserDialog())
-            {
-                DialogResult result = fbd.ShowDialog();
+            // Create an instance of OpenFileDialog
+            OpenFileDialog openFileDialog = new OpenFileDialog();
 
-                if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(fbd.SelectedPath))
-                {
-                    txtPath.Text = fbd.SelectedPath;
-                }
+            // Set the file filter to show only .txt files
+            openFileDialog.Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*";
+            openFileDialog.Title = "Select a text file";
+
+            // Show the dialog and compare the result with DialogResult.OK
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                // Get the selected file path
+                string filePath = openFileDialog.FileName;
+
+                txtPath.Text = filePath;
             }
         }
 
@@ -316,6 +324,15 @@ namespace RTDataExtractor
             {
                 MessageBox.Show("Failed", "Testing DICOM Connection (Echo)", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            btnQC.Enabled = false;
+
+            // Perform QC
+            QC qc = new QC(txtPath.Text, pathOutput);
+            btnQC.Enabled = true;
         }
     }
 }

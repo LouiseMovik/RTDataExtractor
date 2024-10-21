@@ -123,13 +123,15 @@ namespace RTDataExtractor
         {
             string basePath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
             basePath = Path.GetFullPath(Path.Combine(basePath, @"..\..\..\"));
-            string cmdFilePath = Path.Combine(basePath, "DCMTK", "StartDICOMServer.cmd");
+            string cmdFilePath = Path.Combine(basePath, "DCMTK", "StartDICOMServer.cmd"); // ?
+            //string cmdFilePath = Path.Combine(basePath, "RTDataExtractor", "DCMTK", "StartDICOMServer.cmd");  // ?
 
             // Read the content of the .cmd file
             string cmdFileContent = File.ReadAllText(cmdFilePath);
 
             // Replace the output path
             string updatedCmdFileContent = cmdFileContent.Replace("-od % ", $"-od \"{pathOutput}\"");
+            //string updatedCmdFileContent = cmdFileContent.Replace("-od % ", $"-od \"{pathOutput}\"");  // ?
 
             // Save the modified content back to the .cmd file
             File.WriteAllText(cmdFilePath, updatedCmdFileContent);

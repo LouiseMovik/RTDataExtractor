@@ -65,6 +65,8 @@
             this.lblLocalIPResult = new System.Windows.Forms.Label();
             this.lblLocalIP = new System.Windows.Forms.Label();
             this.toolTipInput = new System.Windows.Forms.ToolTip(this.components);
+            this.btnQC = new System.Windows.Forms.Button();
+            this.toolTipQC = new System.Windows.Forms.ToolTip(this.components);
             this.grpList.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridList)).BeginInit();
             this.grpExport.SuspendLayout();
@@ -150,6 +152,7 @@
             // 
             this.grpExport.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.grpExport.Controls.Add(this.btnQC);
             this.grpExport.Controls.Add(this.prgBarPatient);
             this.grpExport.Controls.Add(this.label2);
             this.grpExport.Controls.Add(this.label1);
@@ -169,7 +172,7 @@
             // 
             this.prgBarPatient.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.prgBarPatient.Location = new System.Drawing.Point(201, 75);
+            this.prgBarPatient.Location = new System.Drawing.Point(201, 76);
             this.prgBarPatient.Name = "prgBarPatient";
             this.prgBarPatient.Size = new System.Drawing.Size(249, 21);
             this.prgBarPatient.TabIndex = 20;
@@ -178,7 +181,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(108, 78);
+            this.label2.Location = new System.Drawing.Point(108, 79);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(86, 13);
             this.label2.TabIndex = 19;
@@ -188,7 +191,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(108, 53);
+            this.label1.Location = new System.Drawing.Point(108, 54);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(55, 13);
             this.label1.TabIndex = 18;
@@ -211,7 +214,7 @@
             this.btnStart.BackColor = System.Drawing.SystemColors.Control;
             this.btnStart.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnStart.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnStart.Location = new System.Drawing.Point(8, 72);
+            this.btnStart.Location = new System.Drawing.Point(8, 48);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(81, 24);
             this.btnStart.TabIndex = 15;
@@ -223,7 +226,7 @@
             // 
             this.prgBar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.prgBar.Location = new System.Drawing.Point(201, 48);
+            this.prgBar.Location = new System.Drawing.Point(201, 49);
             this.prgBar.Name = "prgBar";
             this.prgBar.Size = new System.Drawing.Size(249, 21);
             this.prgBar.TabIndex = 3;
@@ -462,6 +465,16 @@
             this.lblLocalIP.TabIndex = 10;
             this.lblLocalIP.Text = "IP address:";
             // 
+            // btnQC
+            // 
+            this.btnQC.Location = new System.Drawing.Point(8, 75);
+            this.btnQC.Name = "btnQC";
+            this.btnQC.Size = new System.Drawing.Size(81, 24);
+            this.btnQC.TabIndex = 21;
+            this.btnQC.Text = "QC";
+            this.btnQC.UseVisualStyleBackColor = true;
+            this.btnQC.Click += new System.EventHandler(this.button1_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -473,7 +486,7 @@
             this.Controls.Add(this.grpList);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
-            this.Text = "RT Data Extractor (Version 1.1)";
+            this.Text = "RT Data Extractor (Version 1.2)";
             this.Click += new System.EventHandler(this.MainForm_Click);
             this.grpList.ResumeLayout(false);
             this.grpList.PerformLayout();
@@ -527,6 +540,8 @@
         private System.Windows.Forms.Label lblOutput;
         private System.Windows.Forms.ToolTip toolTipInput;
         private System.Windows.Forms.TextBox txbOutput;
+        private System.Windows.Forms.Button btnQC;
+        private System.Windows.Forms.ToolTip toolTipQC;
     }
 }
 
