@@ -20,6 +20,7 @@ using VMS.TPS.Common.Model.API;
 using System.Numerics;
 using EvilDICOM.Anonymization.Settings;
 using EvilDICOM.Core.Element;
+using System.Xml;
 
 namespace RTDataExtractor
 {
@@ -121,20 +122,24 @@ namespace RTDataExtractor
         /// </summary>
         public void StartDICOMServer(string pathOutput)
         {
+            KillProcesses();
+            // Search for the StartDICOMServer.cmd file
             string basePath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
             basePath = Path.GetFullPath(Path.Combine(basePath, @"..\..\..\"));
-            string cmdFilePath = Path.Combine(basePath, "DCMTK", "StartDICOMServer.cmd"); // ?
-            //string cmdFilePath = Path.Combine(basePath, "RTDataExtractor", "DCMTK", "StartDICOMServer.cmd");  // ?
+            var directory = new DirectoryInfo(basePath);
+            var cmdFile = directory.GetFiles("StartDICOMServer.cmd", searchOption: SearchOption.AllDirectories).First();
+            string cmdFilePath = cmdFile.FullName;
 
-            // Read the content of the .cmd file
-            string cmdFileContent = File.ReadAllText(cmdFilePath);
+            //// Read the current content of the .cmd file
+            //string newCmdFileContent = File.ReadAllText(cmdFilePath);
 
-            // Replace the output path
-            string updatedCmdFileContent = cmdFileContent.Replace("-od % ", $"-od \"{pathOutput}\"");
-            //string updatedCmdFileContent = cmdFileContent.Replace("-od % ", $"-od \"{pathOutput}\"");  // ?
+            // Create content
+            int port = local.Port;
+            string ae_title = local.AeTitle;
+            string newCmdFileContent = $"@echo off\r\n\r\ncls\r\n\r\nstorescp {port} -d -od {pathOutput} -aet {ae_title}";
 
             // Save the modified content back to the .cmd file
-            File.WriteAllText(cmdFilePath, updatedCmdFileContent);
+            File.WriteAllText(cmdFilePath, newCmdFileContent);
 
             // Execute the updated .cmd file
             recieverProcess = ExecuteCmdFile(cmdFilePath);
@@ -146,16 +151,33 @@ namespace RTDataExtractor
             Process process = new Process();
             process.StartInfo.WorkingDirectory = Path.GetDirectoryName(cmdFilePath); 
             process.StartInfo.FileName = cmdFilePath;
-            process.StartInfo.CreateNoWindow = true;
-            process.StartInfo.UseShellExecute = false; 
+            process.StartInfo.CreateNoWindow = false;
+            process.StartInfo.UseShellExecute = true; 
 
             // Start the process
             process.Start();
             return process;
         }
 
-        public void Extract(List<string> UIDs, MainForm mainForm)
+        public void KillProcesses()
         {
+            // Kill the receiver process
+            if (recieverProcess!= null) recieverProcess.Kill();
+
+            // Try to kill all StoreSCP processes
+            foreach (var process in Process.GetProcessesByName("storescp"))
+            {
+                try
+                {
+                    process.Kill();
+                }
+                catch 
+                { }
+            }
+        }
+
+        public void Extract(List<string> UIDs, MainForm mainForm)
+        { 
             ushort msgId = 1;
 
             // Counter for patient requests

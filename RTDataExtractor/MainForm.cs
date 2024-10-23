@@ -26,14 +26,15 @@ namespace RTDataExtractor
         public MainForm()
         {
             // Optional for user: Reset previous property settings. 
-            //Settings.Default.Reset();
+            Settings.Default.Reset();
+            // Add method that resets StartDICOMServer.cmd
 
             InitializeComponent();
 
             // Optional for user: Enter static paths
-            //txtPath.Text = @"";
-            //pathOutput = @"";
-            //txtOutputPath.Text = pathOutput;
+            txtPath.Text = @"";
+            pathOutput = @"";
+            txtOutputPath.Text = pathOutput;
 
             prioritizer = new Prioritizer(pathOutput);
             toolTipInput.SetToolTip(btnSelectFolder, "Path to a textfile with patient information structured as:\nPatient ID \t Pseudo ID \t Course ID \t Plan ID");
@@ -144,6 +145,7 @@ namespace RTDataExtractor
             {
                 Directory.CreateDirectory(pathOutput);
             }
+            prioritizer = new Prioritizer(pathOutput);
         }
 
         /// <summary>

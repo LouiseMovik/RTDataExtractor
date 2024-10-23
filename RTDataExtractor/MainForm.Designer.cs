@@ -37,6 +37,7 @@
             this.txtPath = new System.Windows.Forms.TextBox();
             this.txbOutput = new System.Windows.Forms.TextBox();
             this.grpExport = new System.Windows.Forms.GroupBox();
+            this.btnQC = new System.Windows.Forms.Button();
             this.prgBarPatient = new System.Windows.Forms.ProgressBar();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -65,7 +66,6 @@
             this.lblLocalIPResult = new System.Windows.Forms.Label();
             this.lblLocalIP = new System.Windows.Forms.Label();
             this.toolTipInput = new System.Windows.Forms.ToolTip(this.components);
-            this.btnQC = new System.Windows.Forms.Button();
             this.toolTipQC = new System.Windows.Forms.ToolTip(this.components);
             this.grpList.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridList)).BeginInit();
@@ -112,6 +112,7 @@
             this.btnSelectFolder.Text = "...";
             this.btnSelectFolder.UseVisualStyleBackColor = true;
             this.btnSelectFolder.Click += new System.EventHandler(this.btnSelectFolder_Click);
+            this.btnSelectFolder.Leave += new System.EventHandler(this.txtPath_Leave);
             // 
             // gridList
             // 
@@ -167,6 +168,16 @@
             this.grpExport.TabIndex = 15;
             this.grpExport.TabStop = false;
             this.grpExport.Text = "Extraction";
+            // 
+            // btnQC
+            // 
+            this.btnQC.Location = new System.Drawing.Point(8, 75);
+            this.btnQC.Name = "btnQC";
+            this.btnQC.Size = new System.Drawing.Size(81, 24);
+            this.btnQC.TabIndex = 21;
+            this.btnQC.Text = "QC";
+            this.btnQC.UseVisualStyleBackColor = true;
+            this.btnQC.Click += new System.EventHandler(this.button1_Click);
             // 
             // prgBarPatient
             // 
@@ -241,6 +252,7 @@
             this.btnSelectOutputFolder.Text = "...";
             this.btnSelectOutputFolder.UseVisualStyleBackColor = true;
             this.btnSelectOutputFolder.Click += new System.EventHandler(this.btnSelectOutputFolder_Click);
+            this.btnSelectOutputFolder.Leave += new System.EventHandler(this.txtOutputPath_Leave);
             // 
             // txtOutputPath
             // 
@@ -465,16 +477,6 @@
             this.lblLocalIP.TabIndex = 10;
             this.lblLocalIP.Text = "IP address:";
             // 
-            // btnQC
-            // 
-            this.btnQC.Location = new System.Drawing.Point(8, 75);
-            this.btnQC.Name = "btnQC";
-            this.btnQC.Size = new System.Drawing.Size(81, 24);
-            this.btnQC.TabIndex = 21;
-            this.btnQC.Text = "QC";
-            this.btnQC.UseVisualStyleBackColor = true;
-            this.btnQC.Click += new System.EventHandler(this.button1_Click);
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -486,7 +488,7 @@
             this.Controls.Add(this.grpList);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
-            this.Text = "RT Data Extractor (Version 1.2)";
+            this.Text = "RT Data Extractor (Version 1.3)";
             this.Click += new System.EventHandler(this.MainForm_Click);
             this.grpList.ResumeLayout(false);
             this.grpList.PerformLayout();

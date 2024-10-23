@@ -2,4 +2,4 @@
 
 cls
 
-storescp 104 -d -od H:\DICOM\ -aet DATAEXTR
+storescp 104 -d -od H:\DICOM -aet DATAEXTR_L

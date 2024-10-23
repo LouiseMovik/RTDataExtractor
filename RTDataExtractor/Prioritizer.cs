@@ -110,8 +110,8 @@ namespace RTDataExtractor
                 // Update counter
                 counter++;
                 mainForm.UpdateRequestsBar(counter);
-                mainForm.WriteMessage("Extraction completed for patient");
             }
+            extractor.KillProcesses();
         }
 
         /// <summary>

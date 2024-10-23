@@ -24,7 +24,8 @@ namespace EvilDICOM.Network
         /// <summary>
         /// IdleTimeout in milliseconds. Default value: 25000ms.
         /// </summary>
-        public int IdleTimeout { get; set; } = 25000; // 25 sec
+        //public int IdleTimeout { get; set; } = 25000; // 25 sec
+        public int IdleTimeout { get; set; } = 3000; // 3 sec
 
         public DICOMSCP(Entity ae) : base(ae)
         {
