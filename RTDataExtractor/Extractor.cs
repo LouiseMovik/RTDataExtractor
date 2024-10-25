@@ -122,7 +122,8 @@ namespace RTDataExtractor
         /// </summary>
         public void StartDICOMServer(string pathOutput)
         {
-            KillProcesses();
+            //KillProcesses();
+            
             // Search for the StartDICOMServer.cmd file
             string basePath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
             basePath = Path.GetFullPath(Path.Combine(basePath, @"..\..\..\"));
@@ -145,14 +146,33 @@ namespace RTDataExtractor
             recieverProcess = ExecuteCmdFile(cmdFilePath);
         }
 
+        /// <summary>
+        /// The content in StartDICOMServer.cmd is removed
+        /// </summary>
+        public void ResetReceiver()
+        {
+            // Search for the StartDICOMServer.cmd file
+            string basePath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+            basePath = Path.GetFullPath(Path.Combine(basePath, @"..\..\..\"));
+            var directory = new DirectoryInfo(basePath);
+            var cmdFile = directory.GetFiles("StartDICOMServer.cmd", searchOption: SearchOption.AllDirectories).First();
+            string cmdFilePath = cmdFile.FullName;
+
+            // Create empty content
+            string newCmdFileContent = "";
+
+            // Save the modified content back to the .cmd file
+            File.WriteAllText(cmdFilePath, newCmdFileContent);
+        }
+
         private Process ExecuteCmdFile(string cmdFilePath)
         {
             // Initialize a new process to run the .cmd file
             Process process = new Process();
             process.StartInfo.WorkingDirectory = Path.GetDirectoryName(cmdFilePath); 
             process.StartInfo.FileName = cmdFilePath;
-            process.StartInfo.CreateNoWindow = false;
-            process.StartInfo.UseShellExecute = true; 
+            process.StartInfo.CreateNoWindow = true;
+            process.StartInfo.UseShellExecute = false; 
 
             // Start the process
             process.Start();
@@ -203,34 +223,41 @@ namespace RTDataExtractor
         /// Uses evil DICOM to identify the UIDs of the considered treatment plan and linked dose, ct and structure set. 
         /// </summary>
         /// <param name="ID"></param>
-        /// <param name="courseID"></param>
         /// <param name="planID"></param>
-        public List<string> IdentifyLinkedObjects(string ID, string courseID, string planID)
+        public List<string> IdentifyLinkedObjects(string ID, string planID, MainForm mainForm)
         {
-            var studies = finder.FindStudies(ID);
-            var series = finder.FindSeries(studies);
-            var plans = finder.FindPlans(series);
-            var consPlan = plans.First(r=>r.PlanLabel.Equals(planID));
-            var consSOPInstanceUID = consPlan.SOPInstanceUID;
-
-            var consStudyInstanceUID = IdentifyStudyInstanceUID(studies, consSOPInstanceUID);
-            var consSeries = finder.FindSeries(studies.Where(r=>r.StudyInstanceUID.Equals(consStudyInstanceUID)));
-
-            var plan = finder.FindPlans(consSeries).First(r=>r.PlanLabel.Equals(planID));
-            var doses = finder.FindDoses(consSeries);
-            var consDoses = doses.Where(r => r.ReferencedPlan.sopInstanceUID.Equals(plan.SOPInstanceUID) && r.DoseSummationType.Equals("PLAN"));
-            var CTs = finder.FindImages(consSeries.Where(s => s.Modality == "CT"));
-            var SS = finder.FindStructures(consSeries);
-
-            List<string> outputList = new List<string>
+            try
             {
-                plan.SOPInstanceUID
-            };
-            outputList.AddRange(consDoses.Select(r=>r.SOPInstanceUID).ToList());
-            outputList.AddRange(CTs.Select(r => r.SOPInstanceUID).ToList());
-            outputList.AddRange(SS.Select(r => r.SOPInstanceUID).ToList());
-            outputList.Distinct();
-            return outputList;
+                var studies = finder.FindStudies(ID);
+                var series = finder.FindSeries(studies);
+                var plans = finder.FindPlans(series);
+                var consPlan = plans.First(r => r.PlanLabel.Equals(planID));
+                var consSOPInstanceUID = consPlan.SOPInstanceUID;
+
+                var consStudyInstanceUID = IdentifyStudyInstanceUID(studies, consSOPInstanceUID);
+                var consSeries = finder.FindSeries(studies.Where(r => r.StudyInstanceUID.Equals(consStudyInstanceUID)));
+
+                var plan = finder.FindPlans(consSeries).First(r => r.PlanLabel.Equals(planID));
+                var doses = finder.FindDoses(consSeries);
+                var consDoses = doses.Where(r => r.ReferencedPlan.sopInstanceUID.Equals(plan.SOPInstanceUID) && r.DoseSummationType.Equals("PLAN"));
+                var CTs = finder.FindImages(consSeries.Where(s => s.Modality == "CT"));
+                var SS = finder.FindStructures(consSeries);
+
+                List<string> outputList = new List<string>
+                {
+                    plan.SOPInstanceUID
+                };
+                outputList.AddRange(consDoses.Select(r => r.SOPInstanceUID).ToList());
+                outputList.AddRange(CTs.Select(r => r.SOPInstanceUID).ToList());
+                outputList.AddRange(SS.Select(r => r.SOPInstanceUID).ToList());
+                outputList.Distinct();
+                return outputList;
+            }
+            catch
+            {
+                mainForm.WriteMessage("Error: Not all linked objects were found --> Control the IDs");
+                return new List<string>();
+            }
         }
 
         private string IdentifyStudyInstanceUID(IEnumerable<CFindStudyIOD> studies, string refSOPInstanceUID)
@@ -255,8 +282,6 @@ namespace RTDataExtractor
          /// Uses a combination of Evil DICOM and own methods to anonymize created files.
          /// </summary>
          /// <param name="ID"></param>
-         /// <param name="courseID"></param>
-         /// <param name="planID"></param>
         public void Anonymize(string pathOutput, string ID, string pseudoID, MainForm mainForm)
         {
             // Identify files to anonymize and set counter
@@ -266,7 +291,7 @@ namespace RTDataExtractor
             var test = toAnonymize.Length;
             if (toAnonymize.Length == 0)
             {
-                mainForm.WriteMessage($"No files were exported for patient: {ID}");
+                mainForm.WriteMessage($"No files were exported for: {ID}");
                 return;
             }
 

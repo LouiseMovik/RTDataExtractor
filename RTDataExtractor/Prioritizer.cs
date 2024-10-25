@@ -72,7 +72,7 @@ namespace RTDataExtractor
 
             foreach (var patient in uniquePatientIDs)
             {
-                mainForm.WriteMessage($"Extraction started for patient: {patient}");
+                mainForm.WriteMessage($"Extraction started for: {patient}");
 
                 // A list that stores UIDs to extract for this patient
                 List<string> UIDs = new List<string>();
@@ -91,11 +91,10 @@ namespace RTDataExtractor
                     // Information from the data row
                     ID = planRow["Patient ID"].ToString();
                     pseudoID = planRow["Pseudo ID"].ToString();
-                    string courseID = planRow["Course ID"].ToString();
                     string planID = planRow["Plan ID"].ToString();
 
                     // Add identified UIDs to the list
-                    UIDs.AddRange(extractor.IdentifyLinkedObjects(ID, courseID, planID));
+                    UIDs.AddRange(extractor.IdentifyLinkedObjects(ID, planID, mainForm));
                 }
 
                 // Keep only distinct UIDs

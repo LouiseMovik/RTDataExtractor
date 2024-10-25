@@ -7,12 +7,14 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using RTDataExtractor.Properties;
 using System.Drawing.Drawing2D;
 using System.Diagnostics.Eventing.Reader;
 using VMS.TPS.Common.Model.API;
+using System.Runtime.InteropServices;
 
 namespace RTDataExtractor
 {
@@ -20,35 +22,46 @@ namespace RTDataExtractor
     {
         private Prioritizer prioritizer;
         private DataTable dtPatients;
+        private string inputTextfile;
         private string pathOutput;
-
 
         public MainForm()
         {
-            // Optional for user: Reset previous property settings. 
-            Settings.Default.Reset();
-            // Add method that resets StartDICOMServer.cmd
+            // OPTIONAL: Reset previous property settings.
+            bool resetSettings = false;
 
-            InitializeComponent();
-
-            // Optional for user: Enter static paths
-            txtPath.Text = @"";
+            // OPTIONAL: Enter static paths
+            inputTextfile = @"";
             pathOutput = @"";
-            txtOutputPath.Text = pathOutput;
 
-            prioritizer = new Prioritizer(pathOutput);
-            toolTipInput.SetToolTip(btnSelectFolder, "Path to a textfile with patient information structured as:\nPatient ID \t Pseudo ID \t Course ID \t Plan ID");
-            toolTipInput.SetToolTip(txtPath, "Path to a textfile with patient information structured as:\nPatient ID \t Pseudo ID \t Course ID \t Plan ID");
+            // Handle user input
+            if (resetSettings)
+            {
+                Settings.Default.Reset();
+                prioritizer = new Prioritizer(pathOutput);
+                prioritizer.Extractor.ResetReceiver();
+            }
+            else
+            {
+                prioritizer = new Prioritizer(pathOutput);
+            }
+
+            // Prepare the GUI
+            InitializeComponent();
+            txtPath.Text = inputTextfile;
+            txtOutputPath.Text = pathOutput;
+            toolTipInput.SetToolTip(btnSelectFolder, "Path to a textfile with patient information structured as:\nPatient ID \t Pseudo ID \t Plan ID");
+            toolTipInput.SetToolTip(txtPath, "Path to a textfile with patient information structured as:\nPatient ID \t Pseudo ID \t Plan ID");
             toolTipQC.SetToolTip(btnQC, "Optional: A quality control can be performed following extraction. \nThe export request is compared to the generated files and a summary is generated in the output folder.");
             UpdateDICOMSettings();
-
+            this.FormClosing += MainForm_FormClosing;
             txtPath.Select();
         }
 
         /// <summary>
         /// Start extraction.
         /// </summary>
-        private void btnStart_Click(object sender, EventArgs e)
+        private async void btnStart_Click(object sender, EventArgs e)
         {
             if (ControlInput())
             {
@@ -56,7 +69,7 @@ namespace RTDataExtractor
                 txbOutput.BringToFront();
                 if (dtPatients.Rows.Count > 0)
                 {
-                    prioritizer.StartExtraction(dtPatients, pathOutput, this);
+                    await Task.Run(() => prioritizer.StartExtraction(dtPatients, pathOutput, this));
                 }
                 else
                 {
@@ -72,8 +85,11 @@ namespace RTDataExtractor
         /// </summary>
         public void WriteMessage(string message)
         {
-            txbOutput.AppendText(message);
-            txbOutput.AppendText(Environment.NewLine);
+            Invoke((Action)(() =>
+            {
+                txbOutput.AppendText(message);
+                txbOutput.AppendText(Environment.NewLine);
+            }));
         }
 
         /// <summary>
@@ -95,7 +111,10 @@ namespace RTDataExtractor
         /// </summary>
         public void UpdateRequestsBar(int value)
         {
-            prgBar.Value = value;
+            Invoke((Action)(() =>
+            {
+                prgBar.Value = value;
+            }));
         }
 
         /// <summary>
@@ -103,7 +122,10 @@ namespace RTDataExtractor
         /// </summary>
         public void UpdatePatientRequestsBar(int value)
         {
-            prgBarPatient.Value = value;
+            Invoke((Action)(() =>
+            {
+                prgBarPatient.Value = value;
+            }));
         }
 
         /// <summary>
@@ -111,7 +133,10 @@ namespace RTDataExtractor
         /// </summary>
         public void SetPatientProgressMaximum(int value)
         {
-            prgBarPatient.Maximum = value;  
+            Invoke((Action)(() =>
+            {
+                prgBarPatient.Maximum = value;
+            }));
         }
 
         /// <summary>
@@ -121,10 +146,22 @@ namespace RTDataExtractor
         {
             try
             {
+                // View data in DataTable in DataGridView
                 string pathToData = txtPath.Text;
                 dtPatients = LoadPatientDataIntoDataTable(pathToData);
                 gridList.DataSource = dtPatients;
 
+                // Set the DataGridView properties
+                gridList.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None; // Disable global autosize mode
+
+                // Set the width of the first and second columns
+                gridList.Columns[0].Width = 120; // Set the desired width for the first column
+                gridList.Columns[1].Width = 120; // Set the desired width for the second column
+
+                // Set the third column to fill the remaining space
+                gridList.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+
+                // Prepare progress bar
                 if (dtPatients.Rows.Count > 0)
                 {
                     prgBar.Maximum = dtPatients.AsEnumerable().Select(row => row.Field<string>("Patient ID")).Distinct().Count();
@@ -252,7 +289,6 @@ namespace RTDataExtractor
             // Define columns for the DataTable
             dataTable.Columns.Add("Patient ID", typeof(string));
             dataTable.Columns.Add("Pseudo ID", typeof(string));
-            dataTable.Columns.Add("Course ID", typeof(string));
             dataTable.Columns.Add("Plan ID", typeof(string));
 
             try
@@ -264,14 +300,13 @@ namespace RTDataExtractor
                     string[] fields = line.Split('\t');
 
                     // Check if the line has the expected number of fields
-                    if (fields.Length == 4)
+                    if (fields.Length == 3)
                     {
                         // Create a new DataRow and add it to the DataTable
                         DataRow row = dataTable.NewRow();
                         row["Patient ID"] = fields[0];
                         row["Pseudo ID"] = fields[1];
-                        row["Course ID"] = fields[2];
-                        row["Plan ID"] = fields[3];
+                        row["Plan ID"] = fields[2];
                         dataTable.Rows.Add(row);
                     }
                     else
@@ -280,13 +315,30 @@ namespace RTDataExtractor
                     }
                 }
             }
-            catch (Exception ex)
+            catch
             {
                 //MessageBox.Show($"An error occurred while reading the file: { ex.Message}", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
 
             // Return the populated DataTable
             return dataTable;
+        }
+
+        /// <summary>
+        /// Event handler method for when the Exit button is clicked. 
+        /// </summary>
+        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            // Display a confirmation dialog
+            var result = MessageBox.Show("Are you sure you want to exit?", "Confirm Exit",
+                                          MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            // Check the user's response
+            if (result == DialogResult.No)
+            {
+                e.Cancel = true; // Cancel the close action
+            }
+            // If "Yes" is selected, the form will close
         }
 
         /// <summary>

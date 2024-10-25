@@ -122,6 +122,7 @@
             this.gridList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridList.Location = new System.Drawing.Point(10, 47);
             this.gridList.Name = "gridList";
+            this.gridList.ReadOnly = true;
             this.gridList.Size = new System.Drawing.Size(441, 328);
             this.gridList.TabIndex = 0;
             // 
@@ -488,7 +489,7 @@
             this.Controls.Add(this.grpList);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
-            this.Text = "RT Data Extractor (Version 1.3)";
+            this.Text = "RT Data Extractor (Version 1.4)";
             this.Click += new System.EventHandler(this.MainForm_Click);
             this.grpList.ResumeLayout(false);
             this.grpList.PerformLayout();
